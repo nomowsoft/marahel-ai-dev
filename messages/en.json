@@ -1,0 +1,10 @@
+{ 
+    "MenuItem": {
+      "home": "Home",
+      "services": "Services we offer"
+    },
+    "Header": {
+      "contactus": "Contact Us"
+    }
+  }
+  
