@@ -818,6 +818,10 @@
     display: inline-flex;
   }
 
+  .table {
+    display: table;
+  }
+
   .h-2 {
     height: calc(var(--spacing) * 2);
   }

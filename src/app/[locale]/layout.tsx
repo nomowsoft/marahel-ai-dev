@@ -35,7 +35,7 @@ export default async function RootLayout({ children, params }: { children: React
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <head>
-          <link rel="icon" href="/header/logo.svg" />
+          <link rel="icon" href="/navbar/MarahelAI.svg" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
       </head>
       <body className="font-doto bg-background">
