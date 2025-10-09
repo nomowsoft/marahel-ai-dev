@@ -1,5 +1,3 @@
-module.exports = [
-"[project]/messages/ar.json (json)", ((__turbopack_context__) => {
+module.exports=[70653,a=>{a.v(JSON.parse('{"MenuItem":{"home":"الرئيسية","services":"الخدمات التي نقدمها"},"Header":{"contactus":"تواصل معنا"}}'))}];
 
-__turbopack_context__.v(JSON.parse("{\"MenuItem\":{\"home\":\"الرئيسية\",\"services\":\"الخدمات التي نقدمها\"},\"Header\":{\"contactus\":\"تواصل معنا\"}}"));}),
-];
+//# sourceMappingURL=messages_ar_json_2a006680._.js.map

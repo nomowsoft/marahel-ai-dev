@@ -1,8 +1,0 @@
-{
-  "projects": {
-    "default": "marahel-ai",
-    "staging": "marahel-ai"
-  },
-  "targets": {},
-  "etags": {}
-}
