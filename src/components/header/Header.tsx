@@ -12,23 +12,29 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import Image from "next/image";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 
-export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+export const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const router = useRouter();
   const pathname = usePathname();
   const localeActive = useLocale();
+  const t = useTranslations('Header')
 
   // 🔄 تغيير اللغة
-  const changeLocale = (nextLocale: string) => {
+  const changeLocale = (nextLocale: string): void => {
     if (nextLocale === localeActive) return;
-    const segments = pathname.split("/");
+
+    const segments: string[] = pathname.split("/");
     if (segments[1] && ["ar", "en"].includes(segments[1])) {
       segments[1] = nextLocale; // استبدال اللغة الحالية
     } else {
       segments.splice(1, 0, nextLocale); // إضافة اللغة إذا لم تكن موجودة
     }
-    router.push(segments.join("/") || "/");
+
+    const newPath = segments.join("/") || "/";
+    router.push(newPath);
   };
 
   return (
@@ -42,15 +48,15 @@ export const Navbar = () => {
 
           {/* 🔹 Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#products" className="text-foreground hover:text-primary transition-colors">
-              Products
-            </a>
-            <a href="#solutions" className="text-foreground hover:text-primary transition-colors">
-              Solutions
-            </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
-              About Company
-            </a>
+            <Link href="#products" className="text-foreground hover:text-primary transition-colors">
+              {t('products')}
+            </Link>
+            <Link href="#solutions" className="text-foreground hover:text-primary transition-colors">
+              {t('solutions')}
+            </Link>
+            <Link href="#about" className="text-foreground hover:text-primary transition-colors">
+              {t('about')}
+            </Link>
           </div>
 
           {/* 🔹 Language Switcher & CTA */}
@@ -82,12 +88,16 @@ export const Navbar = () => {
             </DropdownMenu>
 
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              Contact Us
+              {t('contactus')}
             </Button>
           </div>
 
           {/* 🔹 Mobile Menu Button */}
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-foreground">
+          <button
+            onClick={() => setIsOpen((prev) => !prev)}
+            className="md:hidden text-foreground"
+            aria-label="Toggle menu"
+          >
             <Menu className="h-6 w-6" />
           </button>
         </div>
@@ -95,29 +105,29 @@ export const Navbar = () => {
         {/* 🔹 Mobile Menu */}
         {isOpen && (
           <div className="md:hidden py-4 space-y-4">
-            <a href="#products" className="block text-foreground hover:text-primary transition-colors py-2">
-              Products
-            </a>
-            <a href="#solutions" className="block text-foreground hover:text-primary transition-colors py-2">
-              Solutions
-            </a>
-            <a href="#about" className="block text-foreground hover:text-primary transition-colors py-2">
-              About Company
-            </a>
+            <Link href="#products" className="block text-foreground hover:text-primary transition-colors py-2">
+              {t('products')}
+            </Link>
+            <Link href="#solutions" className="block text-foreground hover:text-primary transition-colors py-2">
+              {t('solutions')}
+            </Link>
+            <Link href="#about" className="block text-foreground hover:text-primary transition-colors py-2">
+              {t('about')}
+            </Link>
 
             {/* 🌐 Language Switcher - Mobile */}
             <div className="flex gap-2 py-2">
               <Button
                 variant={localeActive === "ar" ? "default" : "outline"}
                 onClick={() => changeLocale("ar")}
-                className="flex-1"
+                className={`flex-1 ${localeActive === "ar" ? "bg-primary/10 text-primary" : "text-foreground"}`}
               >
                 العربية
               </Button>
               <Button
                 variant={localeActive === "en" ? "default" : "outline"}
                 onClick={() => changeLocale("en")}
-                className="flex-1"
+                className={`flex-1 ${localeActive === "en" ? "bg-primary/10 text-primary" : "text-foreground"}`}
               >
                 English
               </Button>
