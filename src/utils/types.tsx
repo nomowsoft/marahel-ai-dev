@@ -27,6 +27,7 @@ export type Products = {
   description: string;
   features: string[];
   color: "primary" | "secondary" | "accent";
+  demo: ReactNode;
 }
 
 export type Certification = {

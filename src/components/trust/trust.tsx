@@ -2,6 +2,7 @@ import { FC } from "react";
 import { Card } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
 import { getCertifications, getStats } from "@/utils/data";
+import { MetricsDemo } from "../animations/file5";
 
 export const Trust: FC = () => {
   const t = useTranslations('Trust');
@@ -35,7 +36,6 @@ export const Trust: FC = () => {
                 <div
                   className={`w-16 h-16 rounded-2xl bg-${cert.color}/10 flex items-center justify-center mx-auto mb-4 group-hover:glow-${cert.color} transition-all duration-300`}
                 >
-                  {/* دعم الأيقونات المخصصة (KSA) أو من lucide-react */}
                   {typeof Icon === "function" && Icon.prototype && Icon.prototype.render ? (
                     <Icon className={`w-8 h-8 text-${cert.color}`} />
                   ) : (
@@ -66,6 +66,9 @@ export const Trust: FC = () => {
               <div className="text-muted-foreground font-medium">{stat.label}</div>
             </div>
           ))}
+        </div>
+        <div className="w-full h-[400px] animate-fade-in mt-10" style={{ animationDelay: "0.4s" }}>
+          <MetricsDemo />
         </div>
       </div>
     </section>

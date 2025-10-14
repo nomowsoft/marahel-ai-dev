@@ -1,22 +1,3 @@
-module.exports = [
-"[project]/messages/ar.json (json, async loader)", ((__turbopack_context__) => {
+module.exports=[44839,a=>{a.v(b=>Promise.all(["server/chunks/ssr/messages_ar_json_2a006680._.js"].map(b=>a.l(b))).then(()=>b(70653)))},17741,a=>{a.v(b=>Promise.all(["server/chunks/ssr/messages_en_json_a7997480._.js"].map(b=>a.l(b))).then(()=>b(50929)))}];
 
-__turbopack_context__.v((parentImport) => {
-    return Promise.all([
-  "server/chunks/ssr/messages_ar_json_2a006680._.js"
-].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
-        return parentImport("[project]/messages/ar.json (json)");
-    });
-});
-}),
-"[project]/messages/en.json (json, async loader)", ((__turbopack_context__) => {
-
-__turbopack_context__.v((parentImport) => {
-    return Promise.all([
-  "server/chunks/ssr/messages_en_json_a7997480._.js"
-].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
-        return parentImport("[project]/messages/en.json (json)");
-    });
-});
-}),
-];
+//# sourceMappingURL=messages_055c0e50._.js.map

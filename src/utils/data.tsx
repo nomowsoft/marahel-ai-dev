@@ -20,7 +20,9 @@ import {
   Award, 
   CheckCircle
 } from "lucide-react";
-
+import { KnowledgeHubDemo } from "@/components/animations/file2";
+import { ChatbotDemo } from "@/components/animations/file3";
+import { EventNavigationDemo } from "@/components/animations/file";
 
 export const getMenuItem = (t: (key: string) => string): MenuItem[] => [
     {
@@ -67,7 +69,8 @@ export const getProducts = (t: (key: string) => string): Products[] => [
       t("features12"),
       t("features13")
     ],
-    color: "primary"
+    color: "primary",
+    demo: <KnowledgeHubDemo />
   },
   {
     icon: MessageSquare,
@@ -78,7 +81,8 @@ export const getProducts = (t: (key: string) => string): Products[] => [
       t("features22"),
       t("features23")
     ],
-    color: "secondary"
+    color: "secondary",
+    demo: <ChatbotDemo />
   },
   {
     icon: Calendar,
@@ -89,7 +93,8 @@ export const getProducts = (t: (key: string) => string): Products[] => [
       t("features32"),
       t("features33")
     ],
-    color: "accent"
+    color: "accent",
+    demo: <EventNavigationDemo />
   }
 ];
 
