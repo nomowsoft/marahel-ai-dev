@@ -5,6 +5,7 @@ import { ArrowRight, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getProducts } from "@/utils/data";
 
+
 export const Products: FC = () => {
   const t = useTranslations('Products');
   const values = getProducts(t);
@@ -55,6 +56,10 @@ export const Products: FC = () => {
                     </li>
                   ))}
                 </ul>
+                {/* Animated Demo */}
+                <div className="h-[400px] px-6 pb-6">
+                  {product.demo}
+                </div>
 
                 {/* Button */}
                 <Button
