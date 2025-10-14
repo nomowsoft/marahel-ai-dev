@@ -26,7 +26,7 @@ export const SystemArchitecture = () => {
       setActiveConnection((prev) => (prev + 1) % connections.length);
     }, 1500);
     return () => clearInterval(interval);
-  }, []);
+  }, [connections.length]);
 
   return (
     <div className="relative w-full h-auto md:h-[600px] bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 p-6 md:p-8 overflow-hidden flex flex-col items-center justify-center">
