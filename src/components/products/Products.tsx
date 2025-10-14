@@ -64,7 +64,7 @@ export const Products: FC = () => {
                 {/* Button */}
                 <Button
                   variant="outline"
-                  className="w-full border-primary/30 hover:bg-primary/10 group-hover:border-primary/60 mt-auto"
+                  className="w-full border-primary/30 rounded-xl hover:bg-primary/10 group-hover:border-primary/60 mt-auto"
                 >
                   {t('button')}
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
