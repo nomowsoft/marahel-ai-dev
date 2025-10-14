@@ -68,7 +68,7 @@ export const Challenges: React.FC = () => {
         <div className="text-center">
           <Button
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground glow-primary"
+            className="bg-primary hover:bg-primary/90 rounded-xl text-primary-foreground glow-primary"
           >
             <Download className="ml-2 h-5 w-5" />
             {t('button')}
