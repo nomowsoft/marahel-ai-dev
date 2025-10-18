@@ -1,16 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Database, Cloud, Lock, Zap } from "lucide-react";
+import { Zap } from "lucide-react";
+import { getNodes } from "@/utils/data";
+import { useTranslations } from "next-intl";
 
 export const SystemArchitecture = () => {
+  const t = useTranslations('Nodes');
+  const values = getNodes(t) 
   const [activeConnection, setActiveConnection] = useState(0);
-
-  const nodes = [
-    { icon: Database, label: "قاعدة البيانات", color: "primary" },
-    { icon: Cloud, label: "الخدمات السحابية", color: "secondary" },
-    { icon: Lock, label: "الأمان", color: "accent" },
-    { icon: Zap, label: "المعالجة", color: "primary" },
-  ];
 
   const connections = [
     { from: 0, to: 1 },
@@ -38,8 +35,8 @@ export const SystemArchitecture = () => {
       </div>
 
       {/* Responsive Node Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 md:gap-12 w-full md:w-[80%] justify-items-center md:absolute md:inset-0 md:m-auto md:grid-cols-none">
-        {nodes.map((node, idx) => {
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 md:gap-12 w-full md:w-[80%] justify-items-center md:absolute md:inset-0 md:m-auto">
+        {values.map((node, idx) => {
           const Icon = node.icon;
           const isActive =
             connections[activeConnection]?.from === idx ||
@@ -109,7 +106,7 @@ export const SystemArchitecture = () => {
       {/* Data Flow Indicator */}
       <div className="absolute top-4 right-4 flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 animate-fade-in">
         <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
-        <span className="text-xs sm:text-sm text-primary font-bold">نقل البيانات نشط</span>
+        <span className="text-xs sm:text-sm text-primary font-bold">{t('transfeer')}</span>
       </div>
 
       {/* Background Grid */}

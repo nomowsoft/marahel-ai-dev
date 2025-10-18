@@ -1,23 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
-import { TrendingUp, Users, Clock, Zap, type LucideIcon } from "lucide-react";
-
-interface Metric {
-  icon: LucideIcon;
-  label: string;
-  value: number;
-  max: number;
-  suffix: string;
-  color: string;
-}
+import { useTranslations } from "next-intl";
+import { getMetric } from "@/utils/data";
+import { Metric } from "@/utils/types";
 
 export const MetricsDemo = () => {
-  const [metrics, setMetrics] = useState<Metric[]>([
-    { icon: Users, label: "المستخدمون النشطون", value: 0, max: 2847, suffix: "", color: "primary" },
-    { icon: TrendingUp, label: "معدل الرضا", value: 0, max: 98, suffix: "%", color: "secondary" },
-    { icon: Clock, label: "متوسط وقت الاستجابة", value: 0, max: 2.3, suffix: "ث", color: "accent" },
-    { icon: Zap, label: "المعاملات المكتملة", value: 0, max: 15420, suffix: "", color: "primary" },
-  ]);
+  const t =useTranslations('Metric');
+  const prev = getMetric(t)
+
+  const [metrics, setMetrics] = useState<Metric[]>(prev);
 
   useEffect(() => {
     const interval = setInterval(() => {
