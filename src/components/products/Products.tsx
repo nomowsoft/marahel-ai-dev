@@ -25,7 +25,7 @@ export const Products: FC = () => {
         </div>
 
         {/* Product Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           {values.map((product, index) => {
             const Icon = product.icon;
             return (
@@ -35,29 +35,29 @@ export const Products: FC = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Header */}
-                <div className="flex items-start gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-6">
                   <div
                     className={`w-14 h-14 rounded-xl bg-${product.color}/10 flex items-center justify-center group-hover:scale-110 transition-transform`}
                   >
                     <Icon className={`w-7 h-7 text-${product.color}`} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2 text-foreground h-15">{product.title}</h3>
-                    <p className="text-muted-foreground h-10">{product.description}</p>
+                    <h3 className="xl:text-2xl font-bold mb-2 text-foreground h-15">{product.title}</h3>
                   </div>
                 </div>
+                <p className="text-muted-foreground">{product.description}</p>
 
                 {/* Features */}
-                <ul className="space-y-3 mb-6">
+                <ul className="space-y-3 my-6">
                   {product.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-muted-foreground">
+                    <li key={idx} className="flex items-center text-muted-foreground">
                       <Check className={`w-4 h-4 text-${product.color}`} />
                       {feature}
                     </li>
                   ))}
                 </ul>
                 {/* Animated Demo */}
-                <div className="h-[400px] px-6 pb-6">
+                <div className="h-[400px] pb-6">
                   {product.demo}
                 </div>
 

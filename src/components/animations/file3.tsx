@@ -1,26 +1,21 @@
 'use client';
 import { useState, useEffect } from "react";
 import { Send, Bot, User } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { getDemomessage } from "@/utils/data";
+import { Message } from "@/utils/types";
 
-interface Message {
-  role: "user" | "assistant";
-  content: string;
-}
-
-const DEMO_MESSAGES: Message[] = [
-  { role: "user", content: "ما هي ساعات العمل؟" },
-  { role: "assistant", content: "مرحباً! ساعات العمل من الأحد إلى الخميس، من 9 صباحاً حتى 5 مساءً." },
-  { role: "user", content: "هل يمكنني حجز موعد؟" },
-  { role: "assistant", content: "بالتأكيد! يمكنني مساعدتك في حجز موعد. ما هو التاريخ المفضل لديك؟" },
-];
 export const ChatbotDemo = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  
+  const t = useTranslations('Message');
+  const demomessage = getDemomessage(t);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (currentIndex < DEMO_MESSAGES.length) {
-        setMessages((prev) => [...prev, DEMO_MESSAGES[currentIndex]]);
+      if (currentIndex < demomessage.length) {
+        setMessages((prev) => [...prev, demomessage[currentIndex]]);
         setCurrentIndex((prev) => prev + 1);
       } else {
         setTimeout(() => {
@@ -41,8 +36,8 @@ export const ChatbotDemo = () => {
           <Bot className="w-6 h-6 text-primary" />
         </div>
         <div>
-          <h4 className="font-bold text-foreground">مرشد - مساعد الدردشة</h4>
-          <p className="text-xs text-muted-foreground">متصل الآن</p>
+          <h4 className="font-bold text-foreground">{t('murshed')}</h4>
+          <p className="text-xs text-muted-foreground">{t('now')}</p>
         </div>
         <div className="mr-auto">
           <div className="w-2 h-2 rounded-full bg-accent animate-pulse"></div>
@@ -89,7 +84,7 @@ export const ChatbotDemo = () => {
         <div className="flex items-center gap-2 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-3">
           <input
             type="text"
-            placeholder="اكتب رسالتك..."
+            placeholder={t('placeholder')}
             className="flex-1 bg-transparent text-sm text-foreground outline-none"
             disabled
           />

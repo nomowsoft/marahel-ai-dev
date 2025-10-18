@@ -111,6 +111,56 @@
       "p": "Join leading Saudi organisations already benefiting from secure, compliant AI solutions.",
       "button1": "Schedule Your Demo",
       "button2": "Download AI Strategy Guide"
+    },
+    "Nodes": {
+      "transfeer": "Data transfer active",
+      "label1": "Database",
+      "label2": "Cloud Services",
+      "label3": "Security",
+      "label4": "Processing"
+    },
+    "Events": {
+      "title": "My Companion - Your Guide at the Event",
+      "p": "Main Conference Center",
+      "active": "Active",
+      "title1": "Opening Session",
+      "title2": "Artificial Intelligence Workshop",
+      "title3": "Panel Discussion",
+      "location1": "Main Hall",
+      "location2": "Innovation Hall",
+      "location3": "Conference Hall"
+    },
+    "PathStep": {
+      "label1": "Main Entrance",
+      "label2": "Corridor 1",
+      "label3": "Elevator",
+      "label4": "Hall A1"
+    },
+    "Documents": {
+      "what": "What is the vacation policy?",
+      "sumary": "Smart Summary",
+      "page": "Page",
+      "alldetails": "View Full Details",
+      "p": "According to company policy, employees are entitled to 30 days of paid annual leave...",
+      "proccess": "Processing",
+      "title1": "Policy Guide",
+      "title2": "Annual Report",
+      "title3": "Operational Procedures"
+    },
+    "Message": {
+      "murshed": "Murshed - Chat Assistant",
+      "now": "Online Now",
+      "placeholder": "Type your message...",
+      "content1": "What are the working hours?",
+      "content2": "Hello! Working hours are from Sunday to Thursday, 9 AM to 5 PM.",
+      "content3": "Can I book an appointment?",
+      "content4": "Of course! I can help you book an appointment. What is your preferred date?"
+    },
+    "Metric": {
+      "label1": "Active Users",
+      "label2": "Satisfaction Rate",
+      "label3": "Average Response Time",
+      "label4": "Completed Transactions"
     }
 }
   

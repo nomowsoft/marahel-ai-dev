@@ -1,23 +1,17 @@
 "use client";
 import { useState, useEffect } from "react";
 import { MapPin, Navigation, Star, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { getEvents, getPathSteps } from "@/utils/data";
 
 export const EventNavigationDemo = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [selectedEvent, setSelectedEvent] = useState(0);
-
-  const events = [
-    { time: "09:00", title: "الجلسة الافتتاحية", location: "القاعة الرئيسية", room: "A1" },
-    { time: "11:00", title: "ورشة الذكاء الاصطناعي", location: "قاعة الابتكار", room: "B2" },
-    { time: "14:00", title: "جلسة نقاش", location: "قاعة المؤتمرات", room: "C3" },
-  ];
-
-  const pathSteps = [
-    { x: "20%", y: "30%", label: "المدخل الرئيسي" },
-    { x: "40%", y: "40%", label: "الممر 1" },
-    { x: "60%", y: "35%", label: "المصعد" },
-    { x: "75%", y: "45%", label: "القاعة A1" },
-  ];
+  
+  const t = useTranslations('Events')
+  const t1 = useTranslations('PathStep')
+  const events = getEvents(t)
+  const pathSteps = getPathSteps(t1)
 
   useEffect(() => {
     const eventInterval = setInterval(() => {
@@ -37,19 +31,19 @@ export const EventNavigationDemo = () => {
   return (
     <div className="relative w-full h-full bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 overflow-hidden">
       {/* Header */}
-      <div className="absolute top-0 left-0 right-0 p-6 bg-gradient-to-b from-background/90 to-transparent backdrop-blur-sm z-20">
+      <div className="absolute top-0 left-0 right-0 p-6 bg-gradient-to-b from-background/90 to-transparent backdrop-blur-sm ">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
               <Navigation className="w-5 h-5 text-primary" />
             </div>
             <div>
-              <h4 className="font-bold text-foreground">رفيقي - دليلك في الفعالية</h4>
-              <p className="text-xs text-muted-foreground">مركز المؤتمرات الرئيسي</p>
+              <h4 className="font-bold text-foreground">{t('title')}</h4>
+              <p className="text-xs text-muted-foreground">{t('p')}</p>
             </div>
           </div>
           <div className="px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold">
-            نشط
+            {t('active')}
           </div>
         </div>
       </div>

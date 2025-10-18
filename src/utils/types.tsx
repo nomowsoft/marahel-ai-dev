@@ -54,3 +54,42 @@ export type Solutions = {
 export type ProductsFooter = {
   name: string;
 }
+
+export type Nodes = {
+  icon: LucideIcon | (() => ReactNode);
+  label: string;
+  color: string;
+}
+
+export type Events = {
+  time: string;
+  title: string;
+  location: string;
+  room: string;
+};
+
+export type PathStep = {
+  x: string;
+  y: string;
+  label: string;
+};
+
+export type Documents = {
+  title: string;
+  type: string;
+  pages: number;
+};
+
+ export type Message = {
+    role: "user" | "assistant";
+    content: string;
+  }
+
+ export type Metric = {
+    icon: LucideIcon;
+    label: string;
+    value: number;
+    max: number;
+    suffix: string;
+    color: string;
+  }

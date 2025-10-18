@@ -1,16 +1,15 @@
 "use client";
 import { useState, useEffect } from "react";
 import { FileText, Search, Sparkles, ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { getDocuments } from "@/utils/data";
 
 export const KnowledgeHubDemo = () => {
   const [searchProgress, setSearchProgress] = useState(0);
   const [activeDoc, setActiveDoc] = useState(0);
 
-  const documents = [
-    { title: "دليل السياسات", type: "PDF", pages: 24 },
-    { title: "التقرير السنوي", type: "PDF", pages: 156 },
-    { title: "الإجراءات التشغيلية", type: "DOC", pages: 89 },
-  ];
+  const t = useTranslations('Documents');
+  const documents = getDocuments(t) 
 
   useEffect(() => {
     const progressInterval = setInterval(() => {
@@ -35,7 +34,7 @@ export const KnowledgeHubDemo = () => {
           <Search className="w-5 h-5 text-primary" />
           <input
             type="text"
-            value="ما هي سياسة الإجازات؟"
+            value={t('what')}
             className="flex-1 bg-transparent text-foreground outline-none"
             disabled
           />
@@ -67,13 +66,13 @@ export const KnowledgeHubDemo = () => {
             <div className="flex-1">
               <h4 className="font-bold text-foreground mb-1">{doc.title}</h4>
               <p className="text-xs text-muted-foreground">
-                {doc.type} • {doc.pages} صفحة
+                {doc.type} • {doc.pages} {t('page')}
               </p>
             </div>
             {idx === activeDoc && (
               <div className="animate-fade-in">
                 <div className="px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold">
-                  معالجة
+                  {t('proccess')}
                 </div>
               </div>
             )}
@@ -87,12 +86,12 @@ export const KnowledgeHubDemo = () => {
           <div className="flex items-start gap-3">
             <Sparkles className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
             <div>
-              <h5 className="font-bold text-foreground mb-2">ملخص ذكي</h5>
+              <h5 className="font-bold text-foreground mb-2">{t('sumary')}</h5>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                وفقاً لسياسة الشركة، يحق للموظف 30 يوم إجازة سنوية مدفوعة الأجر...
+                {t('p')}
               </p>
               <button className="flex items-center gap-2 mt-3 text-primary text-sm font-medium hover:gap-3 transition-all">
-                عرض التفاصيل الكاملة
+                {t('alldetails')}
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>

@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
   const t = useTranslations('Hero');
   const values = gethero(t);
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 mt-20 md:mt-0 lg:mt-5">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 mt-20 md:mt-0 lg:mt-20 xl:mt-5">
       {/* 🔹 Background Layers */}
       <div className="absolute inset-0 bg-gradient-hero opacity-50" />
       <div className="absolute inset-0 bg-grid-pattern opacity-20" />

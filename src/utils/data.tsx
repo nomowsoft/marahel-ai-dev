@@ -7,7 +7,13 @@ import {
   Stat, 
   Company, 
   Solutions, 
-  ProductsFooter 
+  ProductsFooter,
+  Nodes,
+  Events,
+  PathStep,
+  Documents,
+  Message,
+  Metric
 } from "./types";
 import {
   Database, 
@@ -18,7 +24,12 @@ import {
   MessageSquare, 
   Calendar, 
   Award, 
-  CheckCircle
+  CheckCircle,
+  Cloud,
+  Lock,
+  Users,
+  TrendingUp,
+  Clock
 } from "lucide-react";
 import { KnowledgeHubDemo } from "@/components/animations/file2";
 import { ChatbotDemo } from "@/components/animations/file3";
@@ -175,4 +186,45 @@ export const getProductsFooter = (t: (key: string) => string): ProductsFooter[] 
   {name: t('name8')},
   {name: t('name9')},
   {name: t('name10')},
+];
+
+export const getNodes = (t: (key: string) => string): Nodes[] =>[
+    { icon: Database, label: t('label1'), color: "primary" },
+    { icon: Cloud, label: t('label2'), color: "secondary" },
+    { icon: Lock, label: t('label3'), color: "accent" },
+    { icon: Zap, label: t('label4'), color: "primary" },
+];
+
+export const getEvents = (t: (key: string) => string): Events[] =>[
+    { time: "09:00", title: t('title1'), location: t('location1'), room: "A1" },
+    { time: "11:00", title: t('title2'), location: t('location2'), room: "B2" },
+    { time: "14:00", title: t('title3'), location: t('location3'), room: "C3" },
+];
+
+export const getPathSteps = (t: (key: string) => string): PathStep[] => [
+  { x: "20%", y: "30%", label: t('label1') },
+  { x: "40%", y: "40%", label: t('label2') },
+  { x: "60%", y: "35%", label: t('label3') },
+  { x: "75%", y: "45%", label: t('label4') },
+];
+
+ export const getDocuments = (t: (key: string) => string): Documents[] => [
+    { title: t('title1'), type: "PDF", pages: 24 },
+    { title: t('title2'), type: "PDF", pages: 156 },
+    { title: t('title3'), type: "DOC", pages: 89 },
+  ];
+
+  
+export const getDemomessage = (t: (key: string) => string): Message[] => [
+    { role: "user", content: t('content1') },
+    { role: "assistant", content: t('content2') },
+    { role: "user", content: t('content3') },
+    { role: "assistant", content: t('content4') },
+  ];
+  
+export const getMetric = (t: (key: string) => string): Metric[] => [
+    { icon: Users, label: t('label1'), value: 0, max: 2847, suffix: "", color: "primary" },
+    { icon: TrendingUp, label: t('label2'), value: 0, max: 98, suffix: "%", color: "secondary" },
+    { icon: Clock, label: t('label3'), value: 0, max: 2.3, suffix: "ث", color: "accent" },
+    { icon: Zap, label: t('label4'), value: 0, max: 15420, suffix: "", color: "primary" },
 ];
