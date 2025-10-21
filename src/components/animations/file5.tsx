@@ -4,27 +4,45 @@ import { useTranslations } from "next-intl";
 import { getMetric } from "@/utils/data";
 import { Metric } from "@/utils/types";
 
-export const MetricsDemo = () => {
-  const t =useTranslations('Metric');
-  const prev = getMetric(t)
+type ExtendedMetric = Metric & { finishedAt?: number };
 
-  const [metrics, setMetrics] = useState<Metric[]>(prev);
+export const MetricsDemo = () => {
+  const t = useTranslations("Metric");
+  const prev = getMetric(t);
+
+  const [metrics, setMetrics] = useState<ExtendedMetric[]>(
+    () => prev.map((m) => ({ ...m }))
+  );
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setMetrics((prev) =>
-        prev.map((metric) => ({
-          ...metric,
-          value:
-            metric.value < metric.max
-              ? Math.min(metric.value + metric.max / 50, metric.max)
-              : 0, // Reset when reaches max
-        }))
-      );
-    }, 50);
+  const tickMs = 50;
 
-    return () => clearInterval(interval);
-  }, []);
+  const interval = setInterval(() => {
+    setMetrics((prev) => {
+      let anyChange = false;
+
+      const updated = prev.map((metric) => {
+        if (metric.value >= metric.max) {
+          return metric; // توقف نهائي
+        }
+
+        const step = metric.max / 50;
+        const next = Math.min(metric.value + step, metric.max);
+        if (next >= metric.max) {
+          anyChange = true;
+          return { ...metric, value: metric.max };
+        }
+
+        anyChange = true;
+        return { ...metric, value: next };
+      });
+
+      return anyChange ? updated : prev; // إذا لم يكن هناك تغيير، لا تعيد تعيين الحالة
+    });
+  }, tickMs);
+
+  return () => clearInterval(interval);
+}, []);
 
   return (
     <div className="relative w-full h-full bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 p-6 overflow-hidden">

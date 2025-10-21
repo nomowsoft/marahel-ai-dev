@@ -27,7 +27,7 @@ export const KnowledgeHubDemo = () => {
   }, [documents.length]);
 
   return (
-    <div className="relative w-full h-full bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 p-6 overflow-hidden">
+    <div className="relative w-full h-full bg-card/50 backdrop-blur-sm rounded-2xl  p-6 overflow-hidden">
       {/* Search Bar */}
       <div className="relative mb-6">
         <div className="flex items-center gap-3 bg-background/60 backdrop-blur-sm border border-border/50 rounded-xl p-4">
@@ -81,23 +81,21 @@ export const KnowledgeHubDemo = () => {
       </div>
 
       {/* AI Summary */}
-      {searchProgress === 100 && (
-        <div className="animate-fade-in bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-4 border border-primary/30">
-          <div className="flex items-start gap-3">
-            <Sparkles className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-            <div>
-              <h5 className="font-bold text-foreground mb-2">{t('sumary')}</h5>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {t('p')}
-              </p>
-              <button className="flex items-center gap-2 mt-3 text-primary text-sm font-medium hover:gap-3 transition-all">
-                {t('alldetails')}
-                <ChevronRight className="w-4 h-4" />
-              </button>
-            </div>
+      <div className="animate-fade-in bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-4 border border-primary/30">
+        <div className="flex items-start gap-3">
+          <Sparkles className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+          <div>
+            <h5 className="font-bold text-foreground mb-2">{t('sumary')}</h5>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              {t('p')}
+            </p>
+            <button className="flex items-center gap-2 mt-3 text-primary text-sm font-medium hover:gap-3 transition-all">
+              {t('alldetails')}
+              <ChevronRight className="w-4 h-4" />
+            </button>
           </div>
         </div>
-      )}
+      </div>
 
       {/* Floating Particles */}
       <div className="absolute top-10 left-10 w-2 h-2 rounded-full bg-primary/40 animate-float"></div>

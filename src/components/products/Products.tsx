@@ -1,14 +1,16 @@
 import { FC } from "react";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getProducts } from "@/utils/data";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 
 
 export const Products: FC = () => {
   const t = useTranslations('Products');
   const values = getProducts(t);
+  const localeActive = useLocale();
   return (
     <section id="products" className="py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-t from-card/30 to-transparent"></div>
@@ -57,18 +59,16 @@ export const Products: FC = () => {
                   ))}
                 </ul>
                 {/* Animated Demo */}
-                <div className="h-[400px] pb-6">
+                <div className="h-[400px] pb-6 overflow-hidden mb-5 border border-primary/20 rounded-2xl">
                   {product.demo}
                 </div>
 
-                {/* Button */}
-                <Button
-                  variant="outline"
-                  className="w-full border-primary/30 rounded-xl hover:bg-primary/10 group-hover:border-primary/60 mt-auto"
+                <Link href={`/${localeActive}/products/${product.id}`}
+                  className="w-full border border-primary rounded-xl hover:bg-primary/10 group-hover:border-primary/60 mt-auto flex justify-center items-center py-3 text-primary font-semibold transition-all"
                 >
-                  {t('button')}
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                  {t('button')}
+                </Link>
               </Card>
             );
           })}

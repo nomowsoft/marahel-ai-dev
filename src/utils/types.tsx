@@ -22,6 +22,7 @@ export type Hero = {
 }
 
 export type Products = {
+  id:number;
   icon: LucideIcon;
   title: string;
   description: string;
@@ -93,3 +94,34 @@ export type Documents = {
     suffix: string;
     color: string;
   }
+
+ 
+ export type ProductItem = {
+  id: number;
+  title: string;
+  description: string;
+  href: string;
+  icon: React.ReactNode;
+  bgColor: string;
+  hoverColor: string;
+}
+
+export type ServiceItem = {
+  title: string;
+  href: string;
+}
+
+export type SolutionItem = {
+  title: string;
+  href: string;
+}
+
+export type BlogerItem = {
+  title: string;
+  href: string;
+}
+
+export type CompanyItem = {
+  title: string;
+  href: string;
+}

@@ -29,9 +29,9 @@ export const EventNavigationDemo = () => {
   }, [events.length, pathSteps.length]);
 
   return (
-    <div className="relative w-full h-full bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 overflow-hidden">
+    <div className="w-full h-full bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 ">
       {/* Header */}
-      <div className="absolute top-0 left-0 right-0 p-6 bg-gradient-to-b from-background/90 to-transparent backdrop-blur-sm ">
+      <div className=" p-6 bg-gradient-to-b from-background/90 to-transparent backdrop-blur-sm ">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
@@ -49,11 +49,11 @@ export const EventNavigationDemo = () => {
       </div>
 
       {/* Map View */}
-      <div className="absolute inset-0 p-6 pt-24">
+      <div className="inset-0 p-6 pt-24">
         {/* Simplified Floor Plan */}
-        <div className="relative w-full h-3/5 bg-background/40 rounded-xl border border-border/50 overflow-hidden">
+        <div className="w-full h-3/5 bg-background/40 rounded-xl border border-border/50 ">
           {/* Path */}
-          <svg className="absolute inset-0 w-full h-full">
+          <svg className="inset-0 w-full h-full">
             <defs>
               <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="hsl(var(--primary))" />

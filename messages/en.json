@@ -7,7 +7,43 @@
       "contactus": "Contact Us",
       "products": "Products",
       "solutions": "Solutions",
-      "about": "About Company"
+      "about": "Company",
+      "knowledgehub": {
+        "title": "AI Interactive Knowledge Hub",
+        "description": "AI-powered centralized knowledge management system"
+      },
+      "morshed": {
+        "title": "Morshed",
+        "description": "The intelligent assistant for organizations"
+      },
+      "rafiki": {
+        "title": "Rafiki",
+        "description": "Event companion and management app"
+      },
+      "serviceMenu": "Services",
+      "services": {
+        "llms": "LLMs Evaluation & Optimization",
+        "readiness": "AI Readiness Assessment",
+        "roadmap": "AI Roadmap Strategy",
+        "platform": "AI Platform",
+        "custom": "Customized Solutions",
+        "consulting": "Strategy Consulting"
+      },
+      "solutionmenu":"Solution",
+      "solution": {
+        "menu": "Industry Solutions"
+      },
+      "blogermenu":"Insights & Blog",
+      "bloger": {
+        "insights": "Insights",
+        "blogs": "Blogs"
+      },
+      "companymenu": "company",
+      "company": {
+        "about": "About Us",
+        "careers": "Careers",
+        "contact": "Contact Us"
+      }
     },
     "Footer": {
       "description": "Leading Saudi AI solutions provider, delivering secure and compliant artificial intelligence for enterprises.",
@@ -148,7 +184,7 @@
       "title3": "Operational Procedures"
     },
     "Message": {
-      "murshed": "Murshed - Chat Assistant",
+      "murshed": "Morshed - Chat Assistant",
       "now": "Online Now",
       "placeholder": "Type your message...",
       "content1": "What are the working hours?",
@@ -161,6 +197,195 @@
       "label2": "Satisfaction Rate",
       "label3": "Average Response Time",
       "label4": "Completed Transactions"
+    },
+    "products": {
+      "features": "Core Features",
+      "work": "How It Works",
+      "performance": "Performance & KPIs (illustrative)",
+      "security": "Compliance & Security",
+      "downloadbutton": "Download Guide",
+      "demobutton": "Schedule Demo",
+      "takebutton": "Talk To Sales",
+    "knowledgehub": {
+      "title": "AI Interactive Knowledge Hub",
+      "description": "The single gateway to store, index, search, and use all enterprise knowledge—documents, audio, video, and images—with instant “Ask Your Archive” answers and Arabic‑first multilingual support.",
+      "features": {
+        "f1": "Unified Knowledge Gateway",
+        "f2": "Arabic‑First & Multilingual",
+        "f3": "Ask Your Archive—Instantly"
+      },
+      "featuresDesc": {
+        "f1": "Eliminate fragmentation: one place to store, index, and share every asset type.",
+        "f2": "Built for Arabic + multi‑language processing across content and chat experiences.",
+        "f3": "Meaning‑based search with concise answers and smart related suggestions."
+      },
+      "features2": {
+        "f1": "Supports documents, audio, video, and images",
+        "f2": "Full Arabic & multi‑language processing",
+        "f3": "Real‑time processing of media and transcripts",
+        "f4": "Meaning‑based, context‑aware search across all content",
+        "f5": "“Ask Your Archive” for instant Q&A with citations",
+        "f6": "Audio‑visual search that jumps to exact moments in media",
+        "f7": "Automatic organization & classification; mind‑map generation",
+        "f8": "Summarize and translate content (AR ↔ EN)",
+        "f9": "Native integrations with CRM/ERP/Support systems",
+        "f10": "Built on our Document Understanding & Search engines"
+      },
+      "work": {
+        "w1": { "text": "Ingestion", "desc": "Docs • Audio • Video • Images" },
+        "w2": { "text": "Index & Vectorize", "desc": "Metadata • Embeddings" },
+        "w3": { "text": "Knowledge Graph", "desc": "Relations • Mind‑maps" },
+        "w4": { "text": "RAG & QA", "desc": "Ask Your Archive" },
+        "w5": { "text": "Apps & Integrations", "desc": "Web • Chat • CRM/ERP" }
+      },
+      "performance": {
+        "p1": { "text": "Seconds‑level", "desc": "Answer Time" },
+        "p2": { "text": "All asset types", "desc": "Coverage" },
+        "p3": { "text": "Arabic + Multilingual", "desc": "Languages" },
+        "p4": { "text": "CRM/ERP/Support", "desc": "Integration" }
+      },
+      "security": {
+        "s1": {
+          "text": "Saudi Regulations",
+          "title": "Saudi Regulations",
+          "items": {
+            "i1": "PDPL: data minimization, access rights, DPIA where required",
+            "i2": "SDAIA AI Ethics: fairness, reliability/safety, transparency",
+            "i3": "NCA‑ECC: RBAC, logging, incident response baselines"
+          }
+        },
+        "s2": {
+          "text": "Security Posture",
+          "title": "Security Posture",
+          "items": {
+            "i1": "In‑Kingdom hosting and data sovereignty",
+            "i2": "Encryption in transit & at rest; precise permissions",
+            "i3": "Audit logs & transparency on demand"
+          }
+        }
+      },
+      "footerTitle": "Your knowledge. Answers in seconds.",
+      "footerText": "Arabic‑ready today. Built for Saudi enterprises."
+    },
+    "morshed": {
+      "title": "Morshed — Intelligent Chat Assistant",
+      "description": "Always-on support via WhatsApp, Telegram, and Web. Fast, accurate answers with seamless handoff to human agents — Arabic & English ready.",
+      "features": {
+        "f1": "Fast & Reliable Answers",
+        "f2": "Handoff to Humans",
+        "f3": "Secure & Enterprise-ready"
+      },
+      "featuresDesc": {
+        "f1": "Reduce wait time with instant responses and high-quality answers",
+        "f2": "Seamless handoff to agents when needed",
+        "f3": "Security by design and compliant with Saudi regulations"
+      },
+      "features2": {
+        "f1": "24/7 multi-channel support",
+        "f2": "Voice or text interaction (AR/EN)",
+        "f3": "Continuous learning via verified answers",
+        "f4": "Ready connectors: WhatsApp, Telegram, Website",
+        "f5": "Reliable answers from knowledge base",
+        "f6": "Agent handoff & conversation log to ticketing system",
+        "f7": "Analytics: intents, customer satisfaction, conversion"
+      },
+      "work": {
+        "w1": { "text": "Channels", "desc": "WhatsApp • Telegram • Web" },
+        "w2": { "text": "NLU & Policies", "desc": "Arabic/English intents & constraints" },
+        "w3": { "text": "Knowledge & RAG", "desc": "FAQs • Docs • KB" },
+        "w4": { "text": "Agent Handoff", "desc": "Tickets • Live chat" },
+        "w5": { "text": "Analytics", "desc": "Intents • CSAT • Conversion" }
+      },
+      "performance": {
+        "p1": { "text": "24/7", "desc": "Availability" },
+        "p2": { "text": "3+ Channels", "desc": "Channels" },
+        "p3": { "text": "Arabic + English", "desc": "Languages" },
+        "p4": { "text": "Agent-ready", "desc": "Handoff" }
+      },
+      "security": {
+        "s1": {
+          "text": "Saudi Regulations",
+          "title": "Saudi Regulations",
+          "items": {
+            "i1": "PDPL: data minimization, user rights, secure handling",
+            "i2": "SDAIA AI Ethics: fairness, safety, transparency",
+            "i3": "NCA‑ECC: RBAC, logging, incident response"
+          }
+        },
+        "s2": {
+          "text": "Security Posture",
+          "title": "Security Posture",
+          "items": {
+            "i1": "Local hosting in KSA",
+            "i2": "Encryption in transit & at rest; least privilege",
+            "i3": "Audit trails with human escalation"
+          }
+        }
+      },
+      "footerTitle": "Delight your customers at scale",
+      "footerText": "Morshed learns, escalates, and resolves—securely and bilingual."
+    },
+    "rafiki": {
+      "title": "Rafiki — Event & Exhibition Concierge",
+      "description": "Bilingual AR/EN concierge plans your day, guides indoor navigation, translates booth info, and captures leads — powered by Marahel AINE & real-time analytics.",
+      "features": {
+        "f1": "Seamless Navigation",
+        "f2": "Self-planning Day",
+        "f3": "Bilingual Concierge"
+      },
+      "featuresDesc": {
+        "f1": "Step-by-step indoor routing with smart pathing to reduce congestion",
+        "f2": "Build personal schedule from sessions, booths, key meetings",
+        "f3": "AR/EN chat, booth summaries, instant translations"
+      },
+      "features2": {
+        "f1": "AINE navigation layers MSP/MPE/MORE",
+        "f2": "Smart schedule builder; conflict detection & alerts",
+        "f3": "Lead capture: QR scan, notes, photos; CRM export",
+        "f4": "Match booths/sessions by interest & time",
+        "f5": "Bilingual concierge chat (AR/EN)",
+        "f6": "Crowd analytics & heatmaps (privacy-preserving)",
+        "f7": "Notifications: session changes, offers, traffic alerts",
+        "f8": "Offline map caching; reliable on-site performance",
+        "f9": "Exhibitor dashboard: staff tasks, leads, follow-ups",
+        "f10": "APIs/SDK for event apps (iOS/Android/Web/AR)"
+      },
+      "work": {
+        "w1": { "text": "Client Apps", "desc": "iOS • Android • Web/AR" },
+        "w2": { "text": "AINE Layer", "desc": "Location & Routing" },
+        "w3": { "text": "Planner & Concierge", "desc": "Schedule • Chat • AR/EN" },
+        "w4": { "text": "Analytics & Leads", "desc": "Heatmaps • CRM Sync" },
+        "w5": { "text": "Integrations", "desc": "Tickets • SSO • APIs" }
+      },
+      "performance": {
+        "p1": { "text": "-35% Avg.", "desc": "Path time reduction" },
+        "p2": { "text": "50K+", "desc": "Active users" },
+        "p3": { "text": "Arabic + English", "desc": "Languages" },
+        "p4": { "text": "Instant", "desc": "Notifications" }
+      },
+      "security": {
+        "s1": {
+          "text": "Saudi Regulations",
+          "title": "Saudi Regulations",
+          "items": {
+            "i1": "PDPL compliant for attendees & consent",
+            "i2": "SDAIA AI Ethics: fairness, safety, transparency for recommendations",
+            "i3": "NCA‑ECC controls: RBAC, logging, incident response"
+          }
+        },
+        "s2": {
+          "text": "Security Posture",
+          "title": "Security Posture",
+          "items": {
+            "i1": "Hosted in KSA with data sovereignty options",
+            "i2": "Encryption in transit & at rest; least privilege",
+            "i3": "Privacy-preserving analytics"
+          }
+        }
+      },
+      "footerTitle": "Make every visit count",
+      "footerText": "Guide, translate, capture—Arabic-ready and organizer-friendly."
     }
+  }
 }
   
