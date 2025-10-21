@@ -1,5 +1,6 @@
 {
   "/[locale]/page": "/[locale]",
+  "/[locale]/products/[id]/page": "/[locale]/products/[id]",
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico"
 }

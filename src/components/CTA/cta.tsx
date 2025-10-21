@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Calendar, Download, Phone, MessageCircle, Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+
 
 export const CTA: React.FC = () => {
   const t = useTranslations('Cta')
@@ -57,7 +59,7 @@ export const CTA: React.FC = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
-                <div className="text-sm text-muted-foreground">+966 53 455 1191</div>
+                <Link href="tel:+966534551191" className="text-sm text-muted-foreground" dir="ltr">+966 53 455 1191</Link>
               </div>
             </Card>
 
@@ -67,7 +69,12 @@ export const CTA: React.FC = () => {
                 <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <MessageCircle className="w-6 h-6 text-secondary" />
                 </div>
-                <div className="text-sm text-muted-foreground">WhatsApp Business</div>
+                <Link href="https://wa.me/+9660534551191" target="_blank" className="text-sm text-muted-foreground block lg:hidden">
+                  WhatsApp
+                </Link>
+                <Link href="https://web.whatsapp.com/send?phone=+966 0534551191" target="_blank" className="text-sm text-muted-foreground hidden lg:block">
+                  WhatsApp
+                </Link>
               </div>
             </Card>
 
@@ -77,7 +84,7 @@ export const CTA: React.FC = () => {
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <Mail className="w-6 h-6 text-accent" />
                 </div>
-                <div className="text-sm text-muted-foreground">info@marahel.com.sa</div>
+                <Link href="mailto:info@marahel.com.sa" className="text-sm text-muted-foreground">info@marahel.com.sa</Link>
               </div>
             </Card>
           </div>

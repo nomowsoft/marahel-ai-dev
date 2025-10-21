@@ -17,7 +17,7 @@ export default function LocaleSwitcher() {
 
   return (
     <div>
-      <div className="flex justify-center" dir="rtl">
+      <div className="flex justify-center" dir={`${localeActive === 'ar'? 'rtl' : 'ltr'}`}>
         <select
           defaultValue={localeActive}
           onChange={(e) => changeLocale(e.target.value)}

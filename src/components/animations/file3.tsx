@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Send, Bot, User } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getDemomessage } from "@/utils/data";
@@ -8,9 +8,11 @@ import { Message } from "@/utils/types";
 export const ChatbotDemo = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const t = useTranslations('Message');
-  const demomessage = getDemomessage(t);
+
+  // تثبيت مصفوفة الرسائل التجريبية
+  const demomessage = useMemo(() => getDemomessage(t), [t]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -26,10 +28,10 @@ export const ChatbotDemo = () => {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, [currentIndex, demomessage]);
 
   return (
-    <div className="relative w-full h-full bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 p-6 overflow-hidden">
+    <div className="relative w-full h-full bg-card/50 backdrop-blur-sm rounded-2xl p-6 overflow-hidden">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6 pb-4 border-b border-border/50">
         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">

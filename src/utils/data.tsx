@@ -13,7 +13,12 @@ import {
   PathStep,
   Documents,
   Message,
-  Metric
+  Metric,
+  ProductItem,
+  ServiceItem,
+  SolutionItem,
+  BlogerItem,
+  CompanyItem
 } from "./types";
 import {
   Database, 
@@ -42,6 +47,60 @@ export const getMenuItem = (t: (key: string) => string): MenuItem[] => [
         isActive: true,
     }
 ]
+export const getProductsMenu = (t: (key: string) => string): ProductItem[] => [
+  {
+    id: 1,
+    title: t('knowledgehub.title'),
+    description: t('knowledgehub.description'),
+    href: "#ai-hub",
+    icon: <FileText className="w-5 h-5 text-primary" />,
+    bgColor: "bg-primary/10",
+    hoverColor: "hover:bg-primary/10",
+  },
+  {
+    id: 2,
+    title: t('morshed.title'),
+    description: t('morshed.description'),
+    href: "#morshed",
+    icon: <MessageSquare className="w-5 h-5 text-secondary" />,
+    bgColor: "bg-secondary/10",
+    hoverColor: "hover:bg-secondary/10",
+  },
+  {
+    id: 3,
+    title: t('rafiki.title'),
+    description: t('rafiki.description'),
+    href: "#rafiki",
+    icon: <Calendar className="w-5 h-5 text-accent" />,
+    bgColor: "bg-accent/10",
+    hoverColor: "hover:bg-accent/10",
+  },
+]
+export const getServicesMenu = (t: (key: string) => string): ServiceItem[] => [
+  { title: t('services.llms'), href: "#services" },
+  { title: t('services.readiness'), href: "#services" },
+  { title: t('services.roadmap'), href: "#services" },
+  { title: t('services.platform'), href: "#services" },
+  { title: t('services.custom'), href: "#services" },
+  { title: t('services.consulting'), href: "#services" },
+]
+
+
+export const getSolutionsMenu = (t: (key: string) => string): SolutionItem[] => [
+  { title: t('solution.menu'), href: "#solutions" },
+];
+
+export const getBlogerMenu = (t: (key: string) => string): BlogerItem[] => [
+  { title: t('bloger.insights'), href: "#insights" },
+  { title: t('bloger.blogs'), href: "#blogs" },
+];
+
+export const getCompanyMenu = (t: (key: string) => string): CompanyItem[] => [
+  { title: t('company.about'),  href: "#about" },
+  { title: t('company.careers'), href: "#careers" },
+  { title: t('company.contact'),  href: "#contact" },
+];
+
 
 export const gethero = (t: (key: string) => string): Hero[] => [
     {
@@ -72,6 +131,7 @@ export const gethero = (t: (key: string) => string): Hero[] => [
 
 export const getProducts = (t: (key: string) => string): Products[] => [
   {
+    id: 1,
     icon: FileText,
     title: t("title1"),
     description: t("description1"),
@@ -84,6 +144,7 @@ export const getProducts = (t: (key: string) => string): Products[] => [
     demo: <KnowledgeHubDemo />
   },
   {
+    id: 2,
     icon: MessageSquare,
     title: t("title2"),
     description: t("description2"),
@@ -96,6 +157,7 @@ export const getProducts = (t: (key: string) => string): Products[] => [
     demo: <ChatbotDemo />
   },
   {
+    id: 3,
     icon: Calendar,
     title: t("title3"),
     description: t("description3"),
@@ -189,9 +251,9 @@ export const getProductsFooter = (t: (key: string) => string): ProductsFooter[] 
 ];
 
 export const getNodes = (t: (key: string) => string): Nodes[] =>[
-    { icon: Database, label: t('label1'), color: "primary" },
-    { icon: Cloud, label: t('label2'), color: "secondary" },
-    { icon: Lock, label: t('label3'), color: "accent" },
+  { icon: Database, label: t('label1'), color: "primary" },
+  { icon: Cloud, label: t('label2'), color: "secondary" },
+    { icon: Lock, label: t('label3'), color: "accent" }, 
     { icon: Zap, label: t('label4'), color: "primary" },
 ];
 

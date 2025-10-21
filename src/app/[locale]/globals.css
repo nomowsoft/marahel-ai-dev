@@ -122,3 +122,30 @@
 main {
   min-height: calc(100vh - 508px);
 }
+
+@keyframes arrowMove {
+  0% {
+    transform: translateX(0);
+    color: #9ca3af; /* gray-400 */
+  }
+  25% {
+    transform: translateX(5px);
+    color: #3b82f6; /* blue-500 */
+  }
+  50% {
+    transform: translateX(0);
+    color: #22c55e; /* green-500 */
+  }
+  75% {
+    transform: translateX(-5px);
+    color: #facc15; /* yellow-400 */
+  }
+  100% {
+    transform: translateX(0);
+    color: #9ca3af; /* back to gray */
+  }
+}
+
+.animate-arrow-move {
+  animation: arrowMove 2s infinite ease-in-out;
+}

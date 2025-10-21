@@ -26,7 +26,7 @@ export const SystemArchitecture = () => {
   }, [connections.length]);
 
   return (
-    <div className="relative w-full h-auto md:h-[600px] bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 p-6 md:p-8 overflow-hidden flex flex-col items-center justify-center">
+    <div className="relative w-full h-auto md:h-[600px] bg-card/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 overflow-hidden flex flex-col items-center justify-center">
       {/* Center Hub (Hidden on small screens) */}
       <div className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full bg-gradient-to-br from-primary via-secondary to-accent items-center justify-center">
         <div className="w-20 h-20 rounded-full bg-card/90 backdrop-blur-sm flex items-center justify-center">
