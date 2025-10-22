@@ -191,10 +191,15 @@
     "content4": "Of course! I can help you book an appointment. What is your preferred date?"
   },
   "Metric": {
+    "live": "live",
     "label1": "Active Users",
     "label2": "Satisfaction Rate",
     "label3": "Average Response Time",
-    "label4": "Completed Transactions"
+    "label4": "Completed Transactions",
+    "suffix1": "",
+    "suffix2": "%",
+    "suffix3": "S",
+    "suffix4": ""
   },
   "products": {
     "features": "Core Features",
