@@ -65,6 +65,7 @@ export const Navbar = () => {
   const pathname = usePathname();
   const localeActive = useLocale();
   const t = useTranslations("Header");
+  const t1 = useTranslations("MenuItem");
 
   const changeLocale = useCallback(
     (nextLocale: string) => {
@@ -98,6 +99,12 @@ export const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4">
+            <Link
+              href="/"
+              className="text-white hover:bg-primary py-2 px-4 rounded-lg hover:text-primary-foreground"
+            >
+              {t1('home')}
+            </Link>
             {DESKTOP_MENUS.map((Dropdown, i) => (
               <NavigationMenu key={i}>
                 <NavigationMenuList>

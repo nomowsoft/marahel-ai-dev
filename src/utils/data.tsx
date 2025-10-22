@@ -77,12 +77,12 @@ export const getProductsMenu = (t: (key: string) => string): ProductItem[] => [
   },
 ]
 export const getServicesMenu = (t: (key: string) => string): ServiceItem[] => [
-  { title: t('services.llms'), href: "#services" },
-  { title: t('services.readiness'), href: "#services" },
-  { title: t('services.roadmap'), href: "#services" },
-  { title: t('services.platform'), href: "#services" },
-  { title: t('services.custom'), href: "#services" },
-  { title: t('services.consulting'), href: "#services" },
+  { id: 1,title: t('services.llms'), href: "#services" },
+  { id: 2,title: t('services.readiness'), href: "#services" },
+  { id: 3,title: t('services.roadmap'), href: "#services" },
+  { id: 4,title: t('services.platform'), href: "#services" },
+  { id: 5,title: t('services.custom'), href: "#services" },
+  { id: 6,title: t('services.consulting'), href: "#services" },
 ]
 
 

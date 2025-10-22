@@ -2,7 +2,7 @@ import React from "react";
 import { ProductsItem, getProducts } from "@/utils/data_products/data_ai";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
 interface ProductSecurityProps {
     product: ProductsItem;
@@ -16,7 +16,6 @@ const ProductSecurity: React.FC<ProductSecurityProps> = ({ product }) => {
         () => products.find((p) => p.id === product.id),
         [products, product.id]
     );
-    const localeActive = useLocale();
 
     if (!foundProduct) {
         return (
