@@ -115,27 +115,27 @@ export const getServices = (t: (key: string) => string): ServicesItem[] => [
             },
             {
                 id: 2,
-                title: t('LLMS.methodtitle.f1'),
+                title: t('LLMS.methodtitle.f2'),
                 text: t('LLMS.method.f2'),
             },
             {
                 id: 3,
-                title: t('LLMS.methodtitle.f1'),
+                title: t('LLMS.methodtitle.f3'),
                 text: t('LLMS.method.f3'),
             },
             {
                 id: 4,
-                title: t('LLMS.methodtitle.f1'),
+                title: t('LLMS.methodtitle.f4'),
                 text: t('LLMS.method.f4'),
             },
             {
                 id: 5,
-                title: t('LLMS.methodtitle.f1'),
+                title: t('LLMS.methodtitle.f5'),
                 text: t('LLMS.method.f5'),
             },
             {
                 id: 6,
-                title: t('LLMS.methodtitle.f1'),
+                title: t('LLMS.methodtitle.f6'),
                 text: t('LLMS.method.f6'),
             }
         ],
@@ -296,27 +296,27 @@ export const getServices = (t: (key: string) => string): ServicesItem[] => [
             },
             {
                 id: 2,
-                title: t('Readiness.methodtitle.f1'),
+                title: t('Readiness.methodtitle.f2'),
                 text: t('Readiness.method.f2'),
             },
             {
                 id: 3,
-                title: t('Readiness.methodtitle.f1'),
+                title: t('Readiness.methodtitle.f2'),
                 text: t('Readiness.method.f3'),
             },
             {
                 id: 4,
-                title: t('Readiness.methodtitle.f1'),
+                title: t('Readiness.methodtitle.f3'),
                 text: t('Readiness.method.f4'),
             },
             {
                 id: 5,
-                title: t('Readiness.methodtitle.f1'),
+                title: t('Readiness.methodtitle.f4'),
                 text: t('Readiness.method.f5'),
             },
             {
                 id: 6,
-                title: t('Readiness.methodtitle.f1'),
+                title: t('Readiness.methodtitle.f5'),
                 text: t('Readiness.method.f6'),
             }
         ],
@@ -461,27 +461,27 @@ export const getServices = (t: (key: string) => string): ServicesItem[] => [
             },
             {
                 id: 2,
-                title: t('Roadmap.methodtitle.f1'),
+                title: t('Roadmap.methodtitle.f2'),
                 text: t('Roadmap.method.f2'),
             },
             {
                 id: 3,
-                title: t('Roadmap.methodtitle.f1'),
+                title: t('Roadmap.methodtitle.f3'),
                 text: t('Roadmap.method.f3'),
             },
             {
                 id: 4,
-                title: t('Roadmap.methodtitle.f1'),
+                title: t('Roadmap.methodtitle.f4'),
                 text: t('Roadmap.method.f4'),
             },
             {
                 id: 5,
-                title: t('Roadmap.methodtitle.f1'),
+                title: t('Roadmap.methodtitle.f5'),
                 text: t('Roadmap.method.f5'),
             },
             {
                 id: 6,
-                title: t('Roadmap.methodtitle.f1'),
+                title: t('Roadmap.methodtitle.f6'),
                 text: t('Roadmap.method.f6'),
             }
         ],
@@ -618,27 +618,27 @@ export const getServices = (t: (key: string) => string): ServicesItem[] => [
             },
             {
                 id: 2,
-                title: t('Platform.methodtitle.f1'),
+                title: t('Platform.methodtitle.f2'),
                 text: t('Platform.method.f2'),
             },
             {
                 id: 3,
-                title: t('Platform.methodtitle.f1'),
+                title: t('Platform.methodtitle.f3'),
                 text: t('Platform.method.f3'),
             },
             {
                 id: 4,
-                title: t('Platform.methodtitle.f1'),
+                title: t('Platform.methodtitle.f4'),
                 text: t('Platform.method.f4'),
             },
             {
                 id: 5,
-                title: t('Platform.methodtitle.f1'),
+                title: t('Platform.methodtitle.f5'),
                 text: t('Platform.method.f5'),
             },
             {
                 id: 6,
-                title: t('Platform.methodtitle.f1'),
+                title: t('Platform.methodtitle.f6'),
                 text: t('Platform.method.f6'),
             }
         ],
@@ -783,22 +783,22 @@ export const getServices = (t: (key: string) => string): ServicesItem[] => [
             },
             {
                 id: 2,
-                title: t('Customized.methodtitle.f1'),
+                title: t('Customized.methodtitle.f2'),
                 text: t('Customized.method.f2'),
             },
             {
                 id: 3,
-                title: t('Customized.methodtitle.f1'),
+                title: t('Customized.methodtitle.f3'),
                 text: t('Customized.method.f3'),
             },
             {
                 id: 4,
-                title: t('Customized.methodtitle.f1'),
+                title: t('Customized.methodtitle.f4'),
                 text: t('Customized.method.f4'),
             },
             {
                 id: 5,
-                title: t('Customized.methodtitle.f1'),
+                title: t('Customized.methodtitle.f5'),
                 text: t('Customized.method.f5'),
             },
         ],
