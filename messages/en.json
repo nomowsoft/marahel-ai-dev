@@ -674,192 +674,192 @@
       "Program": "Program KPIs"
     },
     "Roadmap": {
-      "title": "استراتيجية وخارطة الطريق لتحول الذكاء الاصطناعي",
-      "description": "برنامج يركز على الأعمال ومرتكز على المعايير يترجم أهدافك إلى خارطة طريق للذكاء الاصطناعي موزعة زمنياً—متوافقة مع NIST AI RMF 1.0، ISO/IEC 42001، ومتطلبات المملكة (PDPL، SDAIA AI Ethics، NCA‑ECC). ثنائي اللغة بشكل افتراضي.",
+      "title": "Strategy & Roadmap for AI Transformation",
+      "description": "A business‑first, standards‑anchored program that translates your objectives into a time‑phased AI roadmap—aligned to NIST AI RMF 1.0, ISO/IEC 42001, and KSA requirements (PDPL, SDAIA AI Ethics, NCA‑ECC). Bilingual by default.",
       "features": {
-        "f1": "وضوح للمديرين التنفيذيين",
-        "f2": "مطابقة للمعايير",
-        "f3": "قابل للتنفيذ خلال 90 يومًا"
+        "f1": "Clarity for Executives",
+        "f2": "Standards Mapped",
+        "f3": "Actionable in 90 Days"
       },
       "featuresDesc": {
-        "f1": "رؤية جاهزة للمجلس لفجوات القدرات والمخاطر والأولويات المرتبطة بالعائد.",
-        "f2": "أدلة مطابقة لـ NIST AI RMF 1.0، ISO/IEC 42001، ومتطلبات المملكة (PDPL/SDAIA/NCA‑ECC).",
-        "f3": "سلسلة من النجاحات السريعة وخارطة طريق لمدة 12 شهرًا للتحرك بسرعة وبأمان."
+        "f1": "Board-ready visibility of capability gaps, risks, and ROI-aligned priorities.",
+        "f2": "Evidence against NIST AI RMF 1.0, ISO/IEC 42001, and KSA (PDPL/SDAIA/NCA‑ECC).",
+        "f3": "Sequenced quick-wins plus a 12‑month roadmap to move fast safely."
       },
       "methodtitle": {
-        "f1": "الأسبوع 1–2",
-        "f2": "الأسبوع 3–4",
-        "f3": "الأسبوع 5–6",
-        "f4": "الأسبوع 7–8",
-        "f5": "الأسبوع 9–10",
-        "f6": "الأسبوع 11–12"
+        "f1": "Weeks 1–2",
+        "f2": "Weeks 3–4",
+        "f3": "Weeks 5–6",
+        "f4": "Weeks 7–8",
+        "f5": "Weeks 9–10",
+        "f6": "Weeks 11–12"
       },
       "method": {
-        "f1": "المواءمة والاكتشاف — ورش عمل استراتيجية، مسح الوضع الحالي، تحديد نطاق PDPL/ECC، مؤشرات الأداء",
-        "f2": "التقييم والخط الأساس — تقييم الجاهزية، مطابقة بنود ISO/IEC 42001، إعداد مسودة السياسات",
-        "f3": "أولوية الحافظة — حالات الأعمال، الاعتماديات، موافقة التنفيذيين",
-        "f4": "العمارة المرجعية — رؤية شمالية، مصفوفة الضوابط",
-        "f5": "الحوكمة والمخاطر — مجلس الذكاء الاصطناعي/RACI، نماذج DPIA، ضوابط الأخلاقيات",
-        "f6": "تشكيل التجارب التجريبية — اختيار تجارب سريعة قابلة للقياس؛ قرار التنفيذ"
+        "f1": "Align & Discover — strategy workshops, current‑state scan, PDPL/ECC scoping, KPIs",
+        "f2": "Assess & Baseline — readiness, ISO/IEC 42001 clause mapping, policy outline",
+        "f3": "Prioritize Portfolio — business cases, dependencies, executive gating",
+        "f4": "Reference Architecture — north‑star views, controls matrix",
+        "f5": "Governance & Risk — AI Council/RACI, DPIA templates, ethics controls",
+        "f6": "Pilot Shaping — pick quick‑win pilots with measurable KPIs; go/no‑go"
       },
       "deliverables": {
         "w1": {
-          "text": "العمارة المرجعية للذكاء الاصطناعي (منطقية وفعليّة)، خريطة التكامل، مصفوفة الضوابط الأمنية/البيانات"
+          "text": "North‑Star AI Architecture (logical & physical), integration map, security/data controls matrix"
         },
         "w2": {
-          "text": "حافظة حالات الاستخدام ذات الأولوية مع حالات الأعمال، مؤشرات الأداء، تقييم المخاطر"
+          "text": "Prioritized Use‑Case Portfolio with business cases, KPIs, and risk ratings"
         },
         "w3": {
-          "text": "حزمة السياسات والحوكمة: سياسة الذكاء الاصطناعي، سجل المخاطر، أدلة التصعيد، مطابقة RMF، نماذج DPIA، وثائق الشفافية"
+          "text": "Policy & Governance Pack: AI policy, risk register, escalation runbooks, RMF mapping, DPIA templates, transparency artifacts"
         },
         "w4": {
-          "text": "مخطط التقييم والمراقبة؛ خارطة طريق 12 شهر مع معالم مجدولة"
+          "text": "Evaluation & Monitoring Blueprint; 12‑Month Roadmap with sequenced milestones"
         }
       },
       "performance": {
         "p1": {
-          "text": "↓ تكلفة الخدمة؛ ↑ زيادة الإيرادات",
-          "desc": "القيمة"
+          "text": "↓ cost‑to‑serve; ↑ revenue uplift",
+          "desc": "Value"
         },
         "p2": {
-          "text": "↑ DPIAs وبطاقات النماذج",
-          "desc": "الثقة والمخاطر"
+          "text": "↑ DPIAs & Model Cards",
+          "desc": "Trust & Risk"
         },
         "p3": {
-          "text": "↑ ضوابط ECC؛ ↓ MTTD/MTTR",
-          "desc": "الأمان"
+          "text": "↑ ECC controls; ↓ MTTD/MTTR",
+          "desc": "Security"
         },
         "p4": {
-          "text": "↑ اعتماد ISO/IEC 42001 وRMF",
-          "desc": "الحوكمة"
+          "text": "↑ ISO/IEC 42001 & RMF adoption",
+          "desc": "Governance"
         }
       },
       "security": {
         "s1": {
-          "text": "القوانين السعودية",
-          "title": "القوانين السعودية",
+          "text": "Saudi Regulations",
+          "title": "Saudi Regulations",
           "items": {
-            "i1": "PDPL: الأساس القانوني، التقليل، الاحتفاظ، والتحكم عبر الحدود",
-            "i2": "SDAIA AI Ethics: العدالة، الموثوقية/الأمان، الشفافية والقابلية للشرح",
-            "i3": "NCA‑ECC: التحكم في الوصول، التسجيل، ومعايير استجابة للحوادث"
+            "i1": "PDPL: lawful basis, minimization, data‑subject rights, cross‑border controls",
+            "i2": "SDAIA AI Ethics: fairness, reliability/safety, transparency & explainability",
+            "i3": " NCA‑ECC: RBAC, logging, incident response baselines"
           }
         },
         "s2": {
-          "text": "المعايير العالمية",
-          "title": "المعايير العالمية",
+          "text": "Global Standards",
+          "title": "Global Standards",
           "items": {
-            "i1": "NIST AI RMF 1.0: دورة الحياة Govern/Map/Measure/Manage",
-            "i2": "ISO/IEC 42001: حزمة دليل نظام إدارة الذكاء الاصطناعي",
-            "i3": "وثائق الشفافية: بطاقات النماذج، جداول البيانات، بطاقات النظام"
+            "i1": "NIST AI RMF 1.0: Govern/Map/Measure/Manage lifecycle",
+            "i2": "ISO/IEC 42001: AI management system evidence pack",
+            "i3": "Transparency Artifacts: Model Cards, Datasheets, System Cards"
           }
         }
       },
-      "footerTitle": "خارطة طريق قابلة للتنفيذ والمراجعة",
-      "footerText": "اجعل قيمة الذكاء الاصطناعي قابلة للقياس—اربط حالات الاستخدام بمؤشرات الأداء، والامتثال بالوثائق، والتنفيذ بخطة 12 شهرًا.",
-      "methoddescription": "مثال على بدء 90 يوم",
-      "deliverablesaddress": "المخرجات الملموسة",
-      "button1": "جدولة ورشة عمل",
-      "button2": "تحميل نموذج خارطة الطريق",
-      "button3": "جدولة ورشة عمل",
-      "button4": "طلب قائمة التحقق (AR/EN)",
-      "Program": "مؤشرات الأداء وأدلة الإثبات"
+      "footerTitle": "A Roadmap You Can Execute — and Audit",
+      "footerText": "Make AI value provable—tie use cases to KPIs, compliance to artifacts, and delivery to a 12‑month plan.",
+      "methoddescription": "Example 90‑Day Kickstart",
+      "deliverablesaddress": "Tangible Deliverables",
+      "button1": "Schedule Workshop",
+      "button2": "Download Sample Roadmap",
+      "button3": "Schedule Workshop",
+      "button4": "Request the checklist (AR/EN)",
+      "Program": "KPIs & Proof Points"
     },
     "Platform": {
-      "title": "منصات الذكاء الاصطناعي (مستضافة محليًا / نماذج محلية)",
-      "description": "منصات ذكاء اصطناعي ذات سيادة داخل المملكة للـ RAG، الوكلاء والتحليلات—نشر محلي أو سحابة خاصة مع نماذج LLM/SLM محلية، رؤية كاملة، وضوابط حماية. ثنائية اللغة افتراضيًا.",
+      "title": "AI Platforms (Locally Hosted / Local LLMs)",
+      "description": "Sovereign, in‑Kingdom AI platforms for RAG, agents, and analytics—deploy on‑prem or private cloud with local LLMs/SLMs, full observability, and guardrails. Arabic/English by design.",
       "features": {
-        "f1": "سيادة البيانات",
-        "f2": "التحكم بالتكلفة والأداء",
-        "f3": "سهولة التشغيل والرؤية"
+        "f1": "Data Sovereignty",
+        "f2": "Cost & Performance Control",
+        "f3": "Operability & Insight"
       },
       "featuresDesc": {
-        "f1": "جميع البيانات والنماذج والسجلات تبقى داخل المملكة مع حوكمة متوافقة مع PDPL.",
-        "f2": "اختيار حجم SLMs وGPU المناسب؛ التخزين المؤقت والمعالجة لتقليل التأخير والتكلفة.",
-        "f3": "التتبع، التقييم، وFinOps توضح الأداء من المطالبة حتى الإنتاج."
+        "f1": "All data, models, and logs remain in‑Kingdom with PDPL‑aligned governance.",
+        "f2": "Right‑size SLMs and GPUs; cache and batching to cut latency and cost.",
+        "f3": "Tracing, evals, and FinOps give clarity from prompt to production."
       },
       "methodtitle": {
-        "f1": "الاستيعاب",
-        "f2": "الاسترجاع",
-        "f3": "بوابة LLM",
-        "f4": "الوكلاء",
-        "f5": "التطبيقات",
-        "f6": "الرصد"
+        "f1": "Ingestion",
+        "f2": "Retrieval",
+        "f3": "LLM Gateway",
+        "f4": "Agents",
+        "f5": "Apps",
+        "f6": "Observability"
       },
       "method": {
-        "f1": "ETL • OCR/ASR • الوسم",
-        "f2": "قاعدة بيانات متجهية • BM25 • التخزين المؤقت",
-        "f3": "SLMs محلية • واجهات مزود",
-        "f4": "المخطط • الباحث • الناقد",
-        "f5": "الدردشة • البحث • المساعدون",
-        "f6": "التتبع • التقييمات • FinOps"
+        "f1": "ETL • OCR/ASR • Tagging",
+        "f2": "Vector DB • BM25 • Cache",
+        "f3": "Local SLMs • Vendor APIs",
+        "f4": "Planner • Researcher • Critic",
+        "f5": "Chat • Search • Copilots",
+        "f6": "Tracing • Evals • FinOps"
       },
       "deliverables": {
         "w1": {
-          "text": "العمارة المرجعية (منطقية/فعليّة) + مصفوفة الضوابط"
+          "text": "Reference architecture (logical/physical) + controls matrix"
         },
         "w2": {
-          "text": "فاتورة المواد وخطة السعة للمنصة"
+          "text": "Platform bill of materials (BoM) and capacity plan"
         },
         "w3": {
-          "text": "IaC (Terraform/Helm) وهيكل مستودع GitOps"
+          "text": "IaC (Terraform/Helm) and GitOps repo skeleton"
         },
         "w4": {
-          "text": "أدلة التشغيل: عمليات، النسخ الاحتياطي/DR، استجابة للحوادث"
+          "text": "Runbooks: operations, backup/DR, incident response"
         },
         "w5": {
-          "text": "مخطط التقييم والمراقبة (RAGAS/DeepEval، التتبع)"
+          "text": "Evaluation & monitoring blueprint (RAGAS/DeepEval, tracing)"
         },
         "w6": {
-          "text": "حزمة الأدلة الأمنية وPDPL ووثائق الشفافية"
+          "text": "Security/PDPL evidence pack and transparency artifacts"
         }
       },
       "performance": {
         "p1": {
           "text": "≥ 99.9%",
-          "desc": "مدة التشغيل (SLO)"
+          "desc": "Uptime (SLO)"
         },
         "p2": {
-          "text": "< 600 مللي ثانية",
-          "desc": "التأخير (P95)"
+          "text": "< 600 ms",
+          "desc": "Latency (P95)"
         },
         "p3": {
           "text": "↓ 30–60%",
-          "desc": "تكلفة لكل 1000 رمز"
+          "desc": "Cost per 1K tokens"
         },
         "p4": {
-          "text": "↓ شهريًا",
-          "desc": "نتائج الأمان"
+          "text": "↓ month‑over‑month",
+          "desc": "Security Findings"
         }
       },
       "security": {
         "s1": {
-          "text": "القوانين السعودية",
-          "title": "القوانين السعودية",
+          "text": "Saudi Regulations",
+          "title": "Saudi Regulations",
           "items": {
-            "i1": "PDPL: الأساس القانوني، التقليل، الاحتفاظ، والتحكم عبر الحدود",
-            "i2": "SDAIA AI Ethics: العدالة، الموثوقية/الأمان، الشفافية والقابلية للشرح",
-            "i3": "NCA‑ECC: التحكم في الوصول، التسجيل، تقسيم الشبكة، استجابة للحوادث"
+            "i1": "PDPL: lawful basis, minimization, retention, and cross‑border controls",
+            "i2": "SDAIA AI Ethics: fairness, reliability/safety, transparency & explainability",
+            "i3": "NCA‑ECC: RBAC, logging, network segmentation, incident response"
           }
         },
         "s2": {
-          "text": "المعايير العالمية",
-          "title": "المعايير العالمية",
+          "text": "Global Standards",
+          "title": "Global Standards",
           "items": {
-            "i1": "NIST AI RMF 1.0: دورة الحياة Govern/Map/Measure/Manage مع المخاطر والضوابط",
-            "i2": "ISO/IEC 42001: حزمة دليل نظام إدارة الذكاء الاصطناعي (سياسات، إجراءات، سجلات)",
-            "i3": "تصميم آمن: DLP، إزالة بيانات التعريف الشخصية، إدارة الأسرار، أمان سلسلة التوريد"
+            "i1": "NIST AI RMF 1.0: Govern/Map/Measure/Manage lifecycle with risks and controls",
+            "i2": "ISO/IEC 42001: AI management system evidence pack (policies, procedures, records)",
+            "i3": "Secure‑by‑Design: DLP, PII redaction, secrets management, supply‑chain security"
           }
         }
       },
-      "footerTitle": "امتلك منصة الذكاء الاصطناعي الخاصة بك—داخل المملكة",
-      "footerText": "نشر ذكاء اصطناعي ذو سيادة مع نماذج محلية وحوكمة موثوقة وأداء قابل للقياس.",
-      "methoddescription": "العمارة المرجعية",
-      "deliverablesaddress": "المخرجات",
-      "button1": "جدولة مراجعة العمارة",
-      "button2": "تحميل العمارة المرجعية",
-      "button3": "التحدث مع مهندس عمارة",
-      "button4": "طلب حزمة العمارة (AR/EN)",
-      "Program": "العمارة المرجعية"
+      "footerTitle": "Own Your AI Platform—In Kingdom",
+      "footerText": "Deploy sovereign AI with local LLMs, trusted governance, and measurable performance.",
+      "methoddescription": "Reference Architecture",
+      "deliverablesaddress": "Deliverables",
+      "button1": "Schedule Architecture Review",
+      "button2": "Download Reference Architecture",
+      "button3": "Talk to an architect",
+      "button4": "Request the architecture pack (AR/EN)",
+      "Program": "Reference Architecture"
     },
     "Customized": {
       "title": "Customized AI Solutions (Per Domain)",
