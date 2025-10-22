@@ -285,8 +285,8 @@ export const getDemomessage = (t: (key: string) => string): Message[] => [
   ];
   
 export const getMetric = (t: (key: string) => string): Metric[] => [
-    { icon: Users, label: t('label1'), value: 0, max: 2847, suffix: "", color: "primary" },
-    { icon: TrendingUp, label: t('label2'), value: 0, max: 98, suffix: "%", color: "secondary" },
-    { icon: Clock, label: t('label3'), value: 0, max: 2.3, suffix: "ث", color: "accent" },
-    { icon: Zap, label: t('label4'), value: 0, max: 15420, suffix: "", color: "primary" },
+    { icon: Users, label: t('label1'), value: 0, max: 2847, suffix: t('suffix1'), color: "primary" },
+    { icon: TrendingUp, label: t('label2'), value: 0, max: 98, suffix: t('suffix2'), color: "secondary" },
+    { icon: Clock, label: t('label3'), value: 0, max: 2.3, suffix: t('suffix3'), color: "accent" },
+    { icon: Zap, label: t('label4'), value: 0, max: 15420, suffix: t('suffix4'), color: "primary" },
 ];

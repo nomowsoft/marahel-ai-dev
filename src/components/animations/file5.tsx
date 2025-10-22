@@ -69,7 +69,7 @@ export const MetricsDemo = () => {
                     <Icon className={`w-5 h-5 text-${metric.color}`} />
                   </div>
                   <div className={`text-xs font-bold px-2 py-1 rounded-full bg-${metric.color}/10 text-${metric.color}`}>
-                    مباشر
+                    {t('live')}
                   </div>
                 </div>
 
