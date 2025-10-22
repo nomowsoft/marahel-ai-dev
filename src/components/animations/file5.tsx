@@ -75,7 +75,7 @@ export const MetricsDemo = () => {
 
                 <div className="mb-2">
                   <div className="text-2xl font-bold text-foreground mb-1">
-                    {metric.value.toLocaleString("ar-SA", {
+                    {metric.value.toLocaleString("en-US", {
                       maximumFractionDigits: 1,
                     })}
                     <span className="text-sm text-muted-foreground mr-1">

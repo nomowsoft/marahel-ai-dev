@@ -54,39 +54,50 @@ export const CTA: React.FC = () => {
           {/* Contact Info */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-12 max-w-3xl mx-auto">
             {/* Phone */}
-            <Card className="p-6 bg-card/80 backdrop-blur-sm border-2 border-border rounded-2xl hover:border-primary/50 transition-all group">
-              <div className="flex flex-col items-center gap-3">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Phone className="w-6 h-6 text-primary" />
+            <Link href="tel:+966534551191">
+              <Card className="p-6 bg-card/80 backdrop-blur-sm border-2 border-border rounded-2xl hover:border-primary/50 transition-all group">
+                <div className="flex flex-col items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Phone className="w-6 h-6 text-primary" />
+                  </div>
+                  <span dir="ltr">+966 53 455 1191</span>
                 </div>
-                <Link href="tel:+966534551191" className="text-sm text-muted-foreground" dir="ltr">+966 53 455 1191</Link>
-              </div>
-            </Card>
+              </Card>
+            </Link>
 
             {/* WhatsApp */}
-            <Card className="p-6 bg-card/80 backdrop-blur-sm border-2 border-border rounded-2xl hover:border-primary/50 transition-all group">
-              <div className="flex flex-col items-center gap-3">
-                <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <MessageCircle className="w-6 h-6 text-secondary" />
+            <Link href="https://wa.me/+9660534551191" target="_blank" className="text-sm text-muted-foreground block lg:hidden">
+              <Card className="p-6 bg-card/80 backdrop-blur-sm border-2 border-border rounded-2xl hover:border-primary/50 transition-all group">
+                <div className="flex flex-col items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <MessageCircle className="w-6 h-6 text-secondary" />
+                  </div>
+                    WhatsApp
                 </div>
-                <Link href="https://wa.me/+9660534551191" target="_blank" className="text-sm text-muted-foreground block lg:hidden">
-                  WhatsApp
-                </Link>
-                <Link href="https://web.whatsapp.com/send?phone=+966 0534551191" target="_blank" className="text-sm text-muted-foreground hidden lg:block">
-                  WhatsApp
-                </Link>
-              </div>
-            </Card>
+              </Card>
+            </Link>
+            <Link href="https://web.whatsapp.com/send?phone=+966 0534551191" target="_blank" className="text-sm text-muted-foreground hidden lg:block">
+              <Card className="p-6 bg-card/80 backdrop-blur-sm border-2 border-border rounded-2xl hover:border-primary/50 transition-all group">
+                <div className="flex flex-col items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <MessageCircle className="w-6 h-6 text-secondary" />
+                  </div>
+                    WhatsApp
+                </div>
+              </Card>
+            </Link>
 
             {/* Email */}
-            <Card className="p-6 bg-card/80 backdrop-blur-sm border-2 border-border rounded-2xl hover:border-primary/50 transition-all group">
-              <div className="flex flex-col items-center gap-3">
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Mail className="w-6 h-6 text-accent" />
+            <Link href="mailto:info@marahel.com.sa" className="text-sm text-muted-foreground">
+              <Card className="p-6 bg-card/80 backdrop-blur-sm border-2 border-border rounded-2xl hover:border-primary/50 transition-all group">
+                <div className="flex flex-col items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Mail className="w-6 h-6 text-accent" />
+                  </div>
+                  info@marahel.com.sa
                 </div>
-                <Link href="mailto:info@marahel.com.sa" className="text-sm text-muted-foreground">info@marahel.com.sa</Link>
-              </div>
-            </Card>
+              </Card>
+            </Link>
           </div>
         </div>
       </div>

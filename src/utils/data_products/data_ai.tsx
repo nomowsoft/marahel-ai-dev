@@ -247,11 +247,11 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
                     },
                     {
                         id:2,
-                        text: t('knowledgehub.security.s2.items.i1')
+                        text: t('knowledgehub.security.s2.items.i2')
                     },
                     {
                         id:3,
-                        text: t('knowledgehub.security.s2.items.i1')
+                        text: t('knowledgehub.security.s2.items.i3')
                     },
                 ]
             }

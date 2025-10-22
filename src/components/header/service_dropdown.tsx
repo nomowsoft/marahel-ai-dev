@@ -24,7 +24,7 @@ export const ServiceDropdown = () => {
             {services.map((item) => (
               <NavigationMenuLink asChild key={item.title}>
                 <Link
-                  href={item.href}
+                  href={`/${localActive}/services/${item.id}`}
                   className="group block rounded-lg p-3 hover:bg-primary/10 transition-all"
                 >
                   <div className="flex items-start gap-3">

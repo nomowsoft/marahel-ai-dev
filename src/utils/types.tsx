@@ -107,6 +107,7 @@ export type Documents = {
 }
 
 export type ServiceItem = {
+  id: number;
   title: string;
   href: string;
 }
