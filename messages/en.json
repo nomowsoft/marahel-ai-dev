@@ -1057,5 +1057,43 @@
       "button4": "Download AI Readiness Guide",
       "Program": "Program KPIs (illustrative)"
     }
+  },
+  "Solutions": {
+    "sol1":{
+      "title":"Government & Public Sector",
+      "items":{
+        "name1":"Citizen service automation and chatbots",
+        "name2":"Document processing and digitization",
+        "name3":"Predictive analytics for resource planning",
+        "name4":"Compliance monitoring and reporting"
+      }
+    },
+    "sol2":{
+      "title":"Financial Services",
+      "items":{
+        "name1":"Fraud detection and prevention",
+        "name2":"Credit risk assessment",
+        "name3":"Automated customer onboarding",
+        "name4":"Regulatory compliance automation"
+      }
+    },
+    "sol3":{
+      "title":"Healthcare",
+      "items":{
+        "name1":"Medical imaging analysis",
+        "name2":"Patient data management",
+        "name3":"Drug discovery and research",
+        "name4":"Telemedicine and remote monitoring"
+      }
+    },
+    "sol4":{
+      "title":"Energy & Utilities",
+      "items":{
+        "name1":"Predictive maintenance",
+        "name2":"Smart grid optimization",
+        "name3":"Environmental monitoring",
+        "name4":"Resource allocation planning"
+      }
+    }
   }
 }

@@ -6,9 +6,8 @@ import { routing } from '@/i18n/routing';
 import Link from "next/link";
 import Image from "next/image";
 import { Navbar } from "@/components/header/Header";
-
-// import { ToastContainer } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Metadata } from "next";
 import { Footer } from "@/components/footer/Footer";
 
@@ -43,7 +42,7 @@ export default async function RootLayout({ children, params }: { children: React
           <Navbar />
           <main>
             {children}
-            {/* <ToastContainer /> */}
+            <ToastContainer />
           </main>
           <Footer />
           <div className={`fixed bottom-10 ${locale === 'ar' ? 'left-10' : 'right-10'}`}>

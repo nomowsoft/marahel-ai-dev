@@ -24,7 +24,7 @@ export const CompanyDropdown = () => {
             {dataheader.map((item) => (
               <NavigationMenuLink asChild key={item.title}>
                 <Link
-                  href={item.href}
+                  href={`/${localeActive}${item.href}`}
                   className="group block rounded-lg p-3 hover:bg-primary/10 transition-all"
                 >
                   <div className="flex items-start gap-3">
@@ -45,13 +45,14 @@ export const CompanyDropdown = () => {
 export const CompanyDropdownMobile = () => {
   const t = useTranslations("Header");
   const dataheader = getCompanyMenu(t);
+  const localeActive = useLocale();
   return (
     <div className="space-y-2">
       <div className="text-foreground font-semibold py-2">{t('companymenu')}</div>
       {dataheader.map((item) => (
         <Link
           key={item.title}
-          href={item.href}
+          href={`${localeActive}${item.href}`}
           className="flex items-start gap-3 p-3 rounded-lg hover:bg-primary/10 transition-all text-primary border border-primary/20"
         >
           {item.title}

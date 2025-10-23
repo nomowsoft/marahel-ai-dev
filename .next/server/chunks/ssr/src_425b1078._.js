@@ -235,6 +235,8 @@ __turbopack_context__.s([
     ()=>getSolutions,
     "getSolutionsMenu",
     ()=>getSolutionsMenu,
+    "getSolutionsPage",
+    ()=>getSolutionsPage,
     "getStats",
     ()=>getStats,
     "gethero",
@@ -280,7 +282,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-primary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 56,
+                lineNumber: 57,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-primary/10",
@@ -295,7 +297,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-secondary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 65,
+                lineNumber: 66,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-secondary/10",
@@ -310,7 +312,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-accent"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 74,
+                lineNumber: 75,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-accent/10",
@@ -321,62 +323,62 @@ const getServicesMenu = (t)=>[
         {
             id: 1,
             title: t('services.llms'),
-            href: "#services"
+            href: "/services"
         },
         {
             id: 2,
             title: t('services.readiness'),
-            href: "#services"
+            href: "/services"
         },
         {
             id: 3,
             title: t('services.roadmap'),
-            href: "#services"
+            href: "/services"
         },
         {
             id: 4,
             title: t('services.platform'),
-            href: "#services"
+            href: "/services"
         },
         {
             id: 5,
             title: t('services.custom'),
-            href: "#services"
+            href: "/services"
         },
         {
             id: 6,
             title: t('services.consulting'),
-            href: "#services"
+            href: "/services"
         }
     ];
 const getSolutionsMenu = (t)=>[
         {
             title: t('solution.menu'),
-            href: "#solutions"
+            href: "/solutions"
         }
     ];
 const getBlogerMenu = (t)=>[
         {
             title: t('bloger.insights'),
-            href: "#insights"
+            href: "/visions"
         },
         {
             title: t('bloger.blogs'),
-            href: "#blogs"
+            href: "/blogs"
         }
     ];
 const getCompanyMenu = (t)=>[
         {
             title: t('company.about'),
-            href: "#about"
+            href: "/about"
         },
         {
             title: t('company.careers'),
-            href: "#careers"
+            href: "/jobs"
         },
         {
             title: t('company.contact'),
-            href: "#contact"
+            href: "/contactus"
         }
     ];
 const gethero = (t)=>[
@@ -386,7 +388,7 @@ const gethero = (t)=>[
                 children: "KSA"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 108,
+                lineNumber: 109,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale1'),
@@ -397,7 +399,7 @@ const gethero = (t)=>[
                 className: "w-7 h-7 sm:w-8 sm:h-8 text-secondary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 116,
+                lineNumber: 117,
                 columnNumber: 15
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale2'),
@@ -408,7 +410,7 @@ const gethero = (t)=>[
                 className: "w-7 h-7 sm:w-8 sm:h-8 text-accent"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 121,
+                lineNumber: 122,
                 columnNumber: 15
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale3'),
@@ -419,7 +421,7 @@ const gethero = (t)=>[
                 className: "w-7 h-7 sm:w-8 sm:h-8 text-primary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 126,
+                lineNumber: 127,
                 columnNumber: 15
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale4'),
@@ -440,7 +442,7 @@ const getProducts = (t)=>[
             color: "primary",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file2$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["KnowledgeHubDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 144,
+                lineNumber: 145,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         },
@@ -457,7 +459,7 @@ const getProducts = (t)=>[
             color: "secondary",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file3$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ChatbotDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 157,
+                lineNumber: 158,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         },
@@ -474,7 +476,7 @@ const getProducts = (t)=>[
             color: "accent",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["EventNavigationDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 170,
+                lineNumber: 171,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         }
@@ -527,7 +529,7 @@ const getCertifications = (t)=>[
                     children: "KSA"
                 }, void 0, false, {
                     fileName: "[project]/src/utils/data.tsx",
-                    lineNumber: 219,
+                    lineNumber: 220,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
             title: t('title4'),
@@ -724,6 +726,96 @@ const getMetric = (t)=>[
             max: 15420,
             suffix: t('suffix4'),
             color: "primary"
+        }
+    ];
+const getSolutionsPage = (t)=>[
+        {
+            id: 1,
+            titel: t('sol1.title'),
+            items: [
+                {
+                    id: 1,
+                    name: t('sol1.items.name1')
+                },
+                {
+                    id: 2,
+                    name: t('sol1.items.name2')
+                },
+                {
+                    id: 3,
+                    name: t('sol1.items.name3')
+                },
+                {
+                    id: 4,
+                    name: t('sol1.items.name4')
+                }
+            ]
+        },
+        {
+            id: 2,
+            titel: t('sol2.title'),
+            items: [
+                {
+                    id: 1,
+                    name: t('sol2.items.name1')
+                },
+                {
+                    id: 2,
+                    name: t('sol2.items.name2')
+                },
+                {
+                    id: 3,
+                    name: t('sol2.items.name3')
+                },
+                {
+                    id: 4,
+                    name: t('sol2.items.name4')
+                }
+            ]
+        },
+        {
+            id: 3,
+            titel: t('sol3.title'),
+            items: [
+                {
+                    id: 1,
+                    name: t('sol3.items.name1')
+                },
+                {
+                    id: 2,
+                    name: t('sol3.items.name2')
+                },
+                {
+                    id: 3,
+                    name: t('sol3.items.name3')
+                },
+                {
+                    id: 4,
+                    name: t('sol3.items.name4')
+                }
+            ]
+        },
+        {
+            id: 4,
+            titel: t('sol4.title'),
+            items: [
+                {
+                    id: 1,
+                    name: t('sol4.items.name1')
+                },
+                {
+                    id: 2,
+                    name: t('sol4.items.name2')
+                },
+                {
+                    id: 3,
+                    name: t('sol4.items.name3')
+                },
+                {
+                    id: 4,
+                    name: t('sol4.items.name4')
+                }
+            ]
         }
     ];
 }),
@@ -1082,7 +1174,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$routing$2e$ts
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$Header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/header/Header.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-toastify/dist/index.mjs [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$footer$2f$Footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/footer/Footer.tsx [app-rsc] (ecmascript)");
+;
+;
 ;
 ;
 ;
@@ -1121,7 +1216,7 @@ async function RootLayout({ children, params }) {
                         href: "/navbar/MarahelAI.svg"
                     }, void 0, false, {
                         fileName: "[project]/src/app/[locale]/layout.tsx",
-                        lineNumber: 38,
+                        lineNumber: 37,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -1129,13 +1224,13 @@ async function RootLayout({ children, params }) {
                         content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
                     }, void 0, false, {
                         fileName: "[project]/src/app/[locale]/layout.tsx",
-                        lineNumber: 39,
+                        lineNumber: 38,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/[locale]/layout.tsx",
-                lineNumber: 37,
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
@@ -1145,19 +1240,26 @@ async function RootLayout({ children, params }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$header$2f$Header$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Navbar"], {}, void 0, false, {
                             fileName: "[project]/src/app/[locale]/layout.tsx",
-                            lineNumber: 43,
+                            lineNumber: 42,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                            children: children
-                        }, void 0, false, {
+                            children: [
+                                children,
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$toastify$2f$dist$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ToastContainer"], {}, void 0, false, {
+                                    fileName: "[project]/src/app/[locale]/layout.tsx",
+                                    lineNumber: 45,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/app/[locale]/layout.tsx",
-                            lineNumber: 44,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$footer$2f$Footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                             fileName: "[project]/src/app/[locale]/layout.tsx",
-                            lineNumber: 48,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1174,12 +1276,12 @@ async function RootLayout({ children, params }) {
                                         height: 20
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/[locale]/layout.tsx",
-                                        lineNumber: 51,
+                                        lineNumber: 50,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/[locale]/layout.tsx",
-                                    lineNumber: 50,
+                                    lineNumber: 49,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1193,35 +1295,35 @@ async function RootLayout({ children, params }) {
                                         height: 20
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/[locale]/layout.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 53,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/[locale]/layout.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 52,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/[locale]/layout.tsx",
-                            lineNumber: 49,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/[locale]/layout.tsx",
-                    lineNumber: 42,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/[locale]/layout.tsx",
-                lineNumber: 41,
+                lineNumber: 40,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/[locale]/layout.tsx",
-        lineNumber: 36,
+        lineNumber: 35,
         columnNumber: 5
     }, this);
 }

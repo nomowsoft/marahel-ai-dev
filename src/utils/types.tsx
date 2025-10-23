@@ -126,3 +126,13 @@ export type CompanyItem = {
   title: string;
   href: string;
 }
+
+type SolutionsList = {
+  id: number;
+  name: string;
+};
+export type SolutionsItems = {
+  id: number;
+  titel: string;
+  items: SolutionsList[];
+};

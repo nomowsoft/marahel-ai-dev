@@ -26,7 +26,7 @@ export const SolutionsDropdown = () => {
             {solutions.map((item) => (
               <NavigationMenuLink asChild key={item.title}>
                 <Link
-                  href={item.href}
+                  href={`/${localeActive}${item.href}`}
                   className="group block rounded-lg p-3 hover:bg-primary/10 transition-all"
                 >
                   <div className="flex items-start gap-3">

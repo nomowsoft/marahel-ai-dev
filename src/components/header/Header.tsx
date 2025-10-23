@@ -143,9 +143,9 @@ export const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Link href={`/${localeActive}/contactus`} className="bg-primary hover:bg-accent text-primary-foreground p-2 rounded-sm">
               {t("contactus")}
-            </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -180,9 +180,9 @@ export const Navbar = () => {
               ))}
             </div>
 
-            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Link href={`/${localeActive}/contactus`} className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
               {t("contactus")}
-            </Button>
+            </Link>
           </div>
         )}
       </div>
