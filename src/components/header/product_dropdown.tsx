@@ -55,7 +55,11 @@ export const ProductsDropdown = () => {
   );
 };
 
-export const ProductsDropdownMobile = () => {
+export const ProductsDropdownMobile = ({
+  onLinkClick, 
+}: {
+  onLinkClick?: () => void;
+}) => {
   const localActive = useLocale();
   const t = useTranslations("Header");
   const products = getProductsMenu(t)
@@ -64,6 +68,7 @@ export const ProductsDropdownMobile = () => {
       <div className="text-foreground font-semibold py-2">{t('products')}</div>
       {products.map((item) => (
         <Link
+          onClick={onLinkClick}
           key={item.title}
           href={`/${localActive}/products/${item.id}`}
           className={`flex items-start gap-3 p-3 rounded-lg transition-all border border-border/40 ${item.hoverColor}`}

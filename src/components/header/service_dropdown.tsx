@@ -43,16 +43,22 @@ export const ServiceDropdown = () => {
 
 };
 
-export const ServiceDropdownMobile = () => {
+export const ServiceDropdownMobile = ({
+  onLinkClick, 
+}: {
+  onLinkClick?: () => void;
+}) => {
   const t = useTranslations('Header');
   const services = getServicesMenu(t);
+  const localActive = useLocale();
   return(
     <div className="space-y-2">
       <div className="text-foreground font-semibold py-2">{t('serviceMenu')}</div>
       {services.map((item) => (
         <Link
+          onClick={onLinkClick}
           key={item.title}
-          href={item.href}
+          href={`/${localActive}${item.href}/${item.id}`}
           className="flex items-start gap-3 p-3 rounded-lg hover:bg-primary/10 transition-all border border-border/40 text-primary"
         >
           {item.title}
