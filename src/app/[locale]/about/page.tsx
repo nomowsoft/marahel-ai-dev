@@ -93,6 +93,8 @@ const About = () => {
             </div>
             <div className="relative">
               <Image
+                width={500}
+                height={20}
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
                 alt="فريق العمل"
                 className="rounded-2xl shadow-2xl"

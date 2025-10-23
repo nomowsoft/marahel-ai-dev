@@ -109,11 +109,7 @@ const Blogs = () => {
           <Card className="overflow-hidden max-w-6xl mx-auto border-2 hover:shadow-2xl transition-all">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="relative h-64 md:h-auto">
-                <Image 
-                  src={blogPosts[0].image}
-                  alt={blogPosts[0].title}
-                  className="w-full h-full object-cover"
-                />
+                <Image src={blogPosts[0].image} alt={blogPosts[0].title} width={500} height={20} className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4">
                   <span className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold">
                     مميز
@@ -162,6 +158,8 @@ const Blogs = () => {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
+                  width={500}
+                  height={20}
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
