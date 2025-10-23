@@ -3,18 +3,10 @@ import { useState, useCallback } from "react";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import {
-  Menu,
-  Globe,
-  // Link,
-} from "lucide-react";
+import { Menu, Globe } from "lucide-react";
 import Link from "next/link";
-
 import { Button } from "@/components/ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+import { NavigationMenu, NavigationMenuList } from "@/components/ui/navigation-menu";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -70,7 +62,6 @@ export const Navbar = () => {
   const changeLocale = useCallback(
     (nextLocale: string) => {
       if (nextLocale === localeActive) return;
-
       const segments = pathname.split("/");
       if (["ar", "en"].includes(segments[1])) {
         segments[1] = nextLocale;
@@ -78,16 +69,22 @@ export const Navbar = () => {
         segments.splice(1, 0, nextLocale);
       }
       router.push(segments.join("/") || "/");
+      setIsOpen(false); // ✅ إغلاق المنيو بعد تغيير اللغة
     },
     [localeActive, pathname, router]
   );
+
+  // ✅ دالة لإغلاق المنيو عند الضغط على أي رابط
+  const handleLinkClick = useCallback(() => {
+    setIsOpen(false);
+  }, []);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/">
+          <Link href="/" onClick={handleLinkClick}>
             <Image
               src="/navbar/MarahelAI.svg"
               alt="Marahel AI"
@@ -103,7 +100,7 @@ export const Navbar = () => {
               href="/"
               className="text-white hover:bg-primary py-2 px-4 rounded-lg hover:text-primary-foreground"
             >
-              {t1('home')}
+              {t1("home")}
             </Link>
             {DESKTOP_MENUS.map((Dropdown, i) => (
               <NavigationMenu key={i}>
@@ -143,7 +140,10 @@ export const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link href={`/${localeActive}/contactus`} className="bg-primary hover:bg-accent text-primary-foreground p-2 rounded-sm">
+            <Link
+              href={`/${localeActive}/contactus`}
+              className="bg-primary hover:bg-accent text-primary-foreground p-2 rounded-sm"
+            >
               {t("contactus")}
             </Link>
           </div>
@@ -163,7 +163,8 @@ export const Navbar = () => {
         {isOpen && (
           <div className="md:hidden py-4 space-y-4 overflow-y-auto max-h-[calc(100vh-80px)]">
             {MOBILE_MENUS.map((DropdownMobile, i) => (
-              <DropdownMobile key={i} />
+              // ✅ تمرير دالة الإغلاق كمُعطى إلى كل مكون منسدلة للموبايل
+              <DropdownMobile key={i} onLinkClick={handleLinkClick} />
             ))}
 
             {/* Language Switcher - Mobile */}
@@ -180,7 +181,11 @@ export const Navbar = () => {
               ))}
             </div>
 
-            <Link href={`/${localeActive}/contactus`} className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Link
+              href={`/${localeActive}/contactus`}
+              onClick={handleLinkClick}
+              className="block text-center bg-primary hover:bg-primary/90 text-primary-foreground p-2 rounded-md"
+            >
               {t("contactus")}
             </Link>
           </div>

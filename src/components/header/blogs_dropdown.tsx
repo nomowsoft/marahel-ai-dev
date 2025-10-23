@@ -11,15 +11,15 @@ import { getBlogerMenu } from "@/utils/data";
 
 export const BlogsDropdown = () => {
   const t = useTranslations("Header");
-  const dataheader = getBlogerMenu(t)
+  const dataheader = getBlogerMenu(t);
   const localeActive = useLocale();
 
   return (
     <NavigationMenuItem>
       <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-foreground hover:text-primary">
-        {t('blogermenu')}
+        {t("blogermenu")}
       </NavigationMenuTrigger>
-      <NavigationMenuContent dir={`${localeActive === 'ar'? 'rtl' : 'ltr'}`}>
+      <NavigationMenuContent dir={localeActive === "ar" ? "rtl" : "ltr"}>
         <div className="w-[400px] p-4 bg-card/95 backdrop-blur-lg rounded-lg shadow-lg">
           <div className="space-y-2">
             {dataheader.map((item) => (
@@ -43,16 +43,25 @@ export const BlogsDropdown = () => {
   );
 };
 
-export const BlogsDropdownMobile = () => {
+export const BlogsDropdownMobile = ({
+  onLinkClick, 
+}: {
+  onLinkClick?: () => void;
+}) => {
   const t = useTranslations("Header");
-  const dataheader = getBlogerMenu(t)
+  const dataheader = getBlogerMenu(t);
+  const localeActive = useLocale();
+
   return (
     <div className="space-y-2">
-      <div className="text-foreground font-semibold py-2">{t('blogermenu')}</div>
+      <div className="text-foreground font-semibold py-2">
+        {t("blogermenu")}
+      </div>
       {dataheader.map((item) => (
         <Link
           key={item.title}
-          href={item.href}
+          href={`/${localeActive}${item.href}`}
+          onClick={onLinkClick}
           className="flex items-start gap-3 p-3 rounded-lg hover:bg-primary/10 transition-all text-primary border border-primary/20"
         >
           {item.title}

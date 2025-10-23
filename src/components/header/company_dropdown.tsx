@@ -42,7 +42,11 @@ export const CompanyDropdown = () => {
   );
 };
 
-export const CompanyDropdownMobile = () => {
+export const CompanyDropdownMobile = ({
+  onLinkClick, 
+}: {
+  onLinkClick?: () => void;
+}) => {
   const t = useTranslations("Header");
   const dataheader = getCompanyMenu(t);
   const localeActive = useLocale();
@@ -52,7 +56,8 @@ export const CompanyDropdownMobile = () => {
       {dataheader.map((item) => (
         <Link
           key={item.title}
-          href={`${localeActive}${item.href}`}
+          onClick={onLinkClick}
+          href={`/${localeActive}${item.href}`}
           className="flex items-start gap-3 p-3 rounded-lg hover:bg-primary/10 transition-all text-primary border border-primary/20"
         >
           {item.title}

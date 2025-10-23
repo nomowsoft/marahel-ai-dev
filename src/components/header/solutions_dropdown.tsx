@@ -13,7 +13,7 @@ import { getSolutionsMenu } from "@/utils/data";
 
 export const SolutionsDropdown = () => {
   const t = useTranslations("Header");
-  const solutions = getSolutionsMenu(t)
+  const solutions = getSolutionsMenu(t);
   const localeActive = useLocale();
   return(
     <NavigationMenuItem>
@@ -44,16 +44,22 @@ export const SolutionsDropdown = () => {
   );
 };
 
-export const SolutionsDropdownMobile = () => {
+export const SolutionsDropdownMobile = ({
+  onLinkClick, 
+}: {
+  onLinkClick?: () => void;
+}) => {
   const t = useTranslations("Header");
-  const solutions = getSolutionsMenu(t)
+  const solutions = getSolutionsMenu(t);
+  const localeActive = useLocale();
   return(
     <div className="space-y-2">
       <div className="text-foreground font-semibold py-2">{t('solutionmenu')}</div>
       {solutions.map((item) => (
         <Link
           key={item.href}
-          href={item.href}
+          onClick={onLinkClick}
+          href={`/${localeActive}${item.href}`}
           className="flex items-start gap-3 p-3 rounded-lg hover:bg-primary/10 transition-all border border-border/40 text-primary"
         >
           {item.title}
