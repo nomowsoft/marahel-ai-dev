@@ -18,7 +18,8 @@ import {
   ServiceItem,
   SolutionItem,
   BlogerItem,
-  CompanyItem
+  CompanyItem,
+  SolutionsItems
 } from "./types";
 import {
   Database, 
@@ -77,28 +78,28 @@ export const getProductsMenu = (t: (key: string) => string): ProductItem[] => [
   },
 ]
 export const getServicesMenu = (t: (key: string) => string): ServiceItem[] => [
-  { id: 1,title: t('services.llms'), href: "#services" },
-  { id: 2,title: t('services.readiness'), href: "#services" },
-  { id: 3,title: t('services.roadmap'), href: "#services" },
-  { id: 4,title: t('services.platform'), href: "#services" },
-  { id: 5,title: t('services.custom'), href: "#services" },
-  { id: 6,title: t('services.consulting'), href: "#services" },
+  { id: 1,title: t('services.llms'), href: "/services" },
+  { id: 2,title: t('services.readiness'), href: "/services" },
+  { id: 3,title: t('services.roadmap'), href: "/services" },
+  { id: 4,title: t('services.platform'), href: "/services" },
+  { id: 5,title: t('services.custom'), href: "/services" },
+  { id: 6,title: t('services.consulting'), href: "/services" },
 ]
 
 
 export const getSolutionsMenu = (t: (key: string) => string): SolutionItem[] => [
-  { title: t('solution.menu'), href: "#solutions" },
+  { title: t('solution.menu'), href: "/solutions" },
 ];
 
 export const getBlogerMenu = (t: (key: string) => string): BlogerItem[] => [
-  { title: t('bloger.insights'), href: "#insights" },
-  { title: t('bloger.blogs'), href: "#blogs" },
+  { title: t('bloger.insights'), href: "/visions" },
+  { title: t('bloger.blogs'), href: "/blogs" },
 ];
 
 export const getCompanyMenu = (t: (key: string) => string): CompanyItem[] => [
-  { title: t('company.about'),  href: "#about" },
-  { title: t('company.careers'), href: "#careers" },
-  { title: t('company.contact'),  href: "#contact" },
+  { title: t('company.about'),  href: "/about" },
+  { title: t('company.careers'), href: "/jobs" },
+  { title: t('company.contact'),  href: "/contactus" },
 ];
 
 
@@ -289,4 +290,47 @@ export const getMetric = (t: (key: string) => string): Metric[] => [
     { icon: TrendingUp, label: t('label2'), value: 0, max: 98, suffix: t('suffix2'), color: "secondary" },
     { icon: Clock, label: t('label3'), value: 0, max: 2.3, suffix: t('suffix3'), color: "accent" },
     { icon: Zap, label: t('label4'), value: 0, max: 15420, suffix: t('suffix4'), color: "primary" },
+];
+
+export const getSolutionsPage = (t: (key: string) => string): SolutionsItems[] => [
+  {
+    id: 1,
+    titel: t('sol1.title'),
+    items: [
+      { id: 1, name: t('sol1.items.name1')},
+      { id: 2, name: t('sol1.items.name2')},
+      { id: 3, name: t('sol1.items.name3')},
+      { id: 4, name: t('sol1.items.name4')},
+    ],
+  },
+  {
+    id: 2,
+    titel: t('sol2.title'),
+    items: [
+      { id: 1, name: t('sol2.items.name1')},
+      { id: 2, name: t('sol2.items.name2')},
+      { id: 3, name: t('sol2.items.name3')},
+      { id: 4, name: t('sol2.items.name4')},
+    ],
+  },
+  {
+    id: 3,
+    titel: t('sol3.title'),
+    items: [
+      { id: 1, name: t('sol3.items.name1')},
+      { id: 2, name: t('sol3.items.name2')},
+      { id: 3, name: t('sol3.items.name3')},
+      { id: 4, name: t('sol3.items.name4')},
+    ],
+  },
+  {
+    id: 4,
+    titel: t('sol4.title'),
+    items: [
+      { id: 1, name: t('sol4.items.name1')},
+      { id: 2, name: t('sol4.items.name2')},
+      { id: 3, name: t('sol4.items.name3')},
+      { id: 4, name: t('sol4.items.name4')},
+    ],
+  },
 ];

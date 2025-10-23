@@ -1510,6 +1510,8 @@ __turbopack_context__.s([
     ()=>getSolutions,
     "getSolutionsMenu",
     ()=>getSolutionsMenu,
+    "getSolutionsPage",
+    ()=>getSolutionsPage,
     "getStats",
     ()=>getStats,
     "gethero",
@@ -1555,7 +1557,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-primary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 56,
+                lineNumber: 57,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-primary/10",
@@ -1570,7 +1572,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-secondary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 65,
+                lineNumber: 66,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-secondary/10",
@@ -1585,7 +1587,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-accent"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 74,
+                lineNumber: 75,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-accent/10",
@@ -1596,62 +1598,62 @@ const getServicesMenu = (t)=>[
         {
             id: 1,
             title: t('services.llms'),
-            href: "#services"
+            href: "/services"
         },
         {
             id: 2,
             title: t('services.readiness'),
-            href: "#services"
+            href: "/services"
         },
         {
             id: 3,
             title: t('services.roadmap'),
-            href: "#services"
+            href: "/services"
         },
         {
             id: 4,
             title: t('services.platform'),
-            href: "#services"
+            href: "/services"
         },
         {
             id: 5,
             title: t('services.custom'),
-            href: "#services"
+            href: "/services"
         },
         {
             id: 6,
             title: t('services.consulting'),
-            href: "#services"
+            href: "/services"
         }
     ];
 const getSolutionsMenu = (t)=>[
         {
             title: t('solution.menu'),
-            href: "#solutions"
+            href: "/solutions"
         }
     ];
 const getBlogerMenu = (t)=>[
         {
             title: t('bloger.insights'),
-            href: "#insights"
+            href: "/visions"
         },
         {
             title: t('bloger.blogs'),
-            href: "#blogs"
+            href: "/blogs"
         }
     ];
 const getCompanyMenu = (t)=>[
         {
             title: t('company.about'),
-            href: "#about"
+            href: "/about"
         },
         {
             title: t('company.careers'),
-            href: "#careers"
+            href: "/jobs"
         },
         {
             title: t('company.contact'),
-            href: "#contact"
+            href: "/contactus"
         }
     ];
 const gethero = (t)=>[
@@ -1661,7 +1663,7 @@ const gethero = (t)=>[
                 children: "KSA"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 108,
+                lineNumber: 109,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale1'),
@@ -1672,7 +1674,7 @@ const gethero = (t)=>[
                 className: "w-7 h-7 sm:w-8 sm:h-8 text-secondary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 116,
+                lineNumber: 117,
                 columnNumber: 15
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale2'),
@@ -1683,7 +1685,7 @@ const gethero = (t)=>[
                 className: "w-7 h-7 sm:w-8 sm:h-8 text-accent"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 121,
+                lineNumber: 122,
                 columnNumber: 15
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale3'),
@@ -1694,7 +1696,7 @@ const gethero = (t)=>[
                 className: "w-7 h-7 sm:w-8 sm:h-8 text-primary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 126,
+                lineNumber: 127,
                 columnNumber: 15
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale4'),
@@ -1715,7 +1717,7 @@ const getProducts = (t)=>[
             color: "primary",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file2$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KnowledgeHubDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 144,
+                lineNumber: 145,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         },
@@ -1732,7 +1734,7 @@ const getProducts = (t)=>[
             color: "secondary",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file3$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ChatbotDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 157,
+                lineNumber: 158,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         },
@@ -1749,7 +1751,7 @@ const getProducts = (t)=>[
             color: "accent",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["EventNavigationDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 170,
+                lineNumber: 171,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         }
@@ -1802,7 +1804,7 @@ const getCertifications = (t)=>[
                     children: "KSA"
                 }, void 0, false, {
                     fileName: "[project]/src/utils/data.tsx",
-                    lineNumber: 219,
+                    lineNumber: 220,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
             title: t('title4'),
@@ -1999,6 +2001,96 @@ const getMetric = (t)=>[
             max: 15420,
             suffix: t('suffix4'),
             color: "primary"
+        }
+    ];
+const getSolutionsPage = (t)=>[
+        {
+            id: 1,
+            titel: t('sol1.title'),
+            items: [
+                {
+                    id: 1,
+                    name: t('sol1.items.name1')
+                },
+                {
+                    id: 2,
+                    name: t('sol1.items.name2')
+                },
+                {
+                    id: 3,
+                    name: t('sol1.items.name3')
+                },
+                {
+                    id: 4,
+                    name: t('sol1.items.name4')
+                }
+            ]
+        },
+        {
+            id: 2,
+            titel: t('sol2.title'),
+            items: [
+                {
+                    id: 1,
+                    name: t('sol2.items.name1')
+                },
+                {
+                    id: 2,
+                    name: t('sol2.items.name2')
+                },
+                {
+                    id: 3,
+                    name: t('sol2.items.name3')
+                },
+                {
+                    id: 4,
+                    name: t('sol2.items.name4')
+                }
+            ]
+        },
+        {
+            id: 3,
+            titel: t('sol3.title'),
+            items: [
+                {
+                    id: 1,
+                    name: t('sol3.items.name1')
+                },
+                {
+                    id: 2,
+                    name: t('sol3.items.name2')
+                },
+                {
+                    id: 3,
+                    name: t('sol3.items.name3')
+                },
+                {
+                    id: 4,
+                    name: t('sol3.items.name4')
+                }
+            ]
+        },
+        {
+            id: 4,
+            titel: t('sol4.title'),
+            items: [
+                {
+                    id: 1,
+                    name: t('sol4.items.name1')
+                },
+                {
+                    id: 2,
+                    name: t('sol4.items.name2')
+                },
+                {
+                    id: 3,
+                    name: t('sol4.items.name3')
+                },
+                {
+                    id: 4,
+                    name: t('sol4.items.name4')
+                }
+            ]
         }
     ];
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -2257,7 +2349,7 @@ const ServiceDropdown = ()=>{
                         children: services.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$navigation$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NavigationMenuLink"], {
                                 asChild: true,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "/".concat(localActive, "/services/").concat(item.id),
+                                    href: "/".concat(localActive).concat(item.href, "/").concat(item.id),
                                     className: "group block rounded-lg p-3 hover:bg-primary/10 transition-all",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-start gap-3",
@@ -2403,7 +2495,7 @@ const SolutionsDropdown = ()=>{
                         children: solutions.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$navigation$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NavigationMenuLink"], {
                                 asChild: true,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: item.href,
+                                    href: "/".concat(localeActive).concat(item.href),
                                     className: "group block rounded-lg p-3 hover:bg-primary/10 transition-all",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-start gap-3",
@@ -2548,7 +2640,7 @@ const BlogsDropdown = ()=>{
                         children: dataheader.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$navigation$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NavigationMenuLink"], {
                                 asChild: true,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: item.href,
+                                    href: "/".concat(localeActive).concat(item.href),
                                     className: "group block rounded-lg p-3 hover:bg-primary/10 transition-all",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-start gap-3",
@@ -2693,7 +2785,7 @@ const CompanyDropdown = ()=>{
                         children: dataheader.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$navigation$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NavigationMenuLink"], {
                                 asChild: true,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: item.href,
+                                    href: "/".concat(localeActive).concat(item.href),
                                     className: "group block rounded-lg p-3 hover:bg-primary/10 transition-all",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-start gap-3",
@@ -2753,6 +2845,7 @@ const CompanyDropdownMobile = ()=>{
     _s1();
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"])("Header");
     const dataheader = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$data$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCompanyMenu"])(t);
+    const localeActive = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLocale"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "space-y-2",
         children: [
@@ -2761,28 +2854,29 @@ const CompanyDropdownMobile = ()=>{
                 children: t('companymenu')
             }, void 0, false, {
                 fileName: "[project]/src/components/header/company_dropdown.tsx",
-                lineNumber: 50,
+                lineNumber: 51,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             dataheader.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    href: item.href,
+                    href: "".concat(localeActive).concat(item.href),
                     className: "flex items-start gap-3 p-3 rounded-lg hover:bg-primary/10 transition-all text-primary border border-primary/20",
                     children: item.title
                 }, item.title, false, {
                     fileName: "[project]/src/components/header/company_dropdown.tsx",
-                    lineNumber: 52,
+                    lineNumber: 53,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/header/company_dropdown.tsx",
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s1(CompanyDropdownMobile, "h6+q2O3NJKPY5uL0BIJGLIanww8=", false, function() {
+_s1(CompanyDropdownMobile, "eyDV39+cQZrM1Jgosb1f/G6oRQI=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLocale"]
     ];
 });
 _c1 = CompanyDropdownMobile;
@@ -2990,8 +3084,9 @@ const Navbar = ()=>{
                                     lineNumber: 119,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                    className: "bg-primary hover:bg-primary/90 text-primary-foreground",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/".concat(localeActive, "/contactus"),
+                                    className: "bg-primary hover:bg-accent text-primary-foreground p-2 rounded-sm",
                                     children: t("contactus")
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/header/Header.tsx",
@@ -3056,7 +3151,8 @@ const Navbar = ()=>{
                             lineNumber: 170,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/".concat(localeActive, "/contactus"),
                             className: "w-full bg-primary hover:bg-primary/90 text-primary-foreground",
                             children: t("contactus")
                         }, void 0, false, {

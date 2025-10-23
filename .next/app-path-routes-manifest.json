@@ -1,7 +1,13 @@
 {
+  "/[locale]/about/page": "/[locale]/about",
+  "/[locale]/blogs/page": "/[locale]/blogs",
+  "/[locale]/contactus/page": "/[locale]/contactus",
+  "/[locale]/jobs/page": "/[locale]/jobs",
   "/[locale]/page": "/[locale]",
   "/[locale]/products/[id]/page": "/[locale]/products/[id]",
   "/[locale]/services/[id]/page": "/[locale]/services/[id]",
+  "/[locale]/solutions/page": "/[locale]/solutions",
+  "/[locale]/visions/page": "/[locale]/visions",
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico"
 }
