@@ -2,73 +2,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Calendar, User, ArrowRight, Tag } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { getblogPosts, getFilter } from "@/utils/data";
 
-const blogPosts = [
-  {
-    id: 1,
-    title: "مستقبل الذكاء الاصطناعي في المملكة العربية السعودية",
-    excerpt: "نظرة شاملة على كيفية تغيير الذكاء الاصطناعي لمشهد الأعمال في المملكة ودوره في تحقيق رؤية 2030",
-    author: "د. أحمد المحمدي",
-    date: "15 أكتوبر 2024",
-    category: "الذكاء الاصطناعي",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
-    readTime: "5 دقائق"
-  },
-  {
-    id: 2,
-    title: "كيف تختار الحل المناسب للتحول الرقمي لمؤسستك؟",
-    excerpt: "دليل شامل لاختيار الحلول التقنية المناسبة بناءً على احتياجات مؤسستك وأهدافها الاستراتيجية",
-    author: "م. سارة العتيبي",
-    date: "12 أكتوبر 2024",
-    category: "التحول الرقمي",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    readTime: "7 دقائق"
-  },
-  {
-    id: 3,
-    title: "أهمية أمن البيانات في عصر الذكاء الاصطناعي",
-    excerpt: "استكشاف التحديات والحلول المتعلقة بأمن البيانات عند استخدام تقنيات الذكاء الاصطناعي",
-    author: "د. خالد السالم",
-    date: "8 أكتوبر 2024",
-    category: "الأمن السيبراني",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
-    readTime: "6 دقائق"
-  },
-  {
-    id: 4,
-    title: "تطبيقات الذكاء الاصطناعي في القطاع الصحي",
-    excerpt: "كيف يساهم الذكاء الاصطناعي في تحسين جودة الرعاية الصحية وتسريع التشخيص والعلاج",
-    author: "د. نورة القحطاني",
-    date: "5 أكتوبر 2024",
-    category: "الصحة",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
-    readTime: "8 دقائق"
-  },
-  {
-    id: 5,
-    title: "دور الذكاء الاصطناعي في تحسين تجربة العملاء",
-    excerpt: "اكتشف كيف يمكن للذكاء الاصطناعي أن يحدث ثورة في خدمة العملاء ويزيد من رضاهم",
-    author: "م. فهد الدوسري",
-    date: "1 أكتوبر 2024",
-    category: "خدمة العملاء",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop",
-    readTime: "5 دقائق"
-  },
-  {
-    id: 6,
-    title: "التعلم الآلي: الأساسيات والتطبيقات العملية",
-    excerpt: "مقدمة شاملة عن التعلم الآلي وكيفية تطبيقه في حل المشاكل الحقيقية للأعمال",
-    author: "د. محمد الشهري",
-    date: "28 سبتمبر 2024",
-    category: "تعلم آلي",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=600&fit=crop",
-    readTime: "10 دقائق"
-  }
-];
-
-const categories = ["الكل", "الذكاء الاصطناعي", "التحول الرقمي", "الأمن السيبراني", "الصحة", "خدمة العملاء", "تعلم آلي"];
 
 const Blogs = () => {
+  const t = useTranslations('blogs');
+  const categories = getFilter(t);
+  const blogPosts = getblogPosts(t);
+
   return (
     <div className="min-h-screen bg-background">
   
@@ -77,10 +19,10 @@ const Blogs = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text">
-              المدونة
+              {t('title')}
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              آخر المقالات والرؤى حول الذكاء الاصطناعي والتحول الرقمي
+              {t('description')}
             </p>
           </div>
         </div>
@@ -96,7 +38,7 @@ const Blogs = () => {
                 variant={index === 0 ? "default" : "outline"}
                 className="rounded-full border border-primary text-foreground"
               >
-                {category}
+                {category.title}
               </Button>
             ))}
           </div>
@@ -112,7 +54,7 @@ const Blogs = () => {
                 <Image src={blogPosts[0].image} alt={blogPosts[0].title} width={500} height={20} className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4">
                   <span className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold">
-                    مميز
+                    {t('done')}
                   </span>
                 </div>
               </div>
@@ -137,7 +79,7 @@ const Blogs = () => {
                     {blogPosts[0].author}
                   </div>
                   <Button>
-                    اقرأ المزيد
+                    {t('readmore')}
                     <ArrowRight className="w-4 h-4 mr-2" />
                   </Button>
                 </div>
@@ -192,7 +134,7 @@ const Blogs = () => {
                       {post.author}
                     </div>
                     <Button variant="ghost" size="sm">
-                      اقرأ
+                      {t('read')}
                       <ArrowRight className="w-4 h-4 mr-1" />
                     </Button>
                   </div>
@@ -207,7 +149,7 @@ const Blogs = () => {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4 text-center">
           <Button size="lg" variant="outline" className="border border-primary text-foreground">
-            تحميل المزيد من المقالات
+            {t('button')}
           </Button>
         </div>
       </section>

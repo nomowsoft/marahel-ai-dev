@@ -1059,40 +1059,247 @@
     }
   },
   "Solutions": {
-    "sol1":{
-      "title":"Government & Public Sector",
-      "items":{
-        "name1":"Citizen service automation and chatbots",
-        "name2":"Document processing and digitization",
-        "name3":"Predictive analytics for resource planning",
-        "name4":"Compliance monitoring and reporting"
+    "titel": "Industry Solutions",
+    "description": "AI-powered solutions tailored for Saudi Arabia's key industries",
+    "sol1": {
+      "title": "Government & Public Sector",
+      "items": {
+        "name1": "Citizen service automation and chatbots",
+        "name2": "Document processing and digitization",
+        "name3": "Predictive analytics for resource planning",
+        "name4": "Compliance monitoring and reporting"
       }
     },
-    "sol2":{
-      "title":"Financial Services",
-      "items":{
-        "name1":"Fraud detection and prevention",
-        "name2":"Credit risk assessment",
-        "name3":"Automated customer onboarding",
-        "name4":"Regulatory compliance automation"
+    "sol2": {
+      "title": "Financial Services",
+      "items": {
+        "name1": "Fraud detection and prevention",
+        "name2": "Credit risk assessment",
+        "name3": "Automated customer onboarding",
+        "name4": "Regulatory compliance automation"
       }
     },
-    "sol3":{
-      "title":"Healthcare",
-      "items":{
-        "name1":"Medical imaging analysis",
-        "name2":"Patient data management",
-        "name3":"Drug discovery and research",
-        "name4":"Telemedicine and remote monitoring"
+    "sol3": {
+      "title": "Healthcare",
+      "items": {
+        "name1": "Medical imaging analysis",
+        "name2": "Patient data management",
+        "name3": "Drug discovery and research",
+        "name4": "Telemedicine and remote monitoring"
       }
     },
-    "sol4":{
-      "title":"Energy & Utilities",
-      "items":{
-        "name1":"Predictive maintenance",
-        "name2":"Smart grid optimization",
-        "name3":"Environmental monitoring",
-        "name4":"Resource allocation planning"
+    "sol4": {
+      "title": "Energy & Utilities",
+      "items": {
+        "name1": "Predictive maintenance",
+        "name2": "Smart grid optimization",
+        "name3": "Environmental monitoring",
+        "name4": "Resource allocation planning"
+      }
+    }
+  },
+  "visions": {
+    "title": "Our Vision for the Future",
+    "description": "We aspire to shape an advanced digital future that strengthens Saudi Arabia's position as a global hub for technological innovation.",
+    "card": {
+      "title": "Vision 2030",
+      "title1": "We aim to be a key contributor to achieving Saudi Arabia’s Vision 2030",
+      "p1": "We believe that Saudi Arabia has tremendous potential to become a global center for technological innovation. Our vision is to contribute to this transformation by providing advanced AI solutions that serve various sectors.",
+      "p2": "We strive to build a strong digital economy based on knowledge and innovation, empowering Saudi institutions to compete globally through thoughtful digital transformation grounded in solid scientific principles.",
+      "p3": "Through our innovative solutions, we contribute to enhancing efficiency, improving service quality, and creating new opportunities for growth and development across all vital sectors."
+    },
+    "goalstitle": "Our Strategic Goals",
+    "goalsdesc": "We work to achieve ambitious objectives that support our vision for the future",
+    "goals": {
+      "title": {
+        "t1": "Technological Leadership",
+        "t2": "Sustainable Growth",
+        "t3": "Regional Expansion",
+        "t4": "Continuous Innovation",
+        "t5": "Security and Privacy",
+        "t6": "Community Empowerment"
+      },
+      "desc": {
+        "d1": "To be at the forefront of innovation in AI and digital solutions",
+        "d2": "Achieving continuous and sustainable growth aligned with Saudi Vision 2030",
+        "d3": "Deploying our solutions across the Kingdom and expanding into regional markets",
+        "d4": "Investing in research and development to consistently deliver innovative solutions",
+        "d5": "Ensuring the highest standards of security and privacy across all our solutions",
+        "d6": "Contributing to building an advanced digital society through training and development"
+      }
+    },
+    "successtitle": "Pillars of Success",
+    "successdesc": "The core principles on which we build our vision",
+    "success": {
+      "title": {
+        "t1": "Sustainability",
+        "t2": "Partnership",
+        "t3": "Development"
+      },
+      "desc": {
+        "d1": "We are committed to providing sustainable solutions that support the achievement of sustainable development goals",
+        "d2": "We establish strategic partnerships with industry leaders locally and globally",
+        "d3": "We continuously invest in developing our team and technologies"
+      },
+      "list": {
+        "ul1": {
+          "l1": "Environmentally friendly technologies",
+          "l2": "Efficient resource utilization",
+          "l3": "Long-term solutions"
+        },
+        "ul2": {
+          "l1": "Global technology partnerships",
+          "l2": "Collaboration with universities",
+          "l3": "Long-term relationships"
+        },
+        "ul3": {
+          "l1": "Advanced training programs",
+          "l2": "Research and development",
+          "l3": "Adoption of latest technologies"
+        }
+      }
+    },
+    "endtitle": "Towards a Prosperous Digital Future",
+    "enddesc": "Towards a prosperous digital future",
+    "p1": "Our Future Vision",
+    "p2": "Commitment to Excellence",
+    "p3": "Unlimited Potential"
+  },
+  "blogs": {
+    "title": "Blog",
+    "description": "Latest articles and insights on AI and digital transformation",
+    "done": "Featured",
+    "readmore": "Read more",
+    "read": "Read",
+    "button": "Load more articles",
+    "filter": {
+      "f1": "All",
+      "f2": "Artificial Intelligence",
+      "f3": "Digital Transformation",
+      "f4": "Cybersecurity",
+      "f5": "Health",
+      "f6": "Customer Service",
+      "f7": "Machine Learning"
+    },
+    "blog": {
+      "title": {
+        "t1": "The Future of Artificial Intelligence in Saudi Arabia",
+        "t2": "How to Choose the Right Digital Transformation Solution for Your Organization",
+        "t3": "The Importance of Data Security in the Age of AI",
+        "t4": "AI Applications in the Healthcare Sector",
+        "t5": "The Role of AI in Enhancing Customer Experience",
+        "t6": "Machine Learning: Fundamentals and Practical Applications"
+      },
+      "excerpt": {
+        "ex1": "An overview of how AI is transforming the business landscape in Saudi Arabia and its role in achieving Vision 2030",
+        "ex2": "A comprehensive guide to selecting the right tech solutions based on your organization’s needs and strategic goals",
+        "ex3": "Exploring the challenges and solutions related to data security when using AI technologies",
+        "ex4": "How AI contributes to improving healthcare quality and accelerating diagnosis and treatment",
+        "ex5": "Discover how AI can revolutionize customer service and increase satisfaction",
+        "ex6": "A comprehensive introduction to machine learning and how it can be applied to solve real business problems"
+      },
+      "author": {
+        "author1": "Dr. Ahmed Al-Mohammadi",
+        "author2": "Eng. Sarah Al-Otaibi",
+        "author3": "Dr. Khalid Al-Salem",
+        "author4": "Dr. Nora Al-Qahtani",
+        "author5": "Eng. Fahad Al-Dosari",
+        "author6": "Dr. Mohammed Al-Shahri"
+      },
+      "dateblg": {
+        "date1": "October 15, 2024",
+        "date2": "October 12, 2024",
+        "date3": "October 8, 2024",
+        "date4": "October 5, 2024",
+        "date5": "October 1, 2024",
+        "date6": "September 28, 2024"
+      },
+      "categorys": {
+        "cat1": "Artificial Intelligence",
+        "cat2": "Digital Transformation",
+        "cat3": "Cybersecurity",
+        "cat4": "Health",
+        "cat5": "Customer Service",
+        "cat6": "Machine Learning"
+      },
+      "images": {
+        "image1": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+        "image2": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+        "image3": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
+        "image4": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
+        "image5": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop",
+        "image6": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=600&fit=crop"
+      },
+      "readTime": {
+        "rt1": "5 min read",
+        "rt2": "7 min read",
+        "rt3": "6 min read",
+        "rt4": "8 min read",
+        "rt5": "5 min read",
+        "rt6": "10 min read"
+      }
+    }
+  },
+  "about": {
+    "abouttitle": "About Marahel",
+    "aboutdescription": "We are a Saudi company specialized in providing AI and digital transformation solutions.",
+    "story": {
+      "title": "Our Story",
+      "p1": "Marahel was founded with an ambitious vision to be the ideal partner for Saudi organizations on their digital transformation journey. We believe that artificial intelligence is the future, and we strive to empower organizations to leverage this advanced technology.",
+      "p2": "With a team of specialized experts, we deliver innovative and customized solutions that meet every client’s needs. We take pride in being part of Saudi Vision 2030 and contributing to building a prosperous digital future.",
+      "button": "Contact Us"
+    },
+    "message": {
+      "title": "Our Mission",
+      "description": "Empowering Saudi organizations to achieve digital transformation through innovative AI solutions and contributing to building an advanced digital economy aligned with Saudi Vision 2030."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the leading company in AI solutions in the Kingdom and the region, and the first choice for organizations striving for excellence in digital transformation."
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "The principles we believe in and operate upon.",
+      "values": {
+        "title": {
+          "t1": "Innovation",
+          "t2": "Excellence",
+          "t3": "Partnership",
+          "t4": "Transparency"
+        },
+        "desc": {
+          "d1": "We continuously strive to deliver innovative solutions that keep pace with the latest technological advancements.",
+          "d2": "We are committed to the highest standards of quality in all our services and solutions.",
+          "d3": "We believe in building long-term relationships with our clients and partners.",
+          "d4": "We operate with full transparency and aim to build trust with all stakeholders."
+        }
+      }
+    },
+    "Journey": {
+      "title": "Our Journey",
+      "description": "From foundation to leadership",
+      "item": {
+        "year": {
+          "y1": "2020",
+          "y2": "2021",
+          "y3": "2022",
+          "y4": "2023",
+          "y5": "2024"
+        },
+        "title": {
+          "t1": "Foundation",
+          "t2": "Expansion",
+          "t3": "Growth",
+          "t4": "Leadership",
+          "t5": "The Future"
+        },
+        "desc": {
+          "d1": "Marahel was established with the goal of providing AI solutions in Saudi Arabia.",
+          "d2": "Launched our first products and served over 50 clients.",
+          "d3": "Expanded our services and grew our team to over 30 experts.",
+          "d4": "Became one of the leading AI companies in the Kingdom.",
+          "d5": "Continuing innovation and development in support of Vision 2030."
+        }
       }
     }
   }

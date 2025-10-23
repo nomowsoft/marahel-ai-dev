@@ -12,10 +12,10 @@ const Solutions = () => {
     <section className="my-32 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <div className="mb-12 text-center">
         <h1 className="text-primary text-3xl sm:text-4xl md:text-5xl font-bold">
-          Industry Solutions
+          {t('titel')}
         </h1>
-        <p className="text-muted-foreground text-lg sm:text-xl mt-4 max-w-3xl mx-auto">
-         AI-powered solutions tailored for Saudi Arabia&apos;s key industries
+        <p className="text-muted-foreground text-lg sm:text-xl mt-4 max-w-4xl mx-auto">
+         {t('description')}
         </p>
       </div>
 
