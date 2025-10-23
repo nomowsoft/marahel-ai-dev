@@ -136,3 +136,51 @@ export type SolutionsItems = {
   titel: string;
   items: SolutionsList[];
 };
+
+export type GoalsVisions = {
+  id: number;
+  icon: LucideIcon;
+  title: string;
+  description: string; 
+  color: string;
+}
+
+type PillarsItems = {
+  title: string;
+}
+
+export type Pillars = {
+  id: number,
+  title: string;
+  description: string;
+  items: PillarsItems[];
+}
+
+export type Blogs = {
+  id: number;
+  title: string;
+  excerpt: string;
+  author: string;
+  date: string;
+  category: string;
+  image: string;
+  readTime: string;
+}
+export type Filter = {
+  id: number;
+  title: string;
+}
+export type Values = {
+  id: number;
+  icon: LucideIcon;
+  title: string;
+  description: string;
+
+}
+export type Timeline = {
+  id: number;
+  year: string;
+  title: string;
+  description: string;
+
+}

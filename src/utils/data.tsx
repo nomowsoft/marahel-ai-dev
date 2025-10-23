@@ -19,7 +19,13 @@ import {
   SolutionItem,
   BlogerItem,
   CompanyItem,
-  SolutionsItems
+  SolutionsItems,
+  GoalsVisions,
+  Pillars,
+  Blogs,
+  Filter,
+  Values,
+  Timeline
 } from "./types";
 import {
   Database, 
@@ -35,7 +41,11 @@ import {
   Lock,
   Users,
   TrendingUp,
-  Clock
+  Clock,
+  Rocket, 
+  Sparkles,
+  Target,
+  Eye
 } from "lucide-react";
 import { KnowledgeHubDemo } from "@/components/animations/file2";
 import { ChatbotDemo } from "@/components/animations/file3";
@@ -332,5 +342,238 @@ export const getSolutionsPage = (t: (key: string) => string): SolutionsItems[] =
       { id: 3, name: t('sol4.items.name3')},
       { id: 4, name: t('sol4.items.name4')},
     ],
+  },
+];
+
+
+export const getGoalsVisions = (t: (key: string) => string): GoalsVisions[] => [
+  {
+    id: 1,
+    icon: Rocket,
+    title: t('goals.title.t1'),
+    description: t('goals.desc.d1'),
+    color: "primary"
+  },
+  {
+    id: 2,
+    icon: TrendingUp,
+    title: t('goals.title.t2'),
+    description: t('goals.desc.d2'),
+    color: "secondary"
+  },
+  {
+    id: 3,
+    icon: Globe,
+    title: t('goals.title.t3'),
+    description: t('goals.desc.d3'),
+    color: "accent"
+  },
+  {
+    id: 4,
+    icon: Sparkles,
+    title: t('goals.title.t4'),
+    description: t('goals.desc.d4'),
+    color: "primary"
+  },
+  {
+    id: 5,
+    icon: Shield,
+    title: t('goals.title.t5'),
+    description: t('goals.desc.d5'),
+    color: "secondary"
+  },
+  {
+    id: 6,
+    icon: Users,
+    title: t('goals.title.t6'),
+    description: t('goals.desc.d6'),
+    color: "accent"
+  }
+];
+
+export const getPillars = (t: (key: string) => string): Pillars[] => [
+  {
+    id: 1,
+    title: t('success.title.t1'),
+    description: t('success.desc.d1'),
+    items: [
+      {title: t('success.list.ul1.l1')},
+      {title: t('success.list.ul1.l2')},
+      {title: t('success.list.ul1.l3')}
+    ]
+  },
+  {
+    id: 2,
+    title: t('success.title.t2'),
+    description: t('success.desc.d2'),
+    items: [
+      {title: t('success.list.ul2.l1')},
+      {title: t('success.list.ul2.l2')},
+      {title: t('success.list.ul2.l3')}
+    ]
+  },
+  {
+    id: 3,
+    title: t('success.title.t3'),
+    description: t('success.desc.d3'),
+    items: [
+      {title: t('success.list.ul3.l1')},
+      {title: t('success.list.ul3.l2')},
+      {title: t('success.list.ul3.l3')}
+    ]
+  },
+];
+
+export const getblogPosts = (t: (key: string) => string): Blogs[] => [
+  {
+    id: 1,
+    title: t('blog.title.t1'),
+    excerpt: t('blog.excerpt.ex1'),
+    author: t('blog.author.author1'),
+    date: t('blog.dateblg.date1'),
+    category: t('blog.categorys.cat1'),
+    image: t('blog.images.image1'),
+    readTime: t('blog.readTime.rt1'),
+  },
+  {
+    id: 2,
+    title: t('blog.title.t2'),
+    excerpt: t('blog.excerpt.ex2'),
+    author: t('blog.author.author2'),
+    date: t('blog.dateblg.date2'),
+    category: t('blog.categorys.cat2'),
+    image: t('blog.images.image2'),
+    readTime: t('blog.readTime.rt2'),
+  },
+  {
+    id: 3,
+    title: t('blog.title.t3'),
+    excerpt: t('blog.excerpt.ex3'),
+    author: t('blog.author.author3'),
+    date: t('blog.dateblg.date3'),
+    category: t('blog.categorys.cat3'),
+    image: t('blog.images.image3'),
+    readTime: t('blog.readTime.rt3'),
+  },
+  {
+    id: 4,
+    title: t('blog.title.t4'),
+    excerpt: t('blog.excerpt.ex4'),
+    author: t('blog.author.author4'),
+    date: t('blog.dateblg.date4'),
+    category: t('blog.categorys.cat4'),
+    image: t('blog.images.image4'),
+    readTime: t('blog.readTime.rt4'),
+  },
+  {
+    id: 5,
+    title: t('blog.title.t5'),
+    excerpt: t('blog.excerpt.ex5'),
+    author: t('blog.author.author5'),
+    date: t('blog.dateblg.date5'),
+    category: t('blog.categorys.cat5'),
+    image: t('blog.images.image5'),
+    readTime: t('blog.readTime.rt5'),
+  },
+  {
+    id: 6,
+    title: t('blog.title.t6'),
+    excerpt: t('blog.excerpt.ex6'),
+    author: t('blog.author.author6'),
+    date: t('blog.dateblg.date6'),
+    category: t('blog.categorys.cat6'),
+    image: t('blog.images.image6'),
+    readTime: t('blog.readTime.rt6'),
+  },
+];
+
+export const getFilter = (t: (key: string) => string): Filter[] => [
+  {
+    id: 1,
+    title: t('filter.f1')
+  },
+  {
+    id: 2,
+    title: t('filter.f2')
+  },
+  {
+    id: 3,
+    title: t('filter.f3')
+  },
+  {
+    id: 4,
+    title: t('filter.f4')
+  },
+  {
+    id: 5,
+    title: t('filter.f5')
+  },
+  {
+    id: 6,
+    title: t('filter.f6')
+  },
+  {
+    id: 7,
+    title: t('filter.f7')
+  }
+];
+
+export const getValues = (t: (key: string) => string): Values[] => [
+  {
+    id: 1,
+    icon: Target,
+    title: t('values.values.title.t1'),
+    description: t('values.values.desc.d1') 
+  },
+  {
+    id:2,
+    icon: Award,
+    title: t('values.values.title.t2'),
+    description: t('values.values.desc.d2')
+  },
+  {
+    id:3,
+    icon: Users,
+    title: t('values.values.title.t3'),
+    description: t('values.values.desc.d3') 
+  },
+  {
+    id:4,
+    icon: Eye,
+    title: t('values.values.title.t4'),
+    description: t('values.values.desc.d4') 
+  }
+];
+
+export const getTimeline = (t: (key: string) => string): Timeline[] => [
+  {
+    id: 1,
+    year: t('Journey.item.year.y1'),
+    title: t('Journey.item.title.t1'),
+    description: t('Journey.item.desc.d1')
+  },
+  {
+    id: 2,
+    year: t('Journey.item.year.y2'),
+    title: t('Journey.item.title.t2'),
+    description: t('Journey.item.desc.d2')
+  },
+  {
+    id: 3,
+    year: t('Journey.item.year.y3'),
+    title: t('Journey.item.title.t3'),
+    description: t('Journey.item.desc.d3')
+  },
+  {
+    id: 1,
+    year: t('Journey.item.year.y4'),
+    title: t('Journey.item.title.t4'),
+    description: t('Journey.item.desc.d4')
+  },
+  {
+    id: 1,
+    year: t('Journey.item.year.y5'),
+    title: t('Journey.item.title.t5'),
+    description: t('Journey.item.desc.d5')
   },
 ];
