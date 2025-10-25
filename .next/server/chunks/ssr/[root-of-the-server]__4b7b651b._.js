@@ -201,11 +201,11 @@ const getServices = (t)=>[
                         },
                         {
                             id: 2,
-                            text: t('LLMS.security.s2.items.i1')
+                            text: t('LLMS.security.s2.items.i2')
                         },
                         {
                             id: 3,
-                            text: t('LLMS.security.s2.items.i1')
+                            text: t('LLMS.security.s2.items.i3')
                         }
                     ]
                 }
@@ -366,11 +366,11 @@ const getServices = (t)=>[
                         },
                         {
                             id: 2,
-                            text: t('Readiness.security.s2.items.i1')
+                            text: t('Readiness.security.s2.items.i2')
                         },
                         {
                             id: 3,
-                            text: t('Readiness.security.s2.items.i1')
+                            text: t('Readiness.security.s2.items.i2')
                         }
                     ]
                 }
@@ -523,11 +523,11 @@ const getServices = (t)=>[
                         },
                         {
                             id: 2,
-                            text: t('Roadmap.security.s2.items.i1')
+                            text: t('Roadmap.security.s2.items.i2')
                         },
                         {
                             id: 3,
-                            text: t('Roadmap.security.s2.items.i1')
+                            text: t('Roadmap.security.s2.items.i3')
                         }
                     ]
                 }
@@ -1538,6 +1538,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$c
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$server$2f$useLocale$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__useLocale$3e$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-server/useLocale.js [app-rsc] (ecmascript) <export default as useLocale>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$server$2f$useTranslations$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__useTranslations$3e$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-server/useTranslations.js [app-rsc] (ecmascript) <export default as useTranslations>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__CircleCheckBig$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-rsc] (ecmascript) <export default as CircleCheckBig>");
+;
 ;
 ;
 ;
@@ -1564,17 +1566,17 @@ const ServiceDeliverablesOutcomes = ({ service })=>{
                     children: "service not found"
                 }, void 0, false, {
                     fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-                    lineNumber: 25,
+                    lineNumber: 26,
                     columnNumber: 21
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-                lineNumber: 24,
+                lineNumber: 25,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-            lineNumber: 23,
+            lineNumber: 24,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0));
     }
@@ -1591,12 +1593,12 @@ const ServiceDeliverablesOutcomes = ({ service })=>{
                             children: foundService.deliverablesaddress
                         }, void 0, false, {
                             fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-                            lineNumber: 37,
+                            lineNumber: 38,
                             columnNumber: 25
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-                        lineNumber: 36,
+                        lineNumber: 37,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1606,50 +1608,61 @@ const ServiceDeliverablesOutcomes = ({ service })=>{
                                 style: {
                                     animationDelay: `${index * 0.2}s`
                                 },
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
-                                        className: `absolute top-4 ${localeActive === 'ar' ? 'right-4' : 'left-4'} w-10 h-10 rounded-full bg-primary text-sm font-bold shadow-md text-primary-foreground`,
-                                        children: challenge.id
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-                                        lineNumber: 50,
-                                        columnNumber: 33
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: `mt-10 ${localeActive === 'ar' ? 'text-right' : 'text-left'}`,
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xl sm:text-base text-muted-foreground leading-relaxed",
-                                            children: challenge.text
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
+                                            className: `${localeActive === 'ar' ? 'right-4' : 'left-4'} w-10 h-10 rounded-full bg-primary text-sm font-bold shadow-md text-primary-foreground`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__CircleCheckBig$3e$__["CircleCheckBig"], {}, void 0, false, {
+                                                fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
+                                                lineNumber: 56,
+                                                columnNumber: 41
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 52,
+                                            columnNumber: 37
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `px-2 ${localeActive === 'ar' ? 'text-right' : 'text-left'}`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-xl sm:text-base text-muted-foreground leading-relaxed",
+                                                children: challenge.text
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
+                                                lineNumber: 60,
+                                                columnNumber: 41
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
+                                            lineNumber: 59,
                                             columnNumber: 37
                                         }, ("TURBOPACK compile-time value", void 0))
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-                                        lineNumber: 57,
-                                        columnNumber: 33
-                                    }, ("TURBOPACK compile-time value", void 0))
-                                ]
-                            }, index, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
+                                    lineNumber: 51,
+                                    columnNumber: 33
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, index, false, {
                                 fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-                                lineNumber: 43,
+                                lineNumber: 44,
                                 columnNumber: 29
                             }, ("TURBOPACK compile-time value", void 0)))
                     }, void 0, false, {
                         fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-                        lineNumber: 41,
+                        lineNumber: 42,
                         columnNumber: 21
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 17
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/app/[locale]/services/service_deliverables_outcomes.tsx",
-            lineNumber: 34,
+            lineNumber: 35,
             columnNumber: 13
         }, ("TURBOPACK compile-time value", void 0));
     }
@@ -1896,22 +1909,28 @@ const ServiceSecurity = ({ service })=>{
                                     columnNumber: 29
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 step.SecurityItem.map((step, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "my-2",
+                                        className: "my-2 flex items-center",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
-                                                className: "w-5 h-8 rounded-full bg-primary/30 text-sm font-bold shadow-md text-primary mx-2",
-                                                children: step.id
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-2 h-2 rounded-full bg-primary"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/[locale]/services/service_security.tsx",
+                                                    lineNumber: 52,
+                                                    columnNumber: 41
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/[locale]/services/service_security.tsx",
                                                 lineNumber: 51,
                                                 columnNumber: 37
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-muted-foreground text-sm leading-relaxed",
+                                                className: "text-muted-foreground text-sm leading-relaxed px-2",
                                                 children: step.text
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/[locale]/services/service_security.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 54,
                                                 columnNumber: 37
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
@@ -1939,7 +1958,7 @@ const ServiceSecurity = ({ service })=>{
                             children: foundService.footertitle
                         }, void 0, false, {
                             fileName: "[project]/src/app/[locale]/services/service_security.tsx",
-                            lineNumber: 65,
+                            lineNumber: 63,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1947,13 +1966,13 @@ const ServiceSecurity = ({ service })=>{
                             children: foundService.footertext
                         }, void 0, false, {
                             fileName: "[project]/src/app/[locale]/services/service_security.tsx",
-                            lineNumber: 68,
+                            lineNumber: 66,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/[locale]/services/service_security.tsx",
-                    lineNumber: 64,
+                    lineNumber: 62,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1965,7 +1984,7 @@ const ServiceSecurity = ({ service })=>{
                             children: foundService.button3
                         }, void 0, false, {
                             fileName: "[project]/src/app/[locale]/services/service_security.tsx",
-                            lineNumber: 74,
+                            lineNumber: 72,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
@@ -1975,13 +1994,13 @@ const ServiceSecurity = ({ service })=>{
                             children: foundService.button4
                         }, void 0, false, {
                             fileName: "[project]/src/app/[locale]/services/service_security.tsx",
-                            lineNumber: 82,
+                            lineNumber: 80,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/[locale]/services/service_security.tsx",
-                    lineNumber: 72,
+                    lineNumber: 70,
                     columnNumber: 17
                 }, ("TURBOPACK compile-time value", void 0))
             ]

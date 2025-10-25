@@ -308,20 +308,15 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
             {
                 id: 4,
                 icon: Share2,
-                text: t('morshed.features2.f3'),
+                text: t('morshed.features2.f4'),
             },
             {
                 id: 5,
                 icon: Share2,
-                text: t('morshed.features2.f4'),
-            },
-            {
-                id: 6,
-                icon: Share2,
                 text: t('morshed.features2.f5'),
             },
             {
-                id: 7,
+                id: 6,
                 icon: Share2,
                 text: t('morshed.features2.f6'),
             },
@@ -329,6 +324,11 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
                 id: 7,
                 icon: Share2,
                 text: t('morshed.features2.f7'),
+            },
+            {
+                id: 8,
+                icon: Share2,
+                text: t('morshed.features2.f8'),
             },
         ],
         work: [
@@ -496,20 +496,10 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
             {
                 id: 7,
                 icon: Share2,
-                text: t('rafiki.features2.f7'),
-            },
-            {
-                id: 8,
-                icon: Share2,
                 text: t('rafiki.features2.f8'),
             },
             {
-                id: 9,
-                icon: Share2,
-                text: t('rafiki.features2.f9'),
-            },
-            {
-                id: 10,
+                id: 8,
                 icon: Share2,
                 text: t('rafiki.features2.f10'),
             },
@@ -556,17 +546,11 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
             {
                 id: 2,
                 icon: Share2,
-                text: t('rafiki.performance.p2.text'),
-                description: t('rafiki.performance.p2.desc'),
-            },
-            {
-                id: 3,
-                icon: Share2,
                 text: t('rafiki.performance.p3.text'),
                 description: t('rafiki.performance.p3.desc'),
             },
             {
-                id: 4,
+                id: 3,
                 icon: Share2,
                 text: t('rafiki.performance.p4.text'),
                 description: t('rafiki.performance.p4.desc'),

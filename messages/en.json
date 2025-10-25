@@ -294,7 +294,7 @@
           }
         }
       },
-      "footerTitle": "Your knowledge. Answers in seconds.",
+      "footerTitle": "Unify Your Knowledge. Deliver Answers in Seconds.",
       "footerText": "Arabic‑ready today. Built for Saudi enterprises."
     },
     "morshed": {
@@ -311,13 +311,14 @@
         "f3": "Security by design and compliant with Saudi regulations"
       },
       "features2": {
-        "f1": "24/7 multi-channel support",
-        "f2": "Voice or text interaction (AR/EN)",
-        "f3": "Continuous learning via verified answers",
-        "f4": "Ready connectors: WhatsApp, Telegram, Website",
-        "f5": "Reliable answers from knowledge base",
-        "f6": "Agent handoff & conversation log to ticketing system",
-        "f7": "Analytics: intents, customer satisfaction, conversion"
+        "f1": "Always‑on customer support (24/7) across channels",
+        "f2": "Voice or text interaction (Arabic & English)",
+        "f3": "Continuous learning via answer‑validation methodology",
+        "f4": "Pre‑built connectors: WhatsApp, Telegram, Website",
+        "f5": "Fast, reliable answers with retrieval from your knowledge base",
+        "f6": "Agent handoff and conversation history into your support desk",
+        "f7": "Analytics on intents, satisfaction, and deflection",
+        "f8": "Secure deployment and in‑Kingdom hosting options"
       },
       "work": {
         "w1": {
@@ -383,21 +384,21 @@
       "footerText": "Morshed learns, escalates, and resolves—securely and bilingual."
     },
     "rafiki": {
-      "title": "Rafiki — Event & Exhibition Concierge",
-      "description": "Bilingual AR/EN concierge plans your day, guides indoor navigation, translates booth info, and captures leads — powered by Marahel AINE & real-time analytics.",
+      "title": "Rafiki — Event & Exhibition Companion",
+      "description": "Bilingual AR/EN Companion plans your day, guides indoor navigation, translates booth info, and captures leads — powered by Marahel AINE & real-time analytics.",
       "features": {
         "f1": "Seamless Navigation",
-        "f2": "Self-planning Day",
+        "f2": "A Day That Plans Itself",
         "f3": "Bilingual Concierge"
       },
       "featuresDesc": {
-        "f1": "Step-by-step indoor routing with smart pathing to reduce congestion",
-        "f2": "Build personal schedule from sessions, booths, key meetings",
-        "f3": "AR/EN chat, booth summaries, instant translations"
+        "f1": "Turn‑by‑turn indoor routing with crowd‑aware paths for faster visits.",
+        "f2": "Builds a personal agenda from sessions, booths, and meetings you care about.",
+        "f3": "Arabic ↔ English chat, booth summaries, and on‑the‑spot translations."
       },
       "features2": {
         "f1": "AINE navigation layers MSP/MPE/MORE",
-        "f2": "Smart schedule builder; conflict detection & alerts",
+        "f2": "Smart agenda builder; conflict detection & alerts",
         "f3": "Lead capture: QR scan, notes, photos; CRM export",
         "f4": "Match booths/sessions by interest & time",
         "f5": "Bilingual concierge chat (AR/EN)",
@@ -426,7 +427,7 @@
         },
         "w5": {
           "text": "Integrations",
-          "desc": "Tickets • SSO • APIs"
+          "desc": "• SSO • APIs"
         }
       },
       "performance": {
