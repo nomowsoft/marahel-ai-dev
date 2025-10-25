@@ -65,7 +65,7 @@ export const Challenges: React.FC = () => {
           })}
         </div>
 
-        <div className="text-center">
+        {/* <div className="text-center">
           <Button
             size="lg"
             className="bg-primary hover:bg-primary/90 rounded-xl text-primary-foreground glow-primary"
@@ -73,7 +73,7 @@ export const Challenges: React.FC = () => {
             <Download className="ml-2 h-5 w-5" />
             {t('button')}
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

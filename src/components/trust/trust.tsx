@@ -51,7 +51,7 @@ export const Trust: FC = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
@@ -66,9 +66,6 @@ export const Trust: FC = () => {
               <div className="text-muted-foreground font-medium">{stat.label}</div>
             </div>
           ))}
-        </div>
-        <div className="w-full h-[400px] animate-fade-in mt-10" style={{ animationDelay: "0.4s" }}>
-          <MetricsDemo />
         </div>
       </div>
     </section>

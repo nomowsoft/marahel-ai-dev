@@ -239,11 +239,11 @@ export const getServices = (t: (key: string) => string): ServicesItem[] => [
                     },
                     {
                         id:2,
-                        text: t('LLMS.security.s2.items.i1')
+                        text: t('LLMS.security.s2.items.i2')
                     },
                     {
                         id:3,
-                        text: t('LLMS.security.s2.items.i1')
+                        text: t('LLMS.security.s2.items.i3')
                     },
                 ]
             }
@@ -404,11 +404,11 @@ export const getServices = (t: (key: string) => string): ServicesItem[] => [
                     },
                     {
                         id:2,
-                        text: t('Readiness.security.s2.items.i1')
+                        text: t('Readiness.security.s2.items.i2')
                     },
                     {
                         id:3,
-                        text: t('Readiness.security.s2.items.i1')
+                        text: t('Readiness.security.s2.items.i2')
                     },
                 ]
             }
@@ -561,11 +561,11 @@ export const getServices = (t: (key: string) => string): ServicesItem[] => [
                     },
                     {
                         id:2,
-                        text: t('Roadmap.security.s2.items.i1')
+                        text: t('Roadmap.security.s2.items.i2')
                     },
                     {
                         id:3,
-                        text: t('Roadmap.security.s2.items.i1')
+                        text: t('Roadmap.security.s2.items.i3')
                     },
                 ]
             }

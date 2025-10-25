@@ -207,3 +207,14 @@ export type ContactInfo = {
   content: string;
   link: string;
 }
+
+type Itemsolution = {
+  id: number;
+  name: string;
+}
+export type SolutionHome = {
+  id: number;
+  icon: LucideIcon;
+  title: string;
+  content: Itemsolution[];
+}

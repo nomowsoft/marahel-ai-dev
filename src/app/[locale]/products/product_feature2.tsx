@@ -3,6 +3,7 @@ import { ProductsItem, getProducts } from "@/utils/data_products/data_ai";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useLocale, useTranslations } from "next-intl";
+import { CircleCheckBig } from "lucide-react";
 
 interface ProductFeatureProps {
     product: ProductsItem;
@@ -50,17 +51,19 @@ const ProductFeature2: React.FC<ProductFeatureProps> = ({ product }) => {
                      group hover:scale-[1.03] animate-slide-up"
                             style={{ animationDelay: `${index * 0.2}s` }}
                         >
-                            <Button
-                                className={`absolute top-4 ${localeActive === 'ar' ? 'right-4' : 'left-4'
-                                    } w-10 h-10 rounded-full bg-primary text-sm font-bold shadow-md text-primary-foreground`}
-                            >
-                                {challenge.id}
-                            </Button>
+                            <div className="flex items-center">
+                                <Button
+                                    className={`${localeActive === 'ar' ? 'right-4' : 'left-4'
+                                        } w-10 h-10 rounded-full bg-primary text-sm font-bold shadow-md text-primary-foreground`}
+                                >
+                                    <CircleCheckBig />
+                                </Button>
 
-                            <div className={`mt-10 ${localeActive === 'ar' ? 'text-right' : 'text-left'}`}>
-                                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                                    {challenge.text}
-                                </p>
+                                <div className={`px-2 ${localeActive === 'ar' ? 'text-right' : 'text-left'}`}>
+                                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                                        {challenge.text}
+                                    </p>
+                                </div>
                             </div>
                         </Card>
                     ))}

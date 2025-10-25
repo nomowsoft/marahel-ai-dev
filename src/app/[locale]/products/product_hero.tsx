@@ -53,14 +53,14 @@ const ProductHero: React.FC<ProductHeroProps> = ({ product }) => {
                             </Button>
 
                             {/* Outline Button */}
-                            <Button
+                            {/* <Button
                                 size="lg"
                                 variant="outline"
                                 className="w-full sm:w-auto text-muted-foreground border-2 rounded-xl border-primary/50 hover:bg-primary/10 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 group text-center"
                             >
                                 <Play className="ml-2 h-5 w-5" />
                                 {t('downloadbutton')}
-                            </Button>
+                            </Button> */}
                         </div>
                     </div>
                     {/* Left side: Demo */}

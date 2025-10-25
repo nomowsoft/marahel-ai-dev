@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">{t('products')}</h3>
             <ul className="space-y-2 text-sm">
-              {productsfooter.map((item) => (
+              {solutions.map((item) => (
                 <li key={item.name}>
                   <Link
                     href="#"
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">{t('solutions')}</h3>
             <ul className="space-y-2 text-sm">
-              {solutions.map(
+              {productsfooter.map(
                 (solution) => (
                   <li key={solution.name}>
                     <Link

@@ -27,7 +27,8 @@ import {
   Values,
   Timeline,
   Jobs,
-  ContactInfo
+  ContactInfo,
+  SolutionHome
 } from "./types";
 import {
   Database, 
@@ -50,7 +51,11 @@ import {
   Eye,
   Mail, 
   Phone, 
-  MapPin
+  MapPin,
+  Heart,
+  Landmark,
+  Building2,
+  Radio
 } from "lucide-react";
 import { KnowledgeHubDemo } from "@/components/animations/file2";
 import { ChatbotDemo } from "@/components/animations/file3";
@@ -132,11 +137,6 @@ export const gethero = (t: (key: string) => string): Hero[] => [
         icon: <Shield className="w-7 h-7 sm:w-8 sm:h-8 text-secondary" />,
         label: t('Herolabale2'),
         bg: "bg-secondary/10",
-    },
-    {
-        icon: <Zap className="w-7 h-7 sm:w-8 sm:h-8 text-accent" />,
-        label: t('Herolabale3'),
-        bg: "bg-accent/10",
     },
     {
         icon: <Globe className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />,
@@ -245,7 +245,6 @@ export const getCertifications = (t: (key: string) => string): Certification[] =
 export const getStats = (t: (key: string) => string): Stat[] => [
   { value: "99.9%", label: t('label1'), color: "primary" },
   { value: "0", label: t('label2'), color: "secondary" },
-  { value: "<10ms", label: t('label3'), color: "accent" },
   { value: "24/7", label: t('label4'), color: "primary" },
 ];
 
@@ -809,4 +808,98 @@ export const getContactInfo = (t: (key: string) => string): ContactInfo[] => [
       content: t('contactusinfo.content.c4'),
       link: ""
     }
+  ];
+export const getSolutionHome = (t: (key: string) => string): SolutionHome[] => [
+    {
+      id:1,
+      icon: Building2,
+      title: t('items.title.t1'),
+      content: [
+        {
+          id: 1,
+          name: t('items.description.d1.li1')
+        },
+        {
+          id: 2,
+          name: t('items.description.d1.li2')
+        },
+        {
+          id: 3,
+          name: t('items.description.d1.li3')
+        },
+        {
+          id: 4,
+          name: t('items.description.d1.li4')
+        }
+      ],
+    },
+    {
+      id:2,
+      icon: Heart,
+      title: t('items.title.t2'),
+      content: [
+        {
+          id: 1,
+          name: t('items.description.d2.li1')
+        },
+        {
+          id: 2,
+          name: t('items.description.d2.li2')
+        },
+        {
+          id: 3,
+          name: t('items.description.d2.li3')
+        },
+        {
+          id: 4,
+          name: t('items.description.d2.li4')
+        }
+      ],
+    },
+    {
+      id:3,
+      icon: Landmark,
+      title: t('items.title.t3'),
+      content: [
+        {
+          id: 1,
+          name: t('items.description.d3.li1')
+        },
+        {
+          id: 2,
+          name: t('items.description.d3.li2')
+        },
+        {
+          id: 3,
+          name: t('items.description.d3.li3')
+        },
+        {
+          id: 4,
+          name: t('items.description.d3.li4')
+        }
+      ],
+    },
+    {
+      id:4,
+      icon: Radio,
+      title: t('items.title.t4'),
+      content: [
+        {
+          id: 1,
+          name: t('items.description.d4.li1')
+        },
+        {
+          id: 2,
+          name: t('items.description.d4.li2')
+        },
+        {
+          id: 3,
+          name: t('items.description.d4.li3')
+        },
+        {
+          id: 4,
+          name: t('items.description.d4.li4')
+        }
+      ],
+    },
   ];

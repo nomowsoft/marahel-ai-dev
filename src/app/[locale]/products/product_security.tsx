@@ -48,13 +48,11 @@ const ProductSecurity: React.FC<ProductSecurityProps> = ({ product }) => {
                                 {step.title}
                             </h3>
                             {step.SecurityItem.map((step, index) => (
-                                <div key={index} className="my-2">
-                                    <Button
-                                        className="w-5 h-8 rounded-full bg-primary/30 text-sm font-bold shadow-md text-primary mx-2"
-                                    >
-                                        {step.id}
-                                    </Button>
-                                    <span className="text-muted-foreground text-sm leading-relaxed">
+                                <div key={index} className="my-2 flex items-center">
+                                    <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                        <div className="w-2 h-2 rounded-full bg-primary" />
+                                    </div>
+                                    <span className="text-muted-foreground text-sm leading-relaxed px-2">
                                         {step.text}
                                     </span>
                                 </div>
@@ -81,13 +79,13 @@ const ProductSecurity: React.FC<ProductSecurityProps> = ({ product }) => {
                     </Button>
 
                     {/* Outline Button */}
-                    <Button
+                    {/* <Button
                         size="lg"
                         variant="outline"
                         className="w-full sm:w-auto text-muted-foreground border-2 rounded-xl border-primary/50 hover:bg-primary/10 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 group text-center"
                     >
                         {t('downloadbutton')}
-                    </Button>
+                    </Button> */}
                 </div>
             </div>
         </section>
