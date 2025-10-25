@@ -6,9 +6,13 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { getContactInfo } from "@/utils/data";
 import { toast } from 'react-toastify';
 
 const Contact = () => {
+  const t = useTranslations("contactus");
+  const contactInfo = getContactInfo(t);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -36,46 +40,18 @@ const Contact = () => {
       [e.target.name]: e.target.value
     });
   };
-
-  const contactInfo = [
-    {
-      icon: Mail,
-      title: "البريد الإلكتروني",
-      content: "info@marahelai.com",
-      link: "mailto:info@marahelai.com"
-    },
-    {
-      icon: Phone,
-      title: "الهاتف",
-      content: "+966 11 234 5678",
-      link: "tel:+966112345678"
-    },
-    {
-      icon: MapPin,
-      title: "العنوان",
-      content: "الرياض، المملكة العربية السعودية",
-      link: null
-    },
-    {
-      icon: Clock,
-      title: "ساعات العمل",
-      content: "الأحد - الخميس: 9:00 ص - 5:00 م",
-      link: null
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-        <div className="container mx-auto relative z-10">
-          <div className="max-w-3xl">
+        <div className="container mx-auto relative z-10 text-center">
+          <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-l from-primary to-primary/60 bg-clip-text text-primary">
-              تواصل معنا
+              {t('title')}
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              نحن هنا لمساعدتك في رحلتك نحو التحول الرقمي بالذكاء الاصطناعي. تواصل معنا اليوم لمناقشة احتياجاتك.
+              {t('description')}
             </p>
           </div>
         </div>
@@ -114,23 +90,23 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Form */}
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-foreground">أرسل لنا رسالة</h2>
+              <h2 className="text-3xl font-bold mb-6 text-foreground">{t('form.title')}</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name" className="text-foreground">الاسم *</Label>
+                    <Label htmlFor="name" className="text-foreground">{t('form.filedname')}</Label>
                     <Input
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      placeholder="أدخل اسمك الكامل"
+                      placeholder={t('form.placeholdername')}
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-foreground">البريد الإلكتروني *</Label>
+                    <Label htmlFor="email" className="text-foreground">{t('form.filedemail')}</Label>
                     <Input
                       id="email"
                       name="email"
@@ -138,50 +114,50 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      placeholder="example@email.com"
+                      placeholder={t('form.placeholderemail')}
                     />
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="company" className="text-foreground">الشركة</Label>
+                    <Label htmlFor="company" className="text-foreground">{t('form.filedcompany')}</Label>
                     <Input
                       id="company"
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      placeholder="اسم الشركة (اختياري)"
+                      placeholder={t('form.placeholdercompany')}
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-foreground">رقم الهاتف</Label>
+                    <Label htmlFor="phone" className="text-foreground">{t('form.filedphone')}</Label>
                     <Input
                       id="phone"
                       name="phone"
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+966 XX XXX XXXX"
+                      placeholder={t('form.placeholderphone')}
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="subject" className="text-foreground">الموضوع *</Label>
+                  <Label htmlFor="subject" className="text-foreground">{t('form.filedsubject')}</Label>
                   <Input
                     id="subject"
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    placeholder="ما هو موضوع رسالتك؟"
+                    placeholder={t('form.placeholdersubject')}
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-foreground">الرسالة *</Label>
+                  <Label htmlFor="message" className="text-foreground">{t('form.filedmessage')}</Label>
                   <Textarea
                     id="message"
                     name="message"
@@ -189,14 +165,14 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={6}
-                    placeholder="اكتب رسالتك هنا..."
+                    placeholder={t('form.placeholdermessage')}
                     className="resize-none"
                   />
                 </div>
 
                 <Button type="submit" size="lg" className="w-full md:w-auto">
                   <Send className="ml-2 h-4 w-4" />
-                  إرسال الرسالة
+                  {t('form.button')}
                 </Button>
               </form>
             </div>
@@ -204,45 +180,45 @@ const Contact = () => {
             {/* Additional Info */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold mb-6 text-foreground">كيف يمكننا مساعدتك؟</h2>
+                <h2 className="text-3xl font-bold mb-6 text-foreground">{t('help.title')}</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    نحن متحمسون للاستماع إليك ومساعدتك في استكشاف إمكانيات الذكاء الاصطناعي لأعمالك.
+                    {t('help.description1')}
                   </p>
                   <p>
-                    سواء كنت تبحث عن استشارة، أو تريد معرفة المزيد عن خدماتنا، أو لديك مشروع محدد في ذهنك، فريقنا جاهز للرد على استفساراتك.
+                    {t('help.description2')}
                   </p>
                 </div>
               </div>
 
               <Card className="bg-primary/5 border-primary/20">
                 <CardContent className="pt-6">
-                  <h3 className="font-bold text-xl mb-4">الدعم الفني</h3>
+                  <h3 className="font-bold text-xl mb-4">{t('support.title')}</h3>
                   <p className="text-muted-foreground mb-4">
-                    هل تحتاج إلى مساعدة تقنية عاجلة؟ فريق الدعم الفني متاح لمساعدتك.
+                   {t('support.description')}
                   </p>
                   <Button variant="outline" className="w-full">
-                    تواصل مع الدعم الفني
+                    {t('support.button')}
                   </Button>
                 </CardContent>
               </Card>
 
               <Card className="bg-muted/50">
                 <CardContent className="pt-6">
-                  <h3 className="font-bold text-xl mb-4">احجز استشارة</h3>
+                  <h3 className="font-bold text-xl mb-4">{t('book.title')}</h3>
                   <p className="text-muted-foreground mb-4">
-                    احصل على استشارة مجانية مع خبرائنا لمناقشة احتياجاتك وأهدافك.
+                    {t('book.description')}
                   </p>
                   <Button className="w-full">
-                    احجز موعدًا
+                    {t('book.button')}
                   </Button>
                 </CardContent>
               </Card>
 
               <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-6 rounded-lg">
-                <h3 className="font-bold text-xl mb-4 text-foreground">متابعتنا على وسائل التواصل</h3>
+                <h3 className="font-bold text-xl mb-4 text-foreground">{t('socialmedia.title')}</h3>
                 <p className="text-muted-foreground mb-4">
-                  تابعنا للحصول على آخر الأخبار والتحديثات حول الذكاء الاصطناعي
+                  {t('socialmedia.description')}
                 </p>
                 <div className="flex gap-4">
                   <Button variant="outline" size="icon" className="rounded-full text-primary">

@@ -5,7 +5,7 @@
   "static/chunks/src_57fb2d35._.js",
   "static/chunks/node_modules_next_d961a7b8._.js",
   "static/chunks/node_modules_tailwind-merge_dist_bundle-mjs_mjs_56b6fd65._.js",
-  "static/chunks/node_modules_b74afe01._.js"
+  "static/chunks/node_modules_851f0931._.js"
 ],
     source: "dynamic"
 });

@@ -1312,6 +1312,8 @@ const EventNavigationDemo = ()=>{
 "use strict";
 
 __turbopack_context__.s([
+    "getBenefits",
+    ()=>getBenefits,
     "getBlogerMenu",
     ()=>getBlogerMenu,
     "getCertifications",
@@ -1322,6 +1324,8 @@ __turbopack_context__.s([
     ()=>getCompany,
     "getCompanyMenu",
     ()=>getCompanyMenu,
+    "getContactInfo",
+    ()=>getContactInfo,
     "getDemomessage",
     ()=>getDemomessage,
     "getDocuments",
@@ -1332,6 +1336,8 @@ __turbopack_context__.s([
     ()=>getFilter,
     "getGoalsVisions",
     ()=>getGoalsVisions,
+    "getJobs",
+    ()=>getJobs,
     "getMenuItem",
     ()=>getMenuItem,
     "getMetric",
@@ -1386,6 +1392,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-ssr] (ecmascript) <export default as Sparkles>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/target.js [app-ssr] (ecmascript) <export default as Target>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/eye.js [app-ssr] (ecmascript) <export default as Eye>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-ssr] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/phone.js [app-ssr] (ecmascript) <export default as Phone>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-ssr] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file2$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/animations/file2.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file3$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/animations/file3.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/animations/file.tsx [app-ssr] (ecmascript)");
@@ -1411,7 +1420,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-primary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 67,
+                lineNumber: 72,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-primary/10",
@@ -1426,7 +1435,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-secondary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 76,
+                lineNumber: 81,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-secondary/10",
@@ -1441,7 +1450,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-accent"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 85,
+                lineNumber: 90,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-accent/10",
@@ -1517,7 +1526,7 @@ const gethero = (t)=>[
                 children: "KSA"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 119,
+                lineNumber: 124,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale1'),
@@ -1528,7 +1537,7 @@ const gethero = (t)=>[
                 className: "w-7 h-7 sm:w-8 sm:h-8 text-secondary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 127,
+                lineNumber: 132,
                 columnNumber: 15
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale2'),
@@ -1539,7 +1548,7 @@ const gethero = (t)=>[
                 className: "w-7 h-7 sm:w-8 sm:h-8 text-accent"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 132,
+                lineNumber: 137,
                 columnNumber: 15
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale3'),
@@ -1550,7 +1559,7 @@ const gethero = (t)=>[
                 className: "w-7 h-7 sm:w-8 sm:h-8 text-primary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 137,
+                lineNumber: 142,
                 columnNumber: 15
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale4'),
@@ -1571,7 +1580,7 @@ const getProducts = (t)=>[
             color: "primary",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file2$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["KnowledgeHubDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 155,
+                lineNumber: 160,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         },
@@ -1588,7 +1597,7 @@ const getProducts = (t)=>[
             color: "secondary",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file3$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ChatbotDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 168,
+                lineNumber: 173,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         },
@@ -1605,7 +1614,7 @@ const getProducts = (t)=>[
             color: "accent",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["EventNavigationDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 181,
+                lineNumber: 186,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         }
@@ -1658,7 +1667,7 @@ const getCertifications = (t)=>[
                     children: "KSA"
                 }, void 0, false, {
                     fileName: "[project]/src/utils/data.tsx",
-                    lineNumber: 230,
+                    lineNumber: 235,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
             title: t('title4'),
@@ -2189,6 +2198,226 @@ const getTimeline = (t)=>[
             year: t('Journey.item.year.y5'),
             title: t('Journey.item.title.t5'),
             description: t('Journey.item.desc.d5')
+        }
+    ];
+const getJobs = (t)=>[
+        {
+            id: 1,
+            title: t('jobs.name.n1'),
+            description: t('jobs.description.desc1'),
+            department: t('jobs.department.dept1'),
+            location: t('jobs.location.loc1'),
+            type: t('jobs.type.ty1'),
+            requirements: [
+                {
+                    id: 1,
+                    text: t('jobs.requirments.req4.r1')
+                },
+                {
+                    id: 2,
+                    text: t('jobs.requirments.req1.r2')
+                },
+                {
+                    id: 3,
+                    text: t('jobs.requirments.req1.r3')
+                },
+                {
+                    id: 4,
+                    text: t('jobs.requirments.req1.r4')
+                }
+            ]
+        },
+        {
+            id: 2,
+            title: t('jobs.name.n2'),
+            description: t('jobs.description.desc2'),
+            department: t('jobs.department.dept2'),
+            location: t('jobs.location.loc2'),
+            type: t('jobs.type.ty2'),
+            requirements: [
+                {
+                    id: 1,
+                    text: t('jobs.requirments.req2.r1')
+                },
+                {
+                    id: 2,
+                    text: t('jobs.requirments.req2.r2')
+                },
+                {
+                    id: 3,
+                    text: t('jobs.requirments.req2.r3')
+                },
+                {
+                    id: 4,
+                    text: t('jobs.requirments.req2.r4')
+                }
+            ]
+        },
+        {
+            id: 3,
+            title: t('jobs.name.n3'),
+            description: t('jobs.description.desc3'),
+            department: t('jobs.department.dept3'),
+            location: t('jobs.location.loc3'),
+            type: t('jobs.type.ty3'),
+            requirements: [
+                {
+                    id: 1,
+                    text: t('jobs.requirments.req3.r1')
+                },
+                {
+                    id: 2,
+                    text: t('jobs.requirments.req3.r2')
+                },
+                {
+                    id: 3,
+                    text: t('jobs.requirments.req3.r3')
+                },
+                {
+                    id: 4,
+                    text: t('jobs.requirments.req3.r4')
+                }
+            ]
+        },
+        {
+            id: 4,
+            title: t('jobs.name.n4'),
+            description: t('jobs.description.desc4'),
+            department: t('jobs.department.dept4'),
+            location: t('jobs.location.loc4'),
+            type: t('jobs.type.ty4'),
+            requirements: [
+                {
+                    id: 1,
+                    text: t('jobs.requirments.req4.r1')
+                },
+                {
+                    id: 2,
+                    text: t('jobs.requirments.req4.r2')
+                },
+                {
+                    id: 3,
+                    text: t('jobs.requirments.req4.r3')
+                },
+                {
+                    id: 4,
+                    text: t('jobs.requirments.req4.r4')
+                }
+            ]
+        },
+        {
+            id: 5,
+            title: t('jobs.name.n5'),
+            description: t('jobs.description.desc5'),
+            department: t('jobs.department.dept5'),
+            location: t('jobs.location.loc5'),
+            type: t('jobs.type.ty5'),
+            requirements: [
+                {
+                    id: 1,
+                    text: t('jobs.requirments.req5.r1')
+                },
+                {
+                    id: 2,
+                    text: t('jobs.requirments.req5.r2')
+                },
+                {
+                    id: 3,
+                    text: t('jobs.requirments.req5.r3')
+                },
+                {
+                    id: 4,
+                    text: t('jobs.requirments.req5.r4')
+                }
+            ]
+        },
+        {
+            id: 6,
+            title: t('jobs.name.n6'),
+            description: t('jobs.description.desc6'),
+            department: t('jobs.department.dept6'),
+            location: t('jobs.location.loc6'),
+            type: t('jobs.type.ty6'),
+            requirements: [
+                {
+                    id: 1,
+                    text: t('jobs.requirments.req6.r1')
+                },
+                {
+                    id: 2,
+                    text: t('jobs.requirments.req6.r2')
+                },
+                {
+                    id: 3,
+                    text: t('jobs.requirments.req6.r3')
+                },
+                {
+                    id: 4,
+                    text: t('jobs.requirments.req6.r4')
+                }
+            ]
+        }
+    ];
+const getBenefits = (t)=>[
+        {
+            id: 1,
+            name: t('Benefits.name.n1'),
+            description: t('Benefits.description.d1')
+        },
+        {
+            id: 2,
+            name: t('Benefits.name.n2'),
+            description: t('Benefits.description.d2')
+        },
+        {
+            id: 3,
+            name: t('Benefits.name.n3'),
+            description: t('Benefits.description.d3')
+        },
+        {
+            id: 4,
+            name: t('Benefits.name.n4'),
+            description: t('Benefits.description.d4')
+        },
+        {
+            id: 5,
+            name: t('Benefits.name.n5'),
+            description: t('Benefits.description.d5')
+        },
+        {
+            id: 6,
+            name: t('Benefits.name.n6'),
+            description: t('Benefits.description.d6')
+        }
+    ];
+const getContactInfo = (t)=>[
+        {
+            id: 1,
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"],
+            title: t('contactusinfo.title.t1'),
+            content: t('contactusinfo.content.c1'),
+            link: "mailto:info@marahelai.com"
+        },
+        {
+            id: 2,
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"],
+            title: t('contactusinfo.title.t3'),
+            content: t('contactusinfo.content.c2'),
+            link: "tel:+966112345678"
+        },
+        {
+            id: 3,
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"],
+            title: t('contactusinfo.title.t3'),
+            content: t('contactusinfo.content.c3'),
+            link: ""
+        },
+        {
+            id: 4,
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"],
+            title: t('contactusinfo.title.t4'),
+            content: t('contactusinfo.content.c4'),
+            link: ""
         }
     ];
 }),

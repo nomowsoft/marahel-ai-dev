@@ -25,7 +25,9 @@ import {
   Blogs,
   Filter,
   Values,
-  Timeline
+  Timeline,
+  Jobs,
+  ContactInfo
 } from "./types";
 import {
   Database, 
@@ -45,7 +47,10 @@ import {
   Rocket, 
   Sparkles,
   Target,
-  Eye
+  Eye,
+  Mail, 
+  Phone, 
+  MapPin
 } from "lucide-react";
 import { KnowledgeHubDemo } from "@/components/animations/file2";
 import { ChatbotDemo } from "@/components/animations/file3";
@@ -577,3 +582,231 @@ export const getTimeline = (t: (key: string) => string): Timeline[] => [
     description: t('Journey.item.desc.d5')
   },
 ];
+
+type Benefits = {
+  id: number;
+  name: string;
+  description: string;
+}
+export const getJobs = (t: (key: string) => string): Jobs[] => [
+    {
+      id: 1,
+      title: t('jobs.name.n1'),
+      description: t('jobs.description.desc1'),
+      department: t('jobs.department.dept1'),
+      location: t('jobs.location.loc1'),
+      type: t('jobs.type.ty1'),
+      requirements: [
+        {
+          id:1,
+          text:t('jobs.requirments.req4.r1')
+        },
+        {
+          id:2,
+          text:t('jobs.requirments.req1.r2')
+        },
+        {
+          id:3,
+          text:t('jobs.requirments.req1.r3')
+        },
+        {
+          id:4,
+          text:t('jobs.requirments.req1.r4')
+        },
+      ]
+    },
+    {
+      id: 2,
+      title: t('jobs.name.n2'),
+      description: t('jobs.description.desc2'),
+      department: t('jobs.department.dept2'),
+      location: t('jobs.location.loc2'),
+      type: t('jobs.type.ty2'),
+      requirements: [
+        {
+          id:1,
+          text:t('jobs.requirments.req2.r1')
+        },
+        {
+          id:2,
+          text:t('jobs.requirments.req2.r2')
+        },
+        {
+          id:3,
+          text:t('jobs.requirments.req2.r3')
+        },
+        {
+          id:4,
+          text:t('jobs.requirments.req2.r4')
+        },
+      ]
+    },
+    {
+      id: 3,
+      title: t('jobs.name.n3'),
+      description: t('jobs.description.desc3'),
+      department: t('jobs.department.dept3'),
+      location: t('jobs.location.loc3'),
+      type: t('jobs.type.ty3'),
+      requirements: [
+        {
+          id:1,
+          text:t('jobs.requirments.req3.r1')
+        },
+        {
+          id:2,
+          text:t('jobs.requirments.req3.r2')
+        },
+        {
+          id:3,
+          text:t('jobs.requirments.req3.r3')
+        },
+        {
+          id:4,
+          text:t('jobs.requirments.req3.r4')
+        },
+      ]
+    },
+    {
+      id: 4,
+      title: t('jobs.name.n4'),
+      description: t('jobs.description.desc4'),
+      department: t('jobs.department.dept4'),
+      location: t('jobs.location.loc4'),
+      type: t('jobs.type.ty4'),
+      requirements: [
+        {
+          id:1,
+          text:t('jobs.requirments.req4.r1')
+        },
+        {
+          id:2,
+          text:t('jobs.requirments.req4.r2')
+        },
+        {
+          id:3,
+          text:t('jobs.requirments.req4.r3')
+        },
+        {
+          id:4,
+          text:t('jobs.requirments.req4.r4')
+        },
+      ]
+    },
+    {
+      id: 5,
+      title: t('jobs.name.n5'),
+      description: t('jobs.description.desc5'),
+      department: t('jobs.department.dept5'),
+      location: t('jobs.location.loc5'),
+      type: t('jobs.type.ty5'),
+      requirements: [
+        {
+          id:1,
+          text:t('jobs.requirments.req5.r1')
+        },
+        {
+          id:2,
+          text:t('jobs.requirments.req5.r2')
+        },
+        {
+          id:3,
+          text:t('jobs.requirments.req5.r3')
+        },
+        {
+          id:4,
+          text:t('jobs.requirments.req5.r4')
+        },
+      ]
+    },
+    {
+      id: 6,
+      title: t('jobs.name.n6'),
+      description: t('jobs.description.desc6'),
+      department: t('jobs.department.dept6'),
+      location: t('jobs.location.loc6'),
+      type: t('jobs.type.ty6'),
+      requirements: [
+        {
+          id:1,
+          text:t('jobs.requirments.req6.r1')
+        },
+        {
+          id:2,
+          text:t('jobs.requirments.req6.r2')
+        },
+        {
+          id:3,
+          text:t('jobs.requirments.req6.r3')
+        },
+        {
+          id:4,
+          text:t('jobs.requirments.req6.r4')
+        },
+      ]
+    },
+  ];
+
+export const getBenefits = (t: (key: string) => string): Benefits[] => [
+    {
+      id:1,
+      name: t('Benefits.name.n1'),
+      description: t('Benefits.description.d1')
+    },
+    {
+      id:2,
+      name: t('Benefits.name.n2'),
+      description: t('Benefits.description.d2')
+    },
+    {
+      id:3,
+      name: t('Benefits.name.n3'),
+      description: t('Benefits.description.d3')
+    },
+    {
+      id:4,
+      name: t('Benefits.name.n4'),
+      description: t('Benefits.description.d4')
+    },
+    {
+      id:5,
+      name: t('Benefits.name.n5'),
+      description: t('Benefits.description.d5')
+    },
+    {
+      id:6,
+      name: t('Benefits.name.n6'),
+      description: t('Benefits.description.d6')
+    },
+  ];
+
+export const getContactInfo = (t: (key: string) => string): ContactInfo[] => [
+    {
+      id:1,
+      icon: Mail,
+      title: t('contactusinfo.title.t1'),
+      content: t('contactusinfo.content.c1'),
+      link: "mailto:info@marahelai.com"
+    },
+    {
+      id:2,
+      icon: Phone,
+      title: t('contactusinfo.title.t3'),
+      content: t('contactusinfo.content.c2'),
+      link: "tel:+966112345678"
+    },
+    {
+      id:3,
+      icon: MapPin,
+      title: t('contactusinfo.title.t3'),
+      content: t('contactusinfo.content.c3'),
+      link: ""
+    },
+    {
+      id:4,
+      icon: Clock,
+      title: t('contactusinfo.title.t4'),
+      content: t('contactusinfo.content.c4'),
+      link: ""
+    }
+  ];
