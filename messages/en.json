@@ -1466,5 +1466,44 @@
       "title": "Follow Us on Social Media",
       "description": "Follow us to stay updated with the latest AI news and insights."
     }
+  },
+  "SolutionHome": {
+    "title": "AI Solutions Tailored for Saudi Industries", 
+    "description":"Specialised AI applications designed for the unique needs of key Saudi sectors",
+    "button": "Explore Industry Solutions",
+    "items": {
+      "title": {
+        "t1": "Government & Public Sector",
+        "t2": "Non-Profit Services",
+        "t3": "Private Sector",
+        "t4": "Technical"
+      },
+      "description": {
+        "d1": {
+          "li1": "Citizen Services Automation",
+          "li2": "Knowledge Processing",
+          "li3": "Decision Support Systems",
+          "li4": "Data Sovereignty"
+        },
+        "d2": {
+          "li1": "Readiness Assessment",
+          "li2": "AI Transformation Roadmap",
+          "li3": "Customer Service AI",
+          "li4": "Regulatory Compliance"
+        },
+        "d3": {
+          "li1": "Customer Suport Assistance",
+          "li2": "Leads Management",
+          "li3": "Document Processing",
+          "li4": "Multilanguage NLP"
+        },
+        "d4": {
+          "li1": "LLMs Evaluation & Optimisation",
+          "li2": "Ready to Deploy Engines",
+          "li3": "APIs & SDKs",
+          "li4": "Agentic AI Software"
+        }
+      }
+    }
   }
 }

@@ -69,18 +69,17 @@ export const Navbar = () => {
         segments.splice(1, 0, nextLocale);
       }
       router.push(segments.join("/") || "/");
-      setIsOpen(false); // ✅ إغلاق المنيو بعد تغيير اللغة
+      setIsOpen(false);
     },
     [localeActive, pathname, router]
   );
 
-  // ✅ دالة لإغلاق المنيو عند الضغط على أي رابط
   const handleLinkClick = useCallback(() => {
     setIsOpen(false);
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <nav className="sticky top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -163,7 +162,6 @@ export const Navbar = () => {
         {isOpen && (
           <div className="md:hidden py-4 space-y-4 overflow-y-auto max-h-[calc(100vh-80px)]">
             {MOBILE_MENUS.map((DropdownMobile, i) => (
-              // ✅ تمرير دالة الإغلاق كمُعطى إلى كل مكون منسدلة للموبايل
               <DropdownMobile key={i} onLinkClick={handleLinkClick} />
             ))}
 
