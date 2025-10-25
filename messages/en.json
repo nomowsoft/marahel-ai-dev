@@ -1302,5 +1302,169 @@
         }
       }
     }
+  },
+  "jobs": {
+    "jobstitle": "Join Our Team",
+    "jobsdescription": "Be part of shaping the future with Artificial Intelligence. We’re looking for top talent to join our growing team.",
+    "jobstitle1": "Why Join Us?",
+    "jobsdescription1": "We provide a motivating work environment and exceptional benefits to support your professional and personal growth.",
+    "jobstitle2": "Available Positions",
+    "jobsdescription2": "Explore the available opportunities and start your journey with us.",
+    "requirments": "Requirements",
+    "requestjob": "Apply Now",
+    "notfondjob": "Didn't find a suitable position?",
+    "notdescription": "We are always looking for exceptional talent. Send us your resume and we’ll contact you when a suitable opportunity becomes available.",
+    "cv": "Send Your Resume",
+    "jobs": {
+      "name": {
+        "n1": "Senior AI Engineer",
+        "n2": "AI Strategy Consultant",
+        "n3": "Frontend Developer",
+        "n4": "Data Engineer",
+        "n5": "AI Product Manager",
+        "n6": "AI Intern"
+      },
+      "description": {
+        "desc1": "We are seeking an experienced AI Engineer to join our team in developing innovative solutions.",
+        "desc2": "We’re looking for a consultant to help clients define and implement AI strategies.",
+        "desc3": "Join our team to build advanced user interfaces for AI platforms.",
+        "desc4": "We’re looking for a Data Engineer to build and maintain data infrastructure.",
+        "desc5": "Lead the strategy and development of innovative AI products.",
+        "desc6": "An internship opportunity to learn and develop AI skills in a professional environment."
+      },
+      "department": {
+        "dept1": "Engineering",
+        "dept2": "Consulting",
+        "dept3": "Development",
+        "dept4": "Data",
+        "dept5": "Product",
+        "dept6": "Engineering"
+      },
+      "location": {
+        "loc1": "Riyadh, Saudi Arabia",
+        "loc2": "Riyadh, Saudi Arabia",
+        "loc3": "Riyadh, Saudi Arabia / Remote",
+        "loc4": "Riyadh, Saudi Arabia",
+        "loc5": "Riyadh, Saudi Arabia",
+        "loc6": "Riyadh, Saudi Arabia"
+      },
+      "type": {
+        "ty1": "Full-time",
+        "ty2": "Full-time",
+        "ty3": "Full-time",
+        "ty4": "Full-time",
+        "ty5": "Full-time",
+        "ty6": "Internship"
+      },
+      "requirments": {
+        "req1": {
+          "r1": "5+ years of experience in developing AI models",
+          "r2": "Proficiency in Python and machine learning frameworks",
+          "r3": "Experience in Natural Language Processing (NLP)",
+          "r4": "Bachelor’s or Master’s degree in Computer Science"
+        },
+        "req2": {
+          "r1": "3+ years of experience in technology consulting",
+          "r2": "Deep understanding of AI technologies",
+          "r3": "Excellent communication skills in Arabic and English",
+          "r4": "Experience in project management"
+        },
+        "req3": {
+          "r1": "3+ years of experience in React and TypeScript",
+          "r2": "Proficiency in Tailwind CSS and modern design tools",
+          "r3": "Experience developing interactive user interfaces",
+          "r4": "Good understanding of UX/UI principles"
+        },
+        "req4": {
+          "r1": "4+ years of experience in data engineering",
+          "r2": "Proficiency in SQL and ETL tools",
+          "r3": "Experience with AWS or Azure",
+          "r4": "Knowledge of big data systems"
+        },
+        "req5": {
+          "r1": "5+ years of experience in product management",
+          "r2": "Deep understanding of AI technologies",
+          "r3": "Strong leadership skills",
+          "r4": "Proven track record of launching successful products"
+        },
+        "req6": {
+          "r1": "Final-year student or recent graduate",
+          "r2": "Basic knowledge of Python and machine learning",
+          "r3": "Passionate about AI and technology",
+          "r4": "Strong analytical skills"
+        }
+      }
+    },
+    "Benefits": {
+      "name": {
+        "n1": "Innovative Work Environment",
+        "n2": "Growth Opportunities",
+        "n3": "Competitive Salaries",
+        "n4": "Work Flexibility",
+        "n5": "Supportive Culture",
+        "n6": "Impactful Projects"
+      },
+      "description": {
+        "d1": "Work with the latest AI technologies in the Middle East.",
+        "d2": "Continuous training programs and opportunities for career growth.",
+        "d3": "Comprehensive and competitive compensation packages.",
+        "d4": "Flexible hours and remote work options.",
+        "d5": "A diverse team and an environment that fosters creativity and innovation.",
+        "d6": "Contribute to projects that support Vision 2030."
+      }
+    }
+  },
+  "contactus": {
+    "title": "Contact Us",
+    "description": "We’re here to help you on your journey toward digital transformation with AI. Get in touch with us today to discuss your needs.",
+    "contactusinfo": {
+      "title": {
+        "t1": "Email",
+        "t2": "Phone",
+        "t3": "Address",
+        "t4": "Working Hours"
+      },
+      "content": {
+        "c1": "info@marahelai.com",
+        "c2": "+966 11 234 5678",
+        "c3": "Riyadh, Saudi Arabia",
+        "c4": "Sunday - Thursday: 9:00 AM - 5:00 PM"
+      }
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "filedname": "Name *",
+      "placeholdername": "Enter your full name",
+      "filedemail": "Email *",
+      "placeholderemail": "example@gmail.com",
+      "filedcompany": "Company",
+      "placeholdercompany": "Company name (optional)",
+      "filedphone": "Phone Number",
+      "placeholderphone": "+966 xx xxx xxx",
+      "filedsubject": "Subject *",
+      "placeholdersubject": "What is your message about?",
+      "filedmessage": "Message *",
+      "placeholdermessage": "Write your message here",
+      "button": "Send Message"
+    },
+    "help": {
+      "title": "How Can We Help You?",
+      "description1": "We’re excited to hear from you and help you explore the potential of AI for your business.",
+      "description2": "Whether you’re looking for a consultation, want to learn more about our services, or have a specific project in mind — our team is ready to assist."
+    },
+    "support": {
+      "title": "Technical Support",
+      "description": "Need urgent technical assistance? Our support team is available to help you.",
+      "button": "Contact Support"
+    },
+    "book": {
+      "title": "Book a Consultation",
+      "description": "Get a free consultation with our experts to discuss your needs and goals.",
+      "button": "Book Now"
+    },
+    "socialmedia": {
+      "title": "Follow Us on Social Media",
+      "description": "Follow us to stay updated with the latest AI news and insights."
+    }
   }
 }

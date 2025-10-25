@@ -184,3 +184,26 @@ export type Timeline = {
   description: string;
 
 }
+
+type Requirements = {
+  id: number;
+  text: string;
+}
+export type Jobs = {
+  id: number;
+  title: string;
+  department: string;
+  location: string;
+  type: string;
+  description: string;
+  requirements: Requirements[];
+
+}
+
+export type ContactInfo = {
+  id: number;
+  icon: LucideIcon;
+  title: string;
+  content: string;
+  link: string;
+}
