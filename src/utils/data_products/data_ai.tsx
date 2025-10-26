@@ -58,6 +58,27 @@ export type Security = {
     title: string;
     SecurityItem: SecurityItem[];
 }
+type ItemWorld = {
+    id: number;
+    title: string;
+    description: string
+}
+type ItemPackages = {
+    id: number;
+    title: string;
+}
+type World = {
+    id:number;
+    title:string;
+    items: ItemWorld[];
+
+}
+type Packages = {
+    id:number;
+    title:string;
+    items: ItemPackages[];
+
+}
 
 export type ProductsItem = {
     id: number
@@ -69,6 +90,8 @@ export type ProductsItem = {
     work: Work[];
     security: Security[];
     performance: Performance[];
+    world: World[];
+    packages: Packages[];
     color: "primary" | "secondary" | "accent" | string;
     demo: ReactNode;
     footertitle:string;
@@ -216,6 +239,7 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
             },
 
         ],
+        world: [],
         security: [
             {
                 id:1,
@@ -256,6 +280,7 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
                 ]
             }
         ],
+        packages: [],
         color: "primary",
         demo: <KnowledgeHubDemo />,
         footertitle: t('knowledgehub.footerTitle'),
@@ -389,6 +414,72 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
                 description: t('morshed.performance.p1.desc'),
             },
         ],
+        world: [
+            {
+                id: 1,
+                title: t('morshed.world.items.item1.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('morshed.world.items.item1.group1.title'),
+                        description: t('morshed.world.items.item1.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('morshed.world.items.item1.group2.title'),
+                        description: t('morshed.world.items.item1.group2.description')
+                    }
+                ]
+            },
+            {
+                id: 2,
+                title: t('morshed.world.items.item2.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('morshed.world.items.item2.group1.title'),
+                        description: t('morshed.world.items.item2.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('morshed.world.items.item2.group2.title'),
+                        description: t('morshed.world.items.item2.group2.description')
+                    }
+                ]
+            },
+            {
+                id: 3,
+                title: t('morshed.world.items.item3.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('morshed.world.items.item3.group1.title'),
+                        description: t('morshed.world.items.item3.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('morshed.world.items.item3.group2.title'),
+                        description: t('morshed.world.items.item3.group2.description')
+                    }
+                ]
+            },
+            {
+                id: 4,
+                title: t('morshed.world.items.item4.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('morshed.world.items.item4.group1.title'),
+                        description: t('morshed.world.items.item4.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('morshed.world.items.item4.group2.title'),
+                        description: t('morshed.world.items.item4.group2.description')
+                    }
+                ]
+            },
+        ],
         security: [
             {
                 id:1,
@@ -428,6 +519,62 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
                     },
                 ]
             }
+        ],
+        packages: [
+            {
+                id:1,
+                title: t('morshed.Packages.items.items1.title'),
+                items: [
+                    {
+                        id: 1,
+                        title: t('morshed.Packages.items.items1.item1')
+                    },
+                    {
+                        id: 2,
+                        title: t('morshed.Packages.items.items1.item2')
+                    },
+                    {
+                        id: 3,
+                        title: t('morshed.Packages.items.items1.item3')
+                    },
+                ]
+            },
+            {
+                id:2,
+                title: t('morshed.Packages.items.items2.title'),
+                items: [
+                    {
+                        id: 1,
+                        title: t('morshed.Packages.items.items2.item1')
+                    },
+                    {
+                        id: 2,
+                        title: t('morshed.Packages.items.items2.item2')
+                    },
+                    {
+                        id: 3,
+                        title: t('morshed.Packages.items.items2.item3')
+                    },
+                ]
+            },
+            {
+                id:3,
+                title: t('morshed.Packages.items.items3.title'),
+                items: [
+                    {
+                        id: 1,
+                        title: t('morshed.Packages.items.items3.item1')
+                    },
+                    {
+                        id: 2,
+                        title: t('morshed.Packages.items.items3.item2')
+                    },
+                    {
+                        id: 3,
+                        title: t('morshed.Packages.items.items3.item3')
+                    },
+                ]
+            },
         ],
         color: "secondary",
         demo: <ChatbotDemo />,
@@ -556,6 +703,7 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
                 description: t('rafiki.performance.p4.desc'),
             },
         ],
+        world: [],
         security: [
             {
                 id:1,
@@ -596,6 +744,7 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
                 ]
             }
         ],
+        packages: [],
         color: "accent",
         demo: <EventNavigationDemo />,
         footertitle: t('rafiki.footerTitle'),

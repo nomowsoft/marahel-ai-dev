@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Calendar, Download, Phone, MessageCircle, Mail } from "lucide-react";
+import { Calendar, Phone, MessageCircle, Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 

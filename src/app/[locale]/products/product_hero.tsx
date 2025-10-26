@@ -1,7 +1,7 @@
 import React from "react";
 import { ProductsItem, getProducts } from "@/utils/data_products/data_ai";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 interface ProductHeroProps {

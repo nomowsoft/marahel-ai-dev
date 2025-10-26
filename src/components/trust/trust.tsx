@@ -2,7 +2,6 @@ import { FC } from "react";
 import { Card } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
 import { getCertifications, getStats } from "@/utils/data";
-import { MetricsDemo } from "../animations/file5";
 
 export const Trust: FC = () => {
   const t = useTranslations('Trust');

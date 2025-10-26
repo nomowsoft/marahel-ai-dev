@@ -1,140 +1,94 @@
 "use client";
 import { useState, useEffect } from "react";
-import { MapPin, Navigation, Star, Clock } from "lucide-react";
+import { MapPin, Bot } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { getEvents, getPathSteps } from "@/utils/data";
 
 export const EventNavigationDemo = () => {
-  const [currentStep, setCurrentStep] = useState(0);
-  const [selectedEvent, setSelectedEvent] = useState(0);
-  
-  const t = useTranslations('Events')
-  const t1 = useTranslations('PathStep')
-  const events = getEvents(t)
-  const pathSteps = getPathSteps(t1)
+  const [currentBooth, setCurrentBooth] = useState(0);
+  const t = useTranslations('Events');
+
+  // بيانات الأركان مباشرة في الملف
+  const booths = [
+    { x: "10%", y: "20%", name: "ركن الحكومة", location: "القاعة A", room: "A1" },
+    { x: "40%", y: "35%", name: "ركن المالية", location: "القاعة B", room: "B2" },
+    { x: "70%", y: "25%", name: "ركن الصحة", location: "القاعة C", room: "C3" },
+    { x: "30%", y: "70%", name: "ركن الطاقة", location: "القاعة D", room: "D4" },
+    { x: "60%", y: "80%", name: "ركن التعليم", location: "القاعة E", room: "E5" },
+  ];
 
   useEffect(() => {
-    const eventInterval = setInterval(() => {
-      setSelectedEvent((prev) => (prev + 1) % events.length);
-    }, 4000);
-
-    const stepInterval = setInterval(() => {
-      setCurrentStep((prev) => (prev + 1) % pathSteps.length);
-    }, 1000);
-
-    return () => {
-      clearInterval(eventInterval);
-      clearInterval(stepInterval);
-    };
-  }, [events.length, pathSteps.length]);
+    const interval = setInterval(() => {
+      setCurrentBooth(prev => (prev + 1) % booths.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, [booths.length]);
 
   return (
-    <div className="w-full h-full bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 ">
+    <div className="w-full h-full bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 relative overflow-hidden p-6">
+      
       {/* Header */}
-      <div className=" p-6 bg-gradient-to-b from-background/90 to-transparent backdrop-blur-sm ">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-              <Navigation className="w-5 h-5 text-primary" />
-            </div>
-            <div>
-              <h4 className="font-bold text-foreground">{t('title')}</h4>
-              <p className="text-xs text-muted-foreground">{t('p')}</p>
-            </div>
-          </div>
-          <div className="px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold">
-            {t('active')}
-          </div>
+      <div className="mb-4 p-4 rounded-xl bg-gradient-to-b from-background/90 to-transparent backdrop-blur-sm flex items-center justify-between">
+        <div>
+          <h4 className="font-bold text-foreground">{t('title')}</h4>
+          <p className="text-xs text-muted-foreground">{t('p')}</p>
+        </div>
+        <div className="px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold">
+          AI Guide Active
         </div>
       </div>
 
-      {/* Map View */}
-      <div className="inset-0 p-6 pt-24">
-        {/* Simplified Floor Plan */}
-        <div className="w-full h-3/5 bg-background/40 rounded-xl border border-border/50 ">
-          {/* Path */}
-          <svg className="inset-0 w-full h-full">
-            <defs>
-              <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="hsl(var(--primary))" />
-                <stop offset="100%" stopColor="hsl(var(--accent))" />
-              </linearGradient>
-            </defs>
-            <path
-              d={`M ${pathSteps.map((step, idx) => `${idx === 0 ? 'M' : 'L'} ${step.x} ${step.y}`).join(' ')}`}
-              stroke="url(#pathGradient)"
-              strokeWidth="3"
-              fill="none"
-              strokeDasharray="10,5"
-              className="animate-pulse"
-            />
-          </svg>
+      {/* Map */}
+      <div className="relative w-full h-[400px] bg-background/40 rounded-xl border border-border/50">
+        {/* Path */}
+        <svg className="absolute inset-0 w-full h-full">
+          <defs>
+            <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="hsl(var(--primary))" />
+              <stop offset="100%" stopColor="hsl(var(--accent))" />
+            </linearGradient>
+          </defs>
+          <path
+            d={booths.map((b, i) => `${i === 0 ? 'M' : 'L'} ${b.x} ${b.y}`).join(' ')}
+            stroke="url(#pathGradient)"
+            strokeWidth="3"
+            fill="none"
+            strokeDasharray="8,4"
+            className="animate-pulse"
+          />
+        </svg>
 
-          {/* Path Steps */}
-          {pathSteps.map((step, idx) => (
-            <div
-              key={idx}
-              className="absolute -translate-x-1/2 -translate-y-1/2 transition-all duration-500"
-              style={{ left: step.x, top: step.y }}
-            >
-              <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                  idx <= currentStep
-                    ? "bg-primary text-primary-foreground scale-110"
-                    : "bg-border text-muted-foreground"
-                } transition-all duration-500`}
-              >
-                {idx === currentStep ? (
-                  <div className="w-3 h-3 rounded-full bg-white animate-pulse"></div>
-                ) : (
-                  <span className="text-xs font-bold">{idx + 1}</span>
-                )}
-              </div>
-              <p className="text-xs text-center mt-2 text-foreground font-medium whitespace-nowrap">
-                {step.label}
-              </p>
-            </div>
-          ))}
-
-          {/* Destination Marker */}
+        {/* Booth Markers */}
+        {booths.map((booth, idx) => (
           <div
-            className="absolute -translate-x-1/2 -translate-y-1/2 animate-bounce"
-            style={{ left: pathSteps[pathSteps.length - 1].x, top: pathSteps[pathSteps.length - 1].y }}
+            key={idx}
+            className="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center transition-all duration-500"
+            style={{ left: booth.x, top: booth.y }}
           >
-            <Star className="w-6 h-6 text-accent fill-accent" />
-          </div>
-        </div>
-
-        {/* Event Schedule */}
-        <div className="mt-4 space-y-2">
-          {events.map((event, idx) => (
             <div
-              key={idx}
-              className={`flex items-center gap-4 p-3 rounded-xl border transition-all duration-500 ${
-                idx === selectedEvent
-                  ? "bg-primary/10 border-primary/50 scale-105"
-                  : "bg-card/30 border-border/30 opacity-60"
+              className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                idx === currentBooth
+                  ? "bg-primary text-primary-foreground scale-110 animate-pulse"
+                  : "bg-border text-muted-foreground"
               }`}
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex flex-col items-center justify-center">
-                <Clock className="w-4 h-4 text-primary mb-1" />
-                <span className="text-[10px] text-primary font-bold">{event.time}</span>
-              </div>
-              <div className="flex-1">
-                <h5 className="font-bold text-foreground text-sm mb-1">{event.title}</h5>
-                <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                  <MapPin className="w-3 h-3" />
-                  <span>{event.location}</span>
-                  <span className="px-2 py-0.5 rounded bg-accent/20 text-accent font-bold">
-                    {event.room}
-                  </span>
-                </div>
-              </div>
-              {idx === selectedEvent && (
-                <Navigation className="w-5 h-5 text-primary animate-pulse" />
-              )}
+              {idx === currentBooth ? <Bot className="w-5 h-5" /> : <MapPin className="w-4 h-4" />}
             </div>
-          ))}
+            <p className="text-xs text-center mt-1 text-foreground font-medium whitespace-nowrap">
+              {booth.name}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* Booth Details */}
+      <div className="mt-4 p-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl border border-primary/30 animate-fade-in">
+        <h5 className="font-bold text-foreground mb-1">{booths[currentBooth].name}</h5>
+        <div className="text-xs text-muted-foreground flex gap-2 items-center">
+          <MapPin className="w-3 h-3" />
+          <span>{booths[currentBooth].location}</span>
+          <span className="px-2 py-0.5 rounded bg-accent/20 text-accent font-bold">
+            {booths[currentBooth].room}
+          </span>
         </div>
       </div>
 

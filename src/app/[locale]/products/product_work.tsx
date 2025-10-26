@@ -38,16 +38,16 @@ const ProductWork: React.FC<ProductWorkProps> = ({ product }) => {
                     </h2>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-12 justify-items-center">
-                    {foundProduct.work.map((step, index) => {
+                    {foundProduct.work.map((step) => {
 
                         const Icon = step.icon;
                         return(
-                            <React.Fragment key={index}>
+                            <React.Fragment key={step.id}>
                                 {/* الكارد */}
                                 <Card
                                     className="w-64 h-40 p-8 bg-card/50 backdrop-blur-sm border-2 text-center border-border rounded-2xl 
                                             hover:border-primary/50 transition-all duration-300 group hover:scale-105 animate-slide-up"
-                                    style={{ animationDelay: `${index * 0.2}s` }}
+                                    style={{ animationDelay: `${step.id * 0.2}s` }}
                                 >
                                     <div className="rounded-2xl flex items-center justify-center transition-all duration-300">
                                     <Icon className="text-primary" />
@@ -59,11 +59,11 @@ const ProductWork: React.FC<ProductWorkProps> = ({ product }) => {
                                 </Card>
 
                                 {/* السهم المتحرك */}
-                                {index !== foundProduct.work.length - 1 && (
+                                {step.id !== foundProduct.work.length - 1 && (
                                     <div
                                     className={`md:flex items-center justify-center text-3xl mx-1 pointer-events-none select-none
                                                 animate-arrow-move`}
-                                    style={{ animationDelay: `${index * 0.6}s` }}
+                                    style={{ animationDelay: `${step.id * 0.6}s` }}
                                     >
                                     <span className="md:block hidden">
                                         {localeActive === 'ar' ? '←' : '➔'}

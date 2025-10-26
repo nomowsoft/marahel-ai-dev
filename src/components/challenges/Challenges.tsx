@@ -1,7 +1,5 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
 import { getChallenges } from "@/utils/data";
 import { useTranslations } from "next-intl";
 import { SystemArchitecture } from "../animations/file4";
