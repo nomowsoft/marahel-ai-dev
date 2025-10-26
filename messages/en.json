@@ -342,6 +342,55 @@
           "desc": "Intents • CSAT • Conversion"
         }
       },
+      "world":{
+        "title":"Real‑World Use Cases",
+        "items": {
+          "item1":{
+            "title":"Customer FAQ Deflection",
+            "group1":{
+              "title": "Query",
+              "description": "What are your delivery fees to Jeddah?"
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Answers instantly and links to the policy page; hands off to agent on escalation words."
+            }
+          },
+          "item2":{
+            "title":"Order & Ticket Status",
+            "group1":{
+              "title": "Query",
+              "description": "Track my order #M12345."
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Fetches status via connector and summarizes ETA to the user."
+            }
+          },
+          "item3":{
+            "title":"Appointment Scheduling",
+            "group1":{
+              "title": "Query",
+              "description": "Book a service slot next Tuesday afternoon."
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Suggests available slots; confirms; writes back to calendar."
+            }
+          },
+          "item4":{
+            "title":"Internal Helpdesk",
+            "group1":{
+              "title": "Query",
+              "description": "How do I reset VPN?"
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Provides steps from IT KB; creates a ticket if unresolved."
+            }
+          }
+        }
+      },
       "performance": {
         "p1": {
           "text": "24/7",
@@ -377,6 +426,30 @@
             "i1": "Local hosting in KSA",
             "i2": "Encryption in transit & at rest; least privilege",
             "i3": "Audit trails with human escalation"
+          }
+        }
+      },
+      "Packages": {
+        "title": "Packages",
+        "button": "Request Pricing",
+        "items": {
+          "items1": {
+            "title": "Starter",
+            "item1": "One channel",
+            "item2": "Core FAQ bot",
+            "item3": "Email support"
+          },
+          "items2": {
+            "title": "Professional",
+            "item1": "Omnichannel + RAG",
+            "item2": "Analytics dashboard",
+            "item3": "Priority support"
+          },
+          "items3": {
+            "title": "Enterprise",
+            "item1": "On‑prem options",
+            "item2": "SLA & SSO",
+            "item3": "Dedicated success"
           }
         }
       },

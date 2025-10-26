@@ -299,6 +299,7 @@ export const getDemomessage = (t: (key: string) => string): Message[] => [
     { role: "assistant", content: t('content4') },
   ];
   
+  
 export const getMetric = (t: (key: string) => string): Metric[] => [
     { icon: Users, label: t('label1'), value: 0, max: 2847, suffix: t('suffix1'), color: "primary" },
     { icon: TrendingUp, label: t('label2'), value: 0, max: 98, suffix: t('suffix2'), color: "secondary" },
