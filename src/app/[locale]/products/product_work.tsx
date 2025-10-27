@@ -59,7 +59,7 @@ const ProductWork: React.FC<ProductWorkProps> = ({ product }) => {
                                 </Card>
 
                                 {/* السهم المتحرك */}
-                                {step.id !== foundProduct.work.length - 1 && (
+                                {step.id !== foundProduct.work.length && (
                                     <div
                                     className={`md:flex items-center justify-center text-3xl mx-1 pointer-events-none select-none
                                                 animate-arrow-move`}
