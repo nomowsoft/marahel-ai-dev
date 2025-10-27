@@ -1,9 +1,10 @@
 "use client";
-import { useState, useCallback } from "react";
+
+import { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { Menu, Globe } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuList } from "@/components/ui/navigation-menu";
@@ -77,6 +78,16 @@ export const Navbar = () => {
   const handleLinkClick = useCallback(() => {
     setIsOpen(false);
   }, []);
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
   return (
     <nav className="sticky top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
@@ -87,17 +98,17 @@ export const Navbar = () => {
             <Image
               src="/navbar/MarahelAI.svg"
               alt="Marahel AI"
-              width={100}
-              height={20}
+              width={110}
+              height={24}
               priority
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-6">
             <Link
               href="/"
-              className="text-white hover:bg-primary py-2 px-4 rounded-lg hover:text-primary-foreground"
+              className="text-foreground/80 hover:text-primary font-medium transition"
             >
               {t1("home")}
             </Link>
@@ -110,15 +121,11 @@ export const Navbar = () => {
             ))}
           </div>
 
-          {/* Language Switcher & CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* Desktop Right Actions */}
+          <div className="hidden lg:flex items-center gap-3">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="border-border hover:bg-card"
-                >
+                <Button variant="outline" size="icon" className="border-border">
                   <Globe className="h-5 w-5 text-foreground" />
                 </Button>
               </DropdownMenuTrigger>
@@ -127,11 +134,10 @@ export const Navbar = () => {
                   <DropdownMenuItem
                     key={locale}
                     onClick={() => changeLocale(locale)}
-                    className={`cursor-pointer ${
-                      localeActive === locale
+                    className={`cursor-pointer ${localeActive === locale
                         ? "bg-primary/10 text-primary"
                         : "text-foreground"
-                    }`}
+                      }`}
                   >
                     {locale === "ar" ? "العربية" : "English"}
                   </DropdownMenuItem>
@@ -141,54 +147,75 @@ export const Navbar = () => {
 
             <Link
               href={`/${localeActive}/contactus`}
-              className="bg-primary hover:bg-accent text-primary-foreground p-2 rounded-sm"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md font-medium transition"
             >
               {t("contactus")}
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setIsOpen((prev) => !prev)}
-            className="md:hidden"
-          >
-            <Menu className="text-primary" size={4} />
-          </Button>
+          {/* Mobile Button */}
+          {isOpen &&
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsOpen(false)}
+            >
+              <X className="h-6 w-6 text-slate-500" />
+            </Button>
+          }
+          {!isOpen &&
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsOpen(true)}
+              className="lg:hidden"
+            >
+              <Menu className="h-6 w-6 text-primary" />
+            </Button>
+          }
         </div>
+      </div>
 
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden py-4 space-y-4 overflow-y-auto max-h-[calc(100vh-80px)]">
-            {MOBILE_MENUS.map((DropdownMobile, i) => (
-              <DropdownMobile key={i} onLinkClick={handleLinkClick} />
-            ))}
+      {/* ======= Mobile Menu Drawer ======= */}
+      {isOpen && (
+        <div className="inset-0 z-[999] flex bg-slate-900/60 backdrop-blur-sm lg:hidden mb-20">
+          {/* Drawer content */}
+          <div className="bg-primary/1 shadow-xl px-5 py-6 overflow-y-scroll animate-slideIn w-full max-h-screen">
+            {/* Menus */}
+            <div className="space-y-4">
+              {MOBILE_MENUS.map((DropdownMobile, i) => (
+                <DropdownMobile key={i} onLinkClick={handleLinkClick} />
+              ))}
+            </div>
 
-            {/* Language Switcher - Mobile */}
-            <div className="flex gap-2 py-2">
+            {/* Language Switch */}
+            <div className="mt-6 flex gap-2">
               {["ar", "en"].map((locale) => (
                 <Button
                   key={locale}
                   variant={localeActive === locale ? "default" : "outline"}
                   onClick={() => changeLocale(locale)}
-                  className="flex-1"
+                  className={`flex-1 ${localeActive === locale ? '' : 'text-accent'}`}
                 >
                   {locale === "ar" ? "العربية" : "English"}
                 </Button>
               ))}
             </div>
 
-            <Link
-              href={`/${localeActive}/contactus`}
-              onClick={handleLinkClick}
-              className="block text-center bg-primary hover:bg-primary/90 text-primary-foreground p-2 rounded-md"
-            >
-              {t("contactus")}
-            </Link>
+            {/* Contact Us */}
+            <div>
+              <Link
+                href={`/${localeActive}/contactus`}
+                onClick={handleLinkClick}
+                className="block mt-2 text-center bg-primary hover:bg-primary/90 text-primary-foreground py-2 rounded-md font-medium transition mb-20"
+              >
+                {t("contactus")}
+              </Link>
+            </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
+
     </nav>
   );
 };
