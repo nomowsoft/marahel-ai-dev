@@ -207,7 +207,7 @@ export const Navbar = () => {
               <Link
                 href={`/${localeActive}/contactus`}
                 onClick={handleLinkClick}
-                className="block mt-2 text-center bg-primary hover:bg-primary/90 text-primary-foreground py-2 rounded-md font-medium transition mb-20"
+                className="block mt-2 text-center bg-primary hover:bg-primary/90 text-primary-foreground py-2 rounded-md font-medium transition mb-40"
               >
                 {t("contactus")}
               </Link>
