@@ -36,32 +36,26 @@ const ProductPerformance: React.FC<ProductPerformanceProps> = ({ product }) => {
                         {t('performance')}
                     </h2>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-12 justify-items-center">
+                <div className="flex flex-wrap justify-center gap-8 mb-12">
                     {foundProduct.performance.map((step, index) => {
                         const Icon = step.icon;
-                        return(
+                        return (
                             <Card
                                 key={index}
-                                className="p-8 bg-card/50 backdrop-blur-sm border-2 w-70  text-center border-border rounded-2xl hover:border-primary/50 transition-all duration-300 group hover:scale-105 animate-slide-up"
+                                className="p-8 bg-card/50 backdrop-blur-sm border-2 text-center border-border rounded-2xl hover:border-primary/50 transition-all duration-300 group hover:scale-105 animate-slide-up flex-1 min-w-1/1 lg:min-w-1/5"
                                 style={{ animationDelay: `${index * 0.2}s` }}
                             >
-                                <div
-                                    className="rounded-2xl flex items-center justify-center transition-all duration-300"
-                                >
-                                    <Icon className="text-primary" />
+                                <div className="rounded-2xl flex items-center justify-center transition-all duration-300 mb-4">
+                                    <Icon className="text-primary w-10 h-10" />
                                 </div>
 
-                                <h3 className="text-xl font-bold text-foreground">
+                                <h3 className="text-xl font-bold text-foreground mb-2">
                                     {step.text}
                                 </h3>
 
-                                <div className="space-y-4">
-                                    <div>
-                                        <p className="text-muted-foreground text-sm leading-relaxed">
-                                            {step.description}
-                                        </p>
-                                    </div>
-                                </div>
+                                <p className="text-muted-foreground text-sm leading-relaxed">
+                                    {step.description}
+                                </p>
                             </Card>
                         );
                     })}

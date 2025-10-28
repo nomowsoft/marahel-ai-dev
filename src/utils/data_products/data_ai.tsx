@@ -18,7 +18,9 @@ import {
     CalendarClock,
     Smartphone,
     Network,
-    ChartColumn
+    ChartColumn,
+    Route,
+    Bell
 } from "lucide-react";
 import { KnowledgeHubDemo } from "@/components/animations/file2";
 import { ChatbotDemo } from "@/components/animations/file3";
@@ -309,9 +311,9 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
             {
                 id: 2,
                 icon: Shield,
-                text: t('morshed.features.f2'),
+                text: t('morshed.features.f3'),
                 description:
-                    t('morshed.featuresDesc.f2'),
+                    t('morshed.featuresDesc.f3'),
             },
         ],
         features2: [
@@ -398,20 +400,20 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
             {
                 id: 2,
                 icon: PhoneCall,
-                text: t('morshed.performance.p1.text'),
-                description: t('morshed.performance.p1.desc'),
+                text: t('morshed.performance.p2.text'),
+                description: t('morshed.performance.p2.desc'),
             },
             {
                 id: 3,
                 icon: Globe,
-                text: t('morshed.performance.p1.text'),
-                description: t('morshed.performance.p1.desc'),
+                text: t('morshed.performance.p3.text'),
+                description: t('morshed.performance.p3.desc'),
             },
             {
                 id: 4,
                 icon: Headphones,
-                text: t('morshed.performance.p1.text'),
-                description: t('morshed.performance.p1.desc'),
+                text: t('morshed.performance.p4.text'),
+                description: t('morshed.performance.p4.desc'),
             },
         ],
         world: [
@@ -686,19 +688,19 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
         performance: [
             {
                 id: 1,
-                icon: Share2,
+                icon: Route,
                 text: t('rafiki.performance.p1.text'),
                 description: t('rafiki.performance.p1.desc'),
             },
             {
                 id: 2,
-                icon: Share2,
+                icon: Globe,
                 text: t('rafiki.performance.p3.text'),
                 description: t('rafiki.performance.p3.desc'),
             },
             {
                 id: 3,
-                icon: Share2,
+                icon: Bell,
                 text: t('rafiki.performance.p4.text'),
                 description: t('rafiki.performance.p4.desc'),
             },
