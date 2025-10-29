@@ -241,7 +241,72 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
             },
 
         ],
-        world: [],
+        world: [
+            {
+                id: 1,
+                title: t('knowledgehub.world.items.item1.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('knowledgehub.world.items.item1.group1.title'),
+                        description: t('knowledgehub.world.items.item1.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('knowledgehub.world.items.item1.group2.title'),
+                        description: t('knowledgehub.world.items.item1.group2.description')
+                    }
+                ]
+            },
+            {
+                id: 2,
+                title: t('knowledgehub.world.items.item2.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('knowledgehub.world.items.item2.group1.title'),
+                        description: t('knowledgehub.world.items.item2.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('knowledgehub.world.items.item2.group2.title'),
+                        description: t('knowledgehub.world.items.item2.group2.description')
+                    }
+                ]
+            },
+            {
+                id: 3,
+                title: t('knowledgehub.world.items.item3.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('knowledgehub.world.items.item3.group1.title'),
+                        description: t('knowledgehub.world.items.item3.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('knowledgehub.world.items.item3.group2.title'),
+                        description: t('knowledgehub.world.items.item3.group2.description')
+                    }
+                ]
+            },
+            {
+                id: 4,
+                title: t('knowledgehub.world.items.item4.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('knowledgehub.world.items.item4.group1.title'),
+                        description: t('knowledgehub.world.items.item4.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('knowledgehub.world.items.item4.group2.title'),
+                        description: t('knowledgehub.world.items.item4.group2.description')
+                    }
+                ]
+            },
+        ],
         security: [
             {
                 id:1,
@@ -705,7 +770,72 @@ export const getProducts = (t: (key: string) => string): ProductsItem[] => [
                 description: t('rafiki.performance.p4.desc'),
             },
         ],
-        world: [],
+        world: [
+            {
+                id: 1,
+                title: t('rafiki.world.items.item1.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('rafiki.world.items.item1.group1.title'),
+                        description: t('rafiki.world.items.item1.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('rafiki.world.items.item1.group2.title'),
+                        description: t('rafiki.world.items.item1.group2.description')
+                    }
+                ]
+            },
+            {
+                id: 2,
+                title: t('rafiki.world.items.item2.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('rafiki.world.items.item2.group1.title'),
+                        description: t('rafiki.world.items.item2.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('rafiki.world.items.item2.group2.title'),
+                        description: t('rafiki.world.items.item2.group2.description')
+                    }
+                ]
+            },
+            {
+                id: 3,
+                title: t('rafiki.world.items.item3.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('rafiki.world.items.item3.group1.title'),
+                        description: t('rafiki.world.items.item3.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('rafiki.world.items.item3.group2.title'),
+                        description: t('rafiki.world.items.item3.group2.description')
+                    }
+                ]
+            },
+            {
+                id: 4,
+                title: t('rafiki.world.items.item4.title'),
+                items: [
+                    {
+                        id:1,
+                        title: t('rafiki.world.items.item4.group1.title'),
+                        description: t('rafiki.world.items.item4.group1.description')
+                    },
+                    {
+                        id:1,
+                        title: t('rafiki.world.items.item4.group2.title'),
+                        description: t('rafiki.world.items.item4.group2.description')
+                    }
+                ]
+            },
+        ],
         security: [
             {
                 id:1,

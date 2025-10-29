@@ -1,11 +1,13 @@
 import { Card } from "../ui/card";
-import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
 import { getSolutionHome } from "@/utils/data";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 
 const SolutionsHome = () => {
   const t = useTranslations('SolutionHome');
   const values = getSolutionHome(t);
+  const localActive = useLocale();
   return (
     <section id="challenges" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/50 to-background"></div>
@@ -57,13 +59,12 @@ const SolutionsHome = () => {
           })}
         </div>
         <div className="flex justify-center">
-          <Button
-            size="lg"
-            variant="outline"
-            className="text-muted-foreground border-2 rounded-xl border-primary/50 hover:bg-primary/10 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 group"
+          <Link
+            href={`${localActive}/solutions`}
+            className="text-muted-foreground border-2 rounded-xl border-primary/50 hover:bg-primary/10 text-base sm:text-lg px-6 sm:px-8 py-3 flex items-center group "
           >
             {t('button')}
-          </Button>
+          </Link>
         </div>
       </div>
     </section>

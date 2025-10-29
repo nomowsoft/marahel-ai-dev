@@ -3,16 +3,18 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import React from "react";
 import { gethero } from "@/utils/data";
-import { useTranslations } from "next-intl";
+import { useTranslations,  useLocale } from "next-intl";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   const t = useTranslations('Hero');
+  const localActive = useLocale();
   const values = gethero(t);
   return (
     <section className="relative min-h-screen my-auto flex items-center justify-center overflow-hidden px-4 pb-8">
@@ -88,13 +90,13 @@ const Hero: React.FC = () => {
 
               {/* 🔹 Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-                <Button
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 rounded-xl text-primary-foreground glow-primary group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
+                <Link
+                  href={`${localActive}/solutions`}
+                  className="bg-primary hover:bg-primary/90 rounded-xl text-primary-foreground glow-primary group text-base sm:text-lg px-6 sm:px-8 py-3 flex items-center"
                 >
                   {t('button1')}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                </Link>
 
                 <Button
                   size="lg"
@@ -145,13 +147,13 @@ const Hero: React.FC = () => {
 
               {/* 🔹 Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-                <Button
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 rounded-xl text-primary-foreground glow-primary group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
+                <Link
+                  href={`${localActive}/solutions`}
+                  className="bg-primary hover:bg-primary/90 rounded-xl text-primary-foreground glow-primary group text-base sm:text-lg px-6 sm:px-8 py-3 flex items-center"
                 >
                   {t('button1')}
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                </Link>
 
                 <Button
                   size="lg"
