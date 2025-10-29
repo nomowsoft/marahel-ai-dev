@@ -256,6 +256,55 @@
           "desc": "Web • Chat • CRM/ERP"
         }
       },
+      "world":{
+        "title":"Real‑World Use Cases",
+        "items": {
+          "item1":{
+            "title":"HR Policy Finder",
+            "group1":{
+              "title": "Query",
+              "description": "“What is the annual leave policy?”"
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Instant answer with citation to the HR manual; link to the exact page."
+            }
+          },
+          "item2":{
+            "title":"Media Moment Jump",
+            "group1":{
+              "title": "Query",
+              "description": "“Find the clip where safety procedure X is demonstrated.”"
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Returns the video and jumps to the right timestamp."
+            }
+          },
+          "item3":{
+            "title":"Onboarding Packs",
+            "group1":{
+              "title": "Query",
+              "description": "“Create a starter kit for new sales reps.”"
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Generates a mind‑map + links to the most relevant documents."
+            }
+          },
+          "item4":{
+            "title":"Proactive Suggestions",
+            "group1":{
+              "title": "Query",
+              "description": "“I’m submitting a travel request.”"
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Suggests related policies and forms automatically."
+            }
+          }
+        }
+      },
       "performance": {
         "p1": {
           "text": "Seconds‑level",
@@ -501,6 +550,55 @@
         "w5": {
           "text": "Integrations",
           "desc": "• SSO • APIs"
+        }
+      },
+      "world":{
+        "title":"Real‑World Use Cases",
+        "items": {
+          "item1":{
+            "title":"Find a Booth Fast",
+            "group1":{
+              "title": "Query",
+              "description": "“Take me to Hall B3, booth J‑21.”"
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Rafiki calculates the quickest path and guides you turn‑by‑turn."
+            }
+          },
+          "item2":{
+            "title":"Plan My Day",
+            "group1":{
+              "title": "Query",
+              "description": "“I’m into AI sessions and robotics demos.”"
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Builds a schedule and routes you with minimal walking time."
+            }
+          },
+          "item3":{
+            "title":"Live Translation",
+            "group1":{
+              "title": "Query",
+              "description": "“Translate this exhibitor’s brochure to Arabic.”"
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Summarizes and translates instantly, with links saved to your notes."
+            }
+          },
+          "item4":{
+            "title":"Exhibitor Lead Capture",
+            "group1":{
+              "title": "Query",
+              "description": "“Scan visitor badge and add a note.”"
+            },
+            "group2":{
+              "title": "Outcome",
+              "description": "Creates a lead with QR, adds your note/photo, and syncs to CRM."
+            }
+          }
         }
       },
       "performance": {

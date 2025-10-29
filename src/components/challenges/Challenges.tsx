@@ -50,10 +50,10 @@ export const Challenges: React.FC = () => {
                     </p>
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-muted-foreground/60 mb-2">
+                    <div className="text-lg font-semibold text-primary mb-2">
                       {t('globalcloud')}
                     </div>
-                    <p className="text-muted-foreground/60 text-sm leading-relaxed">
+                    <p className="text-muted-foreground text-sm leading-relaxed">
                       {challenge.global}
                     </p>
                   </div>
