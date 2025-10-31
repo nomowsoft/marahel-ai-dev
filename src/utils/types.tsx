@@ -218,3 +218,25 @@ export type SolutionHome = {
   title: string;
   content: Itemsolution[];
 }
+
+export type DataAbout = {
+  id: number;
+  name: string;
+  dept: string;
+  certificate: string;
+  experiance: string;
+  image: string
+}
+
+export type DescriptionTeam = {
+  id: number;
+  title: string;
+  description: string;
+}
+
+export type ChoseMarahel = {
+  id: number;
+  title: string;
+  description: string;
+  icon: LucideIcon;
+}

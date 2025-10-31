@@ -3,12 +3,14 @@ import { Target, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { getValues, getTimeline } from "@/utils/data";
+import { getValues, getChoseMarahel, getDescriptionTeam, getDataAbout } from "@/utils/data";
 
 const About = () => {
   const t = useTranslations('about');
   const values = getValues(t);
-  const timeline = getTimeline(t);
+  const choseMarahel = getChoseMarahel(t);
+  const descriptionteam = getDescriptionTeam(t);
+  const dataabout = getDataAbout(t);
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -26,15 +28,70 @@ const About = () => {
       </section>
 
       {/* Story Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
+        <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-foreground">{t('ourteam')}</h2>
+            <div className="relative grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+              {dataabout.map((item, index) => (
+                <Card
+                  key={index}
+                  className="rounded-3xl border border-accent py-5 transition-transform hover:scale-105 px-4"
+                >
+                  <div className="flex justify-center">
+                    <Image
+                      src={item.image}
+                      alt=""
+                      width={90}
+                      height={90}
+                      className="rounded-full border-4 border-primary w-20 h-20 sm:w-24 sm:h-24 object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <h1 className="my-3 text-primary text-lg">
+                      {item.name}
+                    </h1>
+                    <p className="text-sm text-accent">
+                      {item.dept}
+                    </p>
+                    <p className="text-sm text-foreground mt-2">
+                      {item.certificate}
+                    </p>
+                    <p className="text-sm text-foreground/50 mt-2">
+                      {item.experiance}
+                    </p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 ">
+        <div className="container mx-auto px-4 max-w-screen-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {descriptionteam.map((item) => {
+              return(
+                <Card className="border-2 border-primary rounded-3xl transition-transform hover:scale-105" key={item.id}>
+                  <CardContent className="p-8">
+                    <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {item.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-10 bg-background max-w-screen-lg mx-auto">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 gap-12 text-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">{t('story.title')}</h2>
               <div className="space-y-4 text-muted-foreground">
-                <p className="text-lg leading-relaxed">
-                  {t('story.p1')}
-                </p>
                 <p className="text-lg leading-relaxed">
                   {t('story.p1')}
                 </p>
@@ -43,22 +100,13 @@ const About = () => {
                 {t('story.button')}
               </Button>
             </div>
-            <div className="relative">
-              <Image
-                width={500}
-                height={20}
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
-                alt="فريق العمل"
-                className="rounded-2xl shadow-2xl"
-              />
-            </div>
           </div>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 ">
+        <div className="container mx-auto px-4 max-w-screen-xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-2 border-primary rounded-3xl">
               <CardContent className="p-8">
@@ -89,7 +137,7 @@ const About = () => {
 
       {/* Values */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 max-w-screen-xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">{t('values.title')}</h2>
             <p className="text-xl text-muted-foreground">
@@ -117,35 +165,31 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-20 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 ">
+        <div className="container mx-auto px-4 max-w-screen-xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">{t('Journey.title')}</h2>
-            <p className="text-xl text-muted-foreground">
-              {t('Journey.description')}
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">{t('whychose')}</h2>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
-              {timeline.map((item, index) => (
-                <div key={index} className="flex gap-6 items-center">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-xl bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
-                    {item.year}
-                  </div>
-                  <Card className="flex-1 border-primary rounded-2xl">
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.description}</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {choseMarahel.map((item) => {
+              const Icon = item.icon;
+              return(
+                <Card key={item.id} className="border-2 border-primary rounded-3xl transition-transform hover:scale-105">
+                  <CardContent className="p-8">
+                    <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+                      <Icon className="w-8 h-8 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-4 text-primary">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {item.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
-
     </div>
   );
 };

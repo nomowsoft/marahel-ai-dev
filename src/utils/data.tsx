@@ -28,7 +28,10 @@ import {
   Timeline,
   Jobs,
   ContactInfo,
-  SolutionHome
+  SolutionHome,
+  DataAbout,
+  DescriptionTeam,
+  ChoseMarahel,
 } from "./types";
 import {
   Database, 
@@ -55,7 +58,12 @@ import {
   Heart,
   Landmark,
   Building2,
-  Radio
+  Radio,
+  Flag,
+  Languages,
+  Share2,
+  Code,
+  Gpu
 } from "lucide-react";
 import { KnowledgeHubDemo } from "@/components/animations/file2";
 import { ChatbotDemo } from "@/components/animations/file3";
@@ -904,3 +912,82 @@ export const getSolutionHome = (t: (key: string) => string): SolutionHome[] => [
       ],
     },
   ];
+
+export const getChoseMarahel = (t: (key: string) => string): ChoseMarahel[] => [
+  {
+    id: 1,
+    title: t("choseMarahel.1.title"),
+    description: t("choseMarahel.1.description"),
+    icon: Flag,
+  },
+  {
+    id: 2,
+    title: t("choseMarahel.2.title"),
+    description: t("choseMarahel.2.description"),
+    icon: Languages,
+  },
+  {
+    id: 3,
+    title: t("choseMarahel.3.title"),
+    description: t("choseMarahel.3.description"),
+    icon: Gpu,
+  },
+  {
+    id: 4,
+    title: t("choseMarahel.4.title"),
+    description: t("choseMarahel.4.description"),
+    icon: Share2,
+  },
+  {
+    id: 5,
+    title: t("choseMarahel.5.title"),
+    description: t("choseMarahel.5.description"),
+    icon: Code,
+  },
+  {
+    id: 6,
+    title: t("choseMarahel.6.title"),
+    description: t("choseMarahel.6.description"),
+    icon: Zap,
+  },
+];
+
+export const getDescriptionTeam = (t: (key: string) => string): DescriptionTeam[] => [
+  {
+    id: 1,
+    title: t("descriptionTeam.1.title"),
+    description: t("descriptionTeam.1.description"),
+  },
+  {
+    id: 2,
+    title: t("descriptionTeam.2.title"),
+    description: t("descriptionTeam.2.description"),
+  },
+];
+
+export const getDataAbout = (t: (key: string) => string): DataAbout[] => [
+  {
+    id: 1,
+    name: t("dataAbout.1.name"),
+    dept: t("dataAbout.1.dept"),
+    certificate: t("dataAbout.1.certificate"),
+    experiance: t("dataAbout.1.experiance"),
+    image: "/about/MFO.png",
+  },
+  {
+    id: 2,
+    name: t("dataAbout.2.name"),
+    dept: t("dataAbout.2.dept"),
+    certificate: t("dataAbout.2.certificate"),
+    experiance: t("dataAbout.2.experiance"),
+    image: "/about/IMZ.png",
+  },
+  {
+    id: 3,
+    name: t("dataAbout.3.name"),
+    dept: t("dataAbout.3.dept"),
+    certificate: t("dataAbout.3.certificate"),
+    experiance: t("dataAbout.3.experiance"),
+    image: "/about/JSB.png",
+  },
+];
