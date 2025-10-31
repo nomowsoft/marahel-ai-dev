@@ -1,3 +1,0 @@
-module.exports=[790,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(11857);a.n(d("[project]/node_modules/next/dist/client/app-dir/link.js <module evaluation>"))},84707,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(11857);a.n(d("[project]/node_modules/next/dist/client/app-dir/link.js"))},97647,a=>{"use strict";a.i(790);var b=a.i(84707);a.n(b)},44839,a=>{a.v(b=>Promise.all(["server/chunks/ssr/messages_ar_json_2a006680._.js"].map(b=>a.l(b))).then(()=>b(70653)))},17741,a=>{a.v(b=>Promise.all(["server/chunks/ssr/messages_en_json_a7997480._.js"].map(b=>a.l(b))).then(()=>b(50929)))}];
-
-//# sourceMappingURL=_53ae6b92._.js.map
