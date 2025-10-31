@@ -207,14 +207,20 @@ __turbopack_context__.s([
     ()=>getCertifications,
     "getChallenges",
     ()=>getChallenges,
+    "getChoseMarahel",
+    ()=>getChoseMarahel,
     "getCompany",
     ()=>getCompany,
     "getCompanyMenu",
     ()=>getCompanyMenu,
     "getContactInfo",
     ()=>getContactInfo,
+    "getDataAbout",
+    ()=>getDataAbout,
     "getDemomessage",
     ()=>getDemomessage,
+    "getDescriptionTeam",
+    ()=>getDescriptionTeam,
     "getDocuments",
     ()=>getDocuments,
     "getEvents",
@@ -288,6 +294,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$landmark$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Landmark$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/landmark.js [app-rsc] (ecmascript) <export default as Landmark>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/building-2.js [app-rsc] (ecmascript) <export default as Building2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$radio$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Radio$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/radio.js [app-rsc] (ecmascript) <export default as Radio>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flag$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Flag$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/flag.js [app-rsc] (ecmascript) <export default as Flag>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$languages$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Languages$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/languages.js [app-rsc] (ecmascript) <export default as Languages>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2d$2$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Share2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/share-2.js [app-rsc] (ecmascript) <export default as Share2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Code$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/code.js [app-rsc] (ecmascript) <export default as Code>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gpu$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Gpu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/gpu.js [app-rsc] (ecmascript) <export default as Gpu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file2$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/animations/file2.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file3$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/animations/file3.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/animations/file.tsx [app-rsc] (ecmascript)");
@@ -313,7 +324,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-primary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 77,
+                lineNumber: 85,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-primary/10",
@@ -328,7 +339,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-secondary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 86,
+                lineNumber: 94,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-secondary/10",
@@ -343,7 +354,7 @@ const getProductsMenu = (t)=>[
                 className: "w-5 h-5 text-accent"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 95,
+                lineNumber: 103,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)),
             bgColor: "bg-accent/10",
@@ -419,7 +430,7 @@ const gethero = (t)=>[
                 children: "KSA"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 129,
+                lineNumber: 137,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale1'),
@@ -430,7 +441,7 @@ const gethero = (t)=>[
                 className: "w-7 h-7 sm:w-8 sm:h-8 text-secondary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 137,
+                lineNumber: 145,
                 columnNumber: 15
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale2'),
@@ -441,7 +452,7 @@ const gethero = (t)=>[
                 className: "w-7 h-7 sm:w-8 sm:h-8 text-primary"
             }, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 142,
+                lineNumber: 150,
                 columnNumber: 15
             }, ("TURBOPACK compile-time value", void 0)),
             label: t('Herolabale4'),
@@ -462,7 +473,7 @@ const getProducts = (t)=>[
             color: "primary",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file2$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["KnowledgeHubDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 160,
+                lineNumber: 168,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         },
@@ -479,7 +490,7 @@ const getProducts = (t)=>[
             color: "secondary",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file3$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ChatbotDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 173,
+                lineNumber: 181,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         },
@@ -496,7 +507,7 @@ const getProducts = (t)=>[
             color: "accent",
             demo: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$file$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["EventNavigationDemo"], {}, void 0, false, {
                 fileName: "[project]/src/utils/data.tsx",
-                lineNumber: 186,
+                lineNumber: 194,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         }
@@ -549,7 +560,7 @@ const getCertifications = (t)=>[
                     children: "KSA"
                 }, void 0, false, {
                     fileName: "[project]/src/utils/data.tsx",
-                    lineNumber: 235,
+                    lineNumber: 243,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
             title: t('title4'),
@@ -1389,6 +1400,82 @@ const getSolutionHome = (t)=>[
                     name: t('items.description.d4.li4')
                 }
             ]
+        }
+    ];
+const getChoseMarahel = (t)=>[
+        {
+            id: 1,
+            title: t("choseMarahel.1.title"),
+            description: t("choseMarahel.1.description"),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flag$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Flag$3e$__["Flag"]
+        },
+        {
+            id: 2,
+            title: t("choseMarahel.2.title"),
+            description: t("choseMarahel.2.description"),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$languages$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Languages$3e$__["Languages"]
+        },
+        {
+            id: 3,
+            title: t("choseMarahel.3.title"),
+            description: t("choseMarahel.3.description"),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gpu$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Gpu$3e$__["Gpu"]
+        },
+        {
+            id: 4,
+            title: t("choseMarahel.4.title"),
+            description: t("choseMarahel.4.description"),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2d$2$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Share2$3e$__["Share2"]
+        },
+        {
+            id: 5,
+            title: t("choseMarahel.5.title"),
+            description: t("choseMarahel.5.description"),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Code$3e$__["Code"]
+        },
+        {
+            id: 6,
+            title: t("choseMarahel.6.title"),
+            description: t("choseMarahel.6.description"),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"]
+        }
+    ];
+const getDescriptionTeam = (t)=>[
+        {
+            id: 1,
+            title: t("descriptionTeam.1.title"),
+            description: t("descriptionTeam.1.description")
+        },
+        {
+            id: 2,
+            title: t("descriptionTeam.2.title"),
+            description: t("descriptionTeam.2.description")
+        }
+    ];
+const getDataAbout = (t)=>[
+        {
+            id: 1,
+            name: t("dataAbout.1.name"),
+            dept: t("dataAbout.1.dept"),
+            certificate: t("dataAbout.1.certificate"),
+            experiance: t("dataAbout.1.experiance"),
+            image: "/about/MFO.png"
+        },
+        {
+            id: 2,
+            name: t("dataAbout.2.name"),
+            dept: t("dataAbout.2.dept"),
+            certificate: t("dataAbout.2.certificate"),
+            experiance: t("dataAbout.2.experiance"),
+            image: "/about/IMZ.png"
+        },
+        {
+            id: 3,
+            name: t("dataAbout.3.name"),
+            dept: t("dataAbout.3.dept"),
+            certificate: t("dataAbout.3.certificate"),
+            experiance: t("dataAbout.3.experiance"),
+            image: "/about/JSB.png"
         }
     ];
 }),

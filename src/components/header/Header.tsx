@@ -20,17 +20,10 @@ import {
   ProductsDropdownMobile,
 } from "./product_dropdown";
 import {
-  ServiceDropdown,
-  ServiceDropdownMobile,
-} from "./service_dropdown";
-import {
   SolutionsDropdown,
   SolutionsDropdownMobile,
 } from "./solutions_dropdown";
-import {
-  BlogsDropdown,
-  BlogsDropdownMobile,
-} from "./blogs_dropdown";
+
 import {
   CompanyDropdown,
   CompanyDropdownMobile,
@@ -38,17 +31,13 @@ import {
 
 const DESKTOP_MENUS = [
   ProductsDropdown,
-  ServiceDropdown,
   SolutionsDropdown,
-  BlogsDropdown,
   CompanyDropdown,
 ];
 
 const MOBILE_MENUS = [
   ProductsDropdownMobile,
-  ServiceDropdownMobile,
   SolutionsDropdownMobile,
-  BlogsDropdownMobile,
   CompanyDropdownMobile,
 ];
 

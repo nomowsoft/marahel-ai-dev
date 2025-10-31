@@ -256,49 +256,49 @@
           "desc": "Web • Chat • CRM/ERP"
         }
       },
-      "world":{
-        "title":"Real‑World Use Cases",
+      "world": {
+        "title": "Real‑World Use Cases",
         "items": {
-          "item1":{
-            "title":"HR Policy Finder",
-            "group1":{
+          "item1": {
+            "title": "HR Policy Finder",
+            "group1": {
               "title": "Query",
               "description": "“What is the annual leave policy?”"
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Instant answer with citation to the HR manual; link to the exact page."
             }
           },
-          "item2":{
-            "title":"Media Moment Jump",
-            "group1":{
+          "item2": {
+            "title": "Media Moment Jump",
+            "group1": {
               "title": "Query",
               "description": "“Find the clip where safety procedure X is demonstrated.”"
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Returns the video and jumps to the right timestamp."
             }
           },
-          "item3":{
-            "title":"Onboarding Packs",
-            "group1":{
+          "item3": {
+            "title": "Onboarding Packs",
+            "group1": {
               "title": "Query",
               "description": "“Create a starter kit for new sales reps.”"
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Generates a mind‑map + links to the most relevant documents."
             }
           },
-          "item4":{
-            "title":"Proactive Suggestions",
-            "group1":{
+          "item4": {
+            "title": "Proactive Suggestions",
+            "group1": {
               "title": "Query",
               "description": "“I’m submitting a travel request.”"
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Suggests related policies and forms automatically."
             }
@@ -365,7 +365,7 @@
         "f3": "Continuous learning via answer‑validation methodology",
         "f4": "Pre‑built connectors: WhatsApp, Telegram, Website",
         "f5": "Fast, reliable answers with retrieval from your knowledge base",
-        "f6": "Agent handoff and conversation history into your support desk",
+        "f6": "Agent handoff and conversation history into your Unified Communication Platform",
         "f7": "Analytics on intents, satisfaction, and deflection",
         "f8": "Secure deployment and in‑Kingdom hosting options"
       },
@@ -391,49 +391,49 @@
           "desc": "Intents • CSAT • Conversion"
         }
       },
-      "world":{
-        "title":"Real‑World Use Cases",
+      "world": {
+        "title": "Real‑World Use Cases",
         "items": {
-          "item1":{
-            "title":"Customer FAQ Deflection",
-            "group1":{
+          "item1": {
+            "title": "Customer FAQ Deflection",
+            "group1": {
               "title": "Query",
               "description": "What are your delivery fees to Jeddah?"
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Answers instantly and links to the policy page; hands off to agent on escalation words."
             }
           },
-          "item2":{
-            "title":"Order & Ticket Status",
-            "group1":{
+          "item2": {
+            "title": "Order & Ticket Status",
+            "group1": {
               "title": "Query",
               "description": "Track my order #M12345."
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Fetches status via connector and summarizes ETA to the user."
             }
           },
-          "item3":{
-            "title":"Appointment Scheduling",
-            "group1":{
+          "item3": {
+            "title": "Appointment Scheduling",
+            "group1": {
               "title": "Query",
               "description": "Book a service slot next Tuesday afternoon."
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Suggests available slots; confirms; writes back to calendar."
             }
           },
-          "item4":{
-            "title":"Internal Helpdesk",
-            "group1":{
+          "item4": {
+            "title": "Internal Helpdesk",
+            "group1": {
               "title": "Query",
               "description": "How do I reset VPN?"
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Provides steps from IT KB; creates a ticket if unresolved."
             }
@@ -552,49 +552,49 @@
           "desc": "• SSO • APIs"
         }
       },
-      "world":{
-        "title":"Real‑World Use Cases",
+      "world": {
+        "title": "Real‑World Use Cases",
         "items": {
-          "item1":{
-            "title":"Find a Booth Fast",
-            "group1":{
+          "item1": {
+            "title": "Find a Booth Fast",
+            "group1": {
               "title": "Query",
               "description": "“Take me to Hall B3, booth J‑21.”"
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Rafiki calculates the quickest path and guides you turn‑by‑turn."
             }
           },
-          "item2":{
-            "title":"Plan My Day",
-            "group1":{
+          "item2": {
+            "title": "Plan My Day",
+            "group1": {
               "title": "Query",
               "description": "“I’m into AI sessions and robotics demos.”"
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Builds a schedule and routes you with minimal walking time."
             }
           },
-          "item3":{
-            "title":"Live Translation",
-            "group1":{
+          "item3": {
+            "title": "Live Translation",
+            "group1": {
               "title": "Query",
               "description": "“Translate this exhibitor’s brochure to Arabic.”"
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Summarizes and translates instantly, with links saved to your notes."
             }
           },
-          "item4":{
-            "title":"Exhibitor Lead Capture",
-            "group1":{
+          "item4": {
+            "title": "Exhibitor Lead Capture",
+            "group1": {
               "title": "Query",
               "description": "“Scan visitor badge and add a note.”"
             },
-            "group2":{
+            "group2": {
               "title": "Outcome",
               "description": "Creates a lead with QR, adds your note/photo, and syncs to CRM."
             }
@@ -1417,17 +1417,16 @@
     "aboutdescription": "We are a Saudi company specialized in providing AI and digital transformation solutions.",
     "story": {
       "title": "Our Story",
-      "p1": "Marahel was founded with an ambitious vision to be the ideal partner for Saudi organizations on their digital transformation journey. We believe that artificial intelligence is the future, and we strive to empower organizations to leverage this advanced technology.",
-      "p2": "With a team of specialized experts, we deliver innovative and customized solutions that meet every client’s needs. We take pride in being part of Saudi Vision 2030 and contributing to building a prosperous digital future.",
+      "p1": "Marahel Digital Company founded with an ambitious vision to be the ideal partner for Saudi enterprises on their AI digital transformation & innovation journey. We believe that artificial intelligence is the future, and we strive to empower enterprises to leverage this advanced technology.",
       "button": "Contact Us"
     },
     "message": {
       "title": "Our Mission",
-      "description": "Empowering Saudi organizations to achieve digital transformation through innovative AI solutions and contributing to building an advanced digital economy aligned with Saudi Vision 2030."
+      "description": "Empowering Saudi Enterprises to achieve AI digital transformation through innovative AI solutions and contributing to building an advanced digital economy aligned with Saudi Arabia Vision 2030."
     },
     "vision": {
       "title": "Our Vision",
-      "description": "To be the leading company in AI solutions in the Kingdom and the region, and the first choice for organizations striving for excellence in digital transformation."
+      "description": "To be the leading company in AI solutions in the Kingdom and the region, and the first choice for enterprises striving for excellence in AI digital transformation."
     },
     "values": {
       "title": "Our Values",
@@ -1472,6 +1471,64 @@
           "d4": "Became one of the leading AI companies in the Kingdom.",
           "d5": "Continuing innovation and development in support of Vision 2030."
         }
+      }
+    },
+    "ourteam": "Our Team",
+    "whychose": "Why Choose Marahel?",
+    "choseMarahel": {
+      "1": {
+        "title": "Sovereign-First Hosting",
+        "description": "All workloads run in Saudi data centers, ensuring PDPL alignment and ultra-low latency."
+      },
+      "2": {
+        "title": "Arabic‑First & Multilingual",
+        "description": "Built for Arabic + multi‑language processing across content and chat experiences."
+      },
+      "3": {
+        "title": "Agentic Innovation",
+        "description": "Goal-oriented agents automate complex workflows, turning hours of manual effort into real-time outcomes."
+      },
+      "4": {
+        "title": "Measured Intelligence",
+        "description": "We benchmark each model with open standards and proprietary tests, giving you hard numbers, not hype."
+      },
+      "5": {
+        "title": "Flexible Delivery",
+        "description": "SaaS, private cloud, or on-premises."
+      },
+      "6": {
+        "title": "Human Expertise",
+        "description": "Veteran AI architects partner with you from ideation to rollout, translating business goals into production code."
+      }
+    },
+    "descriptionTeam": {
+      "1": {
+        "title": "AI 'RDI' Team",
+        "description": "Highly skilled researchers and engineers with advanced degrees, driving innovation in Arabic NLP, agentic AI, and enterprise AI solutions."
+      },
+      "2": {
+        "title": "Customer Success",
+        "description": "Dedicated support team providing 24/7 assistance in Arabic and English, ensuring successful AI implementation and adoption."
+      }
+    },
+    "dataAbout": {
+      "1": {
+        "name": "Mansour Al-Obaid",
+        "dept": "Business Consultant & Cofounder",
+        "certificate": "Executive Business Certificate (USA); Bachelor of Industrial Engineering",
+        "experiance": "25+ years leading companies; Former CEO/Partner of AwalNet, Salam, Arab Sea, and Sara Telecom."
+      },
+      "2": {
+        "name": "Ibrahim Zubaidy",
+        "dept": "CEO & Cofounder",
+        "certificate": "MBA; Bachelor of Computer Science",
+        "experiance": "14+ years in IT training, management, and digital transformation."
+      },
+      "3": {
+        "name": "Jamal Bajaber",
+        "dept": "CTO & Cofounder",
+        "certificate": "Master of Computer Science (USA)",
+        "experiance": "30+ years IT developing & consulting; 12+ years management, academic experience."
       }
     }
   },
@@ -1640,8 +1697,8 @@
     }
   },
   "SolutionHome": {
-    "title": "AI Solutions Tailored for Saudi Industries", 
-    "description":"Specialised AI applications designed for the unique needs of key Saudi sectors",
+    "title": "AI Solutions Tailored for Saudi Industries",
+    "description": "Specialised AI applications designed for the unique needs of key Saudi sectors",
     "button": "Explore Industry Solutions",
     "items": {
       "title": {

@@ -149,6 +149,7 @@
     --color-gray-500: #6a7282;
     --color-white: #fff;
     --spacing: .25rem;
+    --breakpoint-lg: 1024px;
     --breakpoint-xl: 1280px;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
@@ -1307,6 +1308,10 @@
     max-width: max-content;
   }
 
+  .max-w-screen-lg {
+    max-width: var(--breakpoint-lg);
+  }
+
   .max-w-screen-xl {
     max-width: var(--breakpoint-xl);
   }
@@ -1446,6 +1451,10 @@
 
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
 
   .gap-6 {
@@ -1626,6 +1635,11 @@
     border-width: 2px;
   }
 
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
+
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -1634,6 +1648,10 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
+  }
+
+  .border-accent {
+    border-color: var(--color-accent);
   }
 
   .border-border {
@@ -2647,6 +2665,16 @@
     color: var(--color-foreground);
   }
 
+  .text-foreground\/50 {
+    color: color-mix(in srgb, hsl(var(--foreground)) 50%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-foreground\/50 {
+      color: color-mix(in oklab, var(--color-foreground) 50%, transparent);
+    }
+  }
+
   .text-foreground\/80 {
     color: color-mix(in srgb, hsl(var(--foreground)) 80%, transparent);
   }
@@ -2667,16 +2695,6 @@
 
   .text-muted-foreground {
     color: var(--color-muted-foreground);
-  }
-
-  .text-muted-foreground\/60 {
-    color: color-mix(in srgb, hsl(var(--muted-foreground)) 60%, transparent);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .text-muted-foreground\/60 {
-      color: color-mix(in oklab, var(--color-muted-foreground) 60%, transparent);
-    }
   }
 
   .text-popover-foreground {
@@ -3811,6 +3829,12 @@
   }
 
   @media (min-width: 1024px) {
+    .lg\:max-w-screen-lg {
+      max-width: var(--breakpoint-lg);
+    }
+  }
+
+  @media (min-width: 1024px) {
     .lg\:min-w-1\/5 {
       min-width: 20%;
     }
@@ -3882,6 +3906,12 @@
     .lg\:text-6xl {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .xl\:max-w-screen-xl {
+      max-width: var(--breakpoint-xl);
     }
   }
 

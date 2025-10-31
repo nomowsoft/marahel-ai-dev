@@ -1,7 +1,4 @@
 {
-  "/[locale]/contactus/page": "app/[locale]/contactus/page.js",
-  "/[locale]/page": "app/[locale]/page.js",
-  "/[locale]/products/[id]/page": "app/[locale]/products/[id]/page.js",
-  "/[locale]/solutions/page": "app/[locale]/solutions/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/[locale]/about/page": "app/[locale]/about/page.js",
+  "/[locale]/page": "app/[locale]/page.js"
 }
