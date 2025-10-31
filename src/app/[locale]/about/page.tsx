@@ -1,12 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { getValues, getChoseMarahel, getDescriptionTeam, getDataAbout } from "@/utils/data";
 
 const About = () => {
   const t = useTranslations('about');
+  const localActive = useLocale();
   const values = getValues(t);
   const choseMarahel = getChoseMarahel(t);
   const descriptionteam = getDescriptionTeam(t);
@@ -96,9 +97,11 @@ const About = () => {
                   {t('story.p1')}
                 </p>
               </div>
-              <Button size="lg" className="mt-8">
-                {t('story.button')}
-              </Button>
+              <div className="mt-10">
+                <Link href={`/${localActive}/contactus`} className="mt-10 border border-primary bg-primary hover:bg-accent hover:border-accent rounded-lg text-xl px-4 ">
+                  {t('story.button')}
+                </Link>
+              </div>
             </div>
           </div>
         </div>
